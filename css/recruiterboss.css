@@ -1,0 +1,78 @@
+/*
+
+▒█▀▀█ █▀▀ █▀▀ █▀▀█ █░░█ ░▀░ ▀▀█▀▀ █▀▀ █▀▀█ ▒█▀▀█ █▀▀█ █▀▀ █▀▀
+▒█▄▄▀ █▀▀ █░░ █▄▄▀ █░░█ ▀█▀ ░░█░░ █▀▀ █▄▄▀ ▒█▀▀▄ █░░█ ▀▀█ ▀▀█
+▒█░▒█ ▀▀▀ ▀▀▀ ▀░▀▀ ░▀▀▀ ▀▀▀ ░░▀░░ ▀▀▀ ▀░▀▀ ▒█▄▄█ ▀▀▀▀ ▀▀▀ ▀▀▀
+
+*/
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ GENERAL ------ */
+
+html {font-size: 14px;}
+
+a:focus, button:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+    border-color: transparent;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.001) inset, 0 0 1px rgba(255, 255, 255, 0.1);
+    outline: 0 none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    height: 100%;
+    max-width: 100%;
+}
+
+.main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.uppermost_navbar {
+    position: relative;
+    top: 0;
+    min-height: 52px;
+    height: auto;
+    background: #363636;
+    width: 100%;
+    border-radius: 0;
+}
+
+a.signout_btn {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #ebebeb;
+    border-bottom: 1px dotted #8fc93a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
