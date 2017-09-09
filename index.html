@@ -25,7 +25,26 @@
     <link href="css/mq.css" rel="stylesheet">
 </head>
 <body>
-    <div id="main" class="main">
+
+    <!-- Video Resume Example Modal -->
+    <div class="modal fade" id="videoResumeExampleModal" tabindex="-1" role="dialog" aria-labelledby="videoResumeExampleModalDialog">
+        <div class="modal-dialog video_resume_example_modal" role="document">
+            <div class="vidbox">
+                <iframe id="vid_01" src="https://player.vimeo.com/video/49799013?autoplay=0&color=8fc93a&portrait=0" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Uploading Help Video Modal -->
+    <div class="modal fade" id="uploadHelpModal" tabindex="-1" role="dialog" aria-labelledby="uploadHelpModalDialog">
+        <div class="modal-dialog upload_help_modal" role="document">
+            <div class="vidbox">
+                <iframe id="vid_02" src="https://player.vimeo.com/video/18554749?autoplay=0&color=8fc93a&portrait=0" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+<div id="main" class="main">
 
     <!-- Appears on top of the page only when user is authorized (logged into the system) -->
     <div class="uppermost_navbar animated fadeInUp">
@@ -44,6 +63,7 @@
             </button>
             <a class="navbar-brand animated bounceInLeft" href="#">
                 <img src="img/rb_logo.png" class="rb_main_logo">
+                <img src="img/rb_logo_crop.png" class="rb_main_logo_cropped">
             </a>
         </div>
 
@@ -51,7 +71,7 @@
         <div class="collapse navbar-collapse animated bounceInRight" id="rb_bcollapse_1">
             <ul class="nav navbar-nav rb_navstripe navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
+                    <a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a class="dropdown-item" href="#">Sign In</a>
@@ -62,7 +82,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jobseekers <span class="caret"></span></a>
+                    <a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jobseekers <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a class="dropdown-item" href="#">Sign In</a>
@@ -74,13 +94,13 @@
                 </li>
 
                 <li>
-                    <a class="rb_hexagon_button green hvr-shrink" href="#">Post Resume</a>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Resume</a>
                 </li>
                 <li>
-                    <a class="rb_hexagon_button green hvr-shrink" href="#">Post Video Resume</a>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Video Resume</a>
                 </li>
                 <li>
-                    <a class="rb_hexagon_button white hvr-shrink" href="#">Post Your Job</a>
+                    <a class="rb_hexagon_button white hvr-shrink navbarhex" href="#">Post Your Job</a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -93,14 +113,14 @@
                     <div class="col-sm-6 h_banner">
                         <h1>Looking for your next employee?</h1>
                         <h4>With <span>recruiterboss</span> it's now easier than ever!</h4>
-                        <a href="#" class="help_with_upload">
+                        <a href="#" class="help_with_upload" data-toggle="modal" data-target="#uploadHelpModal">
                             <i class="fa fa-life-saver lifesaver"></i>
                             Help with uploading video resume
                         </a>
                     </div>
                     <div class="col-sm-6 macbook_holder">
                         <div class="rb_macbook">
-                            <a class="hexaplay hvr-pulse"></a>
+                            <a class="hexaplay hvr-pulse" data-toggle="modal" data-target="#videoResumeExampleModal"></a>
                         </div>
                     </div>
                 </div>
@@ -135,7 +155,7 @@
                             </select>
                         </div>
                         <div class="form-group col-sm-4">
-                            <label for="location" class="lookin_for_lbl">Select industry</label>
+                            <label for="location" class="lookin_for_lbl">Location</label>
                             <select id="location">
                                 <option>California</option>
                                 <option>Arizona</option>
@@ -149,10 +169,10 @@
                             </select>
                         </div>
                         <div class="form-group col-sm-4">
-                            <label for="contractScope" class="lookin_for_lbl">Select industry</label>
+                            <label for="contractScope" class="lookin_for_lbl">Contract type</label>
                             <select id="contractScope">
                                 <option>Full Time</option>
-                                <option>Half Time</option>
+                                <option>Part Time</option>
                                 <option>Remote</option>
                             </select>
                         </div>
@@ -173,43 +193,43 @@
                         <div class="col-sm-3 octaboxx">
                             <div class="octa healthcare"></div>
                             <h4 class="octa_ttl">Healthcare</h4>
-                            <a href="#" class="rb_hexagon_button green_sm hvr-shrink">Search</a>
+                            <a href="#" class="octahex_btn rb_hexagon_button green_sm hvr-shrink">Search</a>
                         </div>
                         <div class="col-sm-3 octaboxx">
                             <div class="octa sales"></div>
                             <h4 class="octa_ttl">Sales</h4>
-                            <a href="#" class="rb_hexagon_button green_sm hvr-shrink">Search</a>
+                            <a href="#" class="octahex_btn rb_hexagon_button green_sm hvr-shrink">Search</a>
                         </div>
                         <div class="col-sm-3 octaboxx">
                             <div class="octa technology"></div>
                             <h4 class="octa_ttl">Technology</h4>
-                            <a href="#" class="rb_hexagon_button green_sm hvr-shrink">Search</a>
+                            <a href="#" class="octahex_btn rb_hexagon_button green_sm hvr-shrink">Search</a>
                         </div>
                         <div class="col-sm-3 octaboxx">
                             <div class="octa education"></div>
                             <h4 class="octa_ttl">Education</h4>
-                            <a href="#" class="rb_hexagon_button green_sm hvr-shrink">Search</a>
+                            <a href="#" class="octahex_btn rb_hexagon_button green_sm hvr-shrink">Search</a>
                         </div>
 
                         <div class="col-sm-3 octaboxx">
                             <div class="octa finance"></div>
                             <h4 class="octa_ttl">Finance</h4>
-                            <a href="#" class="rb_hexagon_button green_sm hvr-shrink">Search</a>
+                            <a href="#" class="octahex_btn rb_hexagon_button green_sm hvr-shrink">Search</a>
                         </div>
                         <div class="col-sm-3 octaboxx">
                             <div class="octa labor"></div>
                             <h4 class="octa_ttl">Labor</h4>
-                            <a href="#" class="rb_hexagon_button green_sm hvr-shrink">Search</a>
+                            <a href="#" class="octahex_btn rb_hexagon_button green_sm hvr-shrink">Search</a>
                         </div>
                         <div class="col-sm-3 octaboxx">
                             <div class="octa service"></div>
                             <h4 class="octa_ttl">Customer Service</h4>
-                            <a href="#" class="rb_hexagon_button green_sm hvr-shrink">Search</a>
+                            <a href="#" class="octahex_btn rb_hexagon_button green_sm hvr-shrink">Search</a>
                         </div>
                         <div class="col-sm-3 octaboxx">
                             <div class="octa other"></div>
                             <h4 class="octa_ttl">Other</h4>
-                            <a href="#" class="rb_hexagon_button green_sm hvr-shrink">Search</a>
+                            <a href="#" class="octahex_btn rb_hexagon_button green_sm hvr-shrink">Search</a>
                         </div>
                     </div>
                 </div>
@@ -259,7 +279,8 @@
                             <p class="blog_preview_txt">
                                 According to TechCrunch's sources, the company's founders Alex Ljung and Eric Wahlforss
                                 admitted the massive layoffs have only saved enough money to last the streaming service 
-                                "until Q4," which is 50 days away.
+                                "until Q4," which is 50 days away.</p>
+                            <p class="blog_preview_txt">
                                 SoundCloud responded to TechCrunch's story by refuting the leaked statistic and insisting
                                 that the service is "fully funded into Q4.”
                             </p>
@@ -267,29 +288,193 @@
                             <a href="#" class="all_blogs_btn rb_hexagon_button blu hvr-shrink">See All Blog Posts</a>
                         </div>
                     </div>
+                    <div class="col-sm-6 featured_holder">
+                        <h2 class="section_ttl_2">Featured Jobs</h2>
+                        <hr class="micro_hr blu_hr">
+                        <div class="featured_box">
+                            <div class="featured_details_boxx">
+                                <div class="col-sm-3 octa_details_holder">
+                                    <div class="f_octa financial"></div>
+                                </div>
+                                <div class="col-sm-9 f_octa_text_holder">
+                                    <h4>Mortgage Specialist</h4>
+                                    <div class="category_rect">Finance</div>
+                                    <a href="#" class="f_seedetailz_btn">See the details</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="featured_details_boxx">
+                                <div class="col-sm-3 octa_details_holder">
+                                    <div class="f_octa tech"></div>
+                                </div>
+                                <div class="col-sm-9 f_octa_text_holder">
+                                    <h4>Senior Java Developer</h4>
+                                    <div class="category_rect">Technology</div>
+                                    <a href="#" class="f_seedetailz_btn">See the details</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="featured_details_boxx">
+                                <div class="col-sm-3 octa_details_holder">
+                                    <div class="f_octa lab"></div>
+                                </div>
+                                <div class="col-sm-9 f_octa_text_holder">
+                                    <h4>Taxi Driver</h4>
+                                    <div class="category_rect">Labor</div>
+                                    <a href="#" class="f_seedetailz_btn">See the details</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="featured_details_boxx">
+                                <div class="col-sm-3 octa_details_holder">
+                                    <div class="f_octa health"></div>
+                                </div>
+                                <div class="col-sm-9 f_octa_text_holder">
+                                    <h4>Surgeon Assistant</h4>
+                                    <div class="category_rect">Healthcare</div>
+                                    <a href="#" class="f_seedetailz_btn">See the details</a>
+                                </div>
+                            </div>
+                            <a href="#" class="seemorejobs_btn rb_hexagon_button white_2 hvr-shrink">See All Jobs</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="section_hr">
+            </div>
+        </div>
+    </div> <!-- Blog and Featured Area END -->
+
+    <div class="charity_area_skewed">
+        <div class="container">
+            <div class="row">
+                <div class="charity_area_str8">
+
                 </div>
             </div>
         </div>
-    </div>
+    </div> <!-- Charity Area END -->
 
+    <footer class="rb_footer">
+        <div class="container">
+            <div class="row">
+                <div class="rb_footer_inner_boxx">
+                    <div class="col-sm-3 footer_logo_holder">
+                        <a href="#">
+                            <img src="img/rb_logo.png" class="footer_logo">
+                        </a>
+                        <div class="phone_holder">
+                            <i class="fa fa-phone footer_phone_icon"></i>
+                            <a href="tel:+1-541-754-3010">+1-541-754-3010</a>
+                        </div>
+                        <div class="email_holder">
+                            <i class="fa fa-envelope footer_email_icon"></i>
+                            <a href="mailto:info@recruiterboss.com">info@recruiterboss.com</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 footer_linxx_holder">
+                        <ul class="footer_linxx">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Video Resume</a></li>
+                            <li><a href="#">Employers</a></li>
+                            <li><a href="#">Job Seekers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 footer_linxx_holder">
+                        <ul class="footer_linxx">
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Manage email</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 footer_buttons_holder">
+                        <a href="#" class="footer_hex_btn_green rb_hexagon_button green hvr-shrink">Post Video Resume</a>
+                        <a href="#" class="footer_hex_btn_white rb_hexagon_button white hvr-shrink">Post Your Job</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottommost_stripe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 microtext_holder">
+                        <small class="microtext">&copy; 2017 <span>Recruiterboss</span> All Rights Reserved</small>
+                    </div>
+                    <div class="col-sm-6 socialz_holder">
+                       <ul class="sozialz pull-right">
+                           <li><a href="#"><i class="fa fa-facebook-square"></i> </a> </li>
+                           <li><a href="#"><i class="fa fa-linkedin-square"></i> </a> </li>
+                           <li><a href="#"><i class="fa fa-google-plus-square"></i> </a> </li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Footer END -->
 
 </div> <!-- Main END -->
 
 <!-- jQuery'z -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+
 <!-- JSz -->
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/recruiterboss.js"></script>
 <script src="js/select2.full.js"></script>
+    <script>
+        $('#industry, #location, #contractScope').select2({
+            width: '100%',
+            minimumResultsForSearch: -1
+        });
+    </script>
+
 <script>
+    $(document).ready(function(){
 
-    $('#industry, #location, #contractScope').select2({
-        width: '100%',
-        minimumResultsForSearch: -1
+        $('a.hexaplay').click(function () {
+            $("iframe#vid_01").attr("src", $("iframe#vid_01").attr("src").replace("autoplay=0", "autoplay=1"));
+        });
+
+        $('a.help_with_upload').click(function () {
+            $("iframe#vid_02").attr("src", $("iframe#vid_02").attr("src").replace("autoplay=0", "autoplay=1"));
+        });
+
+        $(function(){
+            $('.modal').on('hidden.bs.modal', function (e) {
+                $iframe = $(this).find("iframe");
+                $iframe.attr("src", $iframe.attr("src"));
+                $("iframe#vid_01").attr("src", $("iframe#vid_01").attr("src").replace("autoplay=1", "autoplay=0"));
+            });
+        });
+
+        $(function(){
+            $('.modal').on('hidden.bs.modal', function (e) {
+                $iframe = $(this).find("iframe");
+                $iframe.attr("src", $iframe.attr("src"));
+                $("iframe#vid_02").attr("src", $("iframe#vid_02").attr("src").replace("autoplay=1", "autoplay=0"));
+            });
+        });
+
+//        $('.modal').each(function(){
+//            var src = $(this).find('iframe').attr('src');
+//            $(this).on('click', function(){
+//
+//                $(this).find('iframe').attr('src', '');
+//                $(this).find('iframe').attr('src', src);
+//
+//            });
+//        });
     });
-
 </script>
+
+
+
+
+
 
 </body>
 </html>

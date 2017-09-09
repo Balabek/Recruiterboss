@@ -1,0 +1,384 @@
+/*
+
+▒█▀▄▀█ █▀▀ █▀▀▄ ░▀░ █▀▀█ 　 ▒█▀▀█ █░░█ █▀▀ █▀▀█ ░▀░ █▀▀ █▀▀
+▒█▒█▒█ █▀▀ █░░█ ▀█▀ █▄▄█ 　 ▒█░▒█ █░░█ █▀▀ █▄▄▀ ▀█▀ █▀▀ ▀▀█
+▒█░░▒█ ▀▀▀ ▀▀▀░ ▀▀▀ ▀░░▀ 　 ░▀▀█▄ ░▀▀▀ ▀▀▀ ▀░▀▀ ▀▀▀ ▀▀▀ ▀▀▀
+
+*/
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* >>>>>>>> I M P O R T A N T ! <<<<<<<<< */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> LG/XL <<<<< */
+
+
+/* >>>>> SM/XS <<<<< */
+@media screen and (max-width: 767px){
+    #rb_bcollapse_1 {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        margin-top: 16px;
+        background: rgba(0,0,0,0.9);
+        padding-bottom: 6px;
+        padding-top: 6px;
+    }
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- NAV & HEADER ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+@media screen and (max-width: 1199px){
+    img.rb_main_logo {width: 35%;}
+    .rb_navstripe {position: relative; top: -20px;}
+
+    .rb_macbook {width: 610px;}
+    .h_banner h1 {font-size: 62px;}
+}
+
+@media screen and (max-width: 1099px){
+    img.rb_main_logo {display: none;}
+    img.rb_main_logo_cropped {display: block; width: 35%;}
+
+    .rb_macbook {width: 590px; right: 20%;}
+
+    .h_banner {margin-top: 28%; padding-left: 0;}
+
+    .rb_navstripe {top: 20px;}
+    .h_banner h1 {font-size: 48px;}
+    .h_banner h4 {font-size: 20px;}
+    a.help_with_upload {font-size: 1rem; line-height: 2;}
+}
+
+@media screen and (max-width: 1064px){
+    .rb_navstripe {top: -20px;}
+}
+
+@media screen and (max-width: 991px){
+    .macbook_holder {margin-top: 33%;}
+    .rb_macbook {width: 490px; height: 330px;}
+
+    .h_banner {margin-top: 38%; right: 5%;}
+}
+
+@media screen and (max-width: 934px){
+    a.navbarhex {height: 12px; width: 141px; font-size: 0.7rem; padding-top: 4px; line-height: 0.1 !important;}
+}
+
+@media screen and (max-width: 840px){
+    ul.rb_navstripe li {margin-right: 4px; }
+    a.standard_linx {font-size: 0.77rem;}
+
+    .h_banner h1 {font-size: 32px;}
+    .h_banner h4 {font-size: 18px;}
+    a.help_with_upload {font-size: 0.77rem; line-height: 2.6;}
+
+    .lifesaver {font-size: 1.6rem;}
+
+    .rb_macbook {right: 30%;}
+    .h_banner {margin-top: 39%; right: 0;}
+}
+
+@media screen and (max-width: 767px){
+    .h_banner {margin-top: 25%; padding-left: 20px;}
+
+    .h_banner h1 {font-size: 62px;}
+    .h_banner h4 {font-size: 32px;}
+    a.help_with_upload {font-size: 1rem; line-height: 2;}
+
+    .lifesaver {font-size: 2rem;}
+
+    .macbook_holder {margin-top: 7%; margin-bottom: 60px;}
+    .rb_macbook {width: 700px; height: 430px; right: 0;}
+
+    img.rb_main_logo_cropped {width: 50%;}
+
+    .navbar-default .navbar-toggle {margin-top: 30px;}
+
+    a.navbarhex {height: 40px; width: 174px; font-size: 1rem; padding-top: 16px; line-height: 1.6 !important; margin-bottom: 12px;}
+    a.standard_linx {font-size: 1rem;}
+
+    .rb_navstripe {top: 0; float: right; padding-right: 20px;}
+}
+
+@media screen and (max-width: 680px){
+    .h_banner {margin-top: 32%;}
+
+    .h_banner h1 {font-size: 48px;}
+    .h_banner h4 {font-size: 20px;}
+
+    .rb_macbook {width: 625px; height: 360px;}
+}
+
+@media screen and (max-width: 603px){
+    .h_banner {margin-top: 40%;}
+
+    .h_banner h1 {font-size: 48px;}
+    .h_banner h4 {font-size: 20px;}
+
+    .rb_macbook {width: 565px; height: 330px;}
+}
+
+@media screen and (max-width: 535px){
+    .h_banner {margin-top: 42%;}
+
+    .h_banner h1 {font-size: 42px;}
+    .h_banner h4 {font-size: 18px;}
+
+    .rb_macbook {width: 505px; height: 310px;}
+    .macbook_holder {margin-bottom: 85px;}
+}
+
+@media screen and (max-width: 500px){
+    .rb_macbook {width: 450px;}
+}
+
+@media screen and (max-width: 469px){
+    .rb_macbook {width: 430px; height: 270px;}
+    a.hexaplay {left: 44%;}
+
+    small.uppermost_user_info {float: left;}
+}
+
+@media screen and (max-width: 430px){
+    .rb_macbook {width: 390px;}
+}
+
+@media screen and (max-width: 414px){
+    .rb_macbook {width: 380px; height: 240px;}
+    img.rb_main_logo_cropped {width: 38%;}
+}
+
+@media screen and (max-width: 380px){
+    .h_banner {margin-top: 50%;}
+    .rb_macbook {width: 350px; height: 220px;}
+    a.hexaplay {width: 46px; height: 46px;}
+}
+
+@media screen and (max-width: 350px){
+    .rb_macbook {width: 310px; height: 210px;}
+}
+
+@media screen and (max-width: 334px){
+    .rb_macbook {width: 285px; height: 195px;}
+    a.hexaplay {width: 36px; height: 36px;}
+
+    a.help_with_upload {font-size: 0.77rem; line-height: 2.6;}
+    .lifesaver {font-size: 1.6rem;}
+}
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- LOOKING FOR AREA ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+@media screen and (max-width: 991px){
+    .looking_for_inner_box {margin-top: 25%;}
+}
+
+@media screen and (max-width: 860px){
+    .newsletter_hex {width: 830px;}
+}
+
+@media screen and (max-width: 810px){
+    .newsletter_hex {width: 800px;}
+}
+
+@media screen and (max-width: 767px){
+    .looking_for_area {min-height: 885px;}
+    .looking_for_inner_box {margin-top: 28%;}
+    .newsletter_hex {width: 760px; bottom: -11%;}
+    .looking_for_form {padding-top: 16px;}
+    .lookingfor_submit_btn {bottom: -90px;}
+}
+
+@media screen and (max-width: 735px){
+    .newsletter_hex {width: 730px;}
+    h2.section_ttl {font-size: 32px;}
+}
+
+@media screen and (max-width: 710px){
+    .newsletter_hex {width: 100%;}
+    h2.section_ttl {font-size: 28px;}
+}
+
+@media screen and (max-width: 680px){
+    .newsletter_hex {height: 180px; bottom: -104px;}
+    input.rb_newletter_input {width: 80%;}
+    .newsletter_hex h3 {font-size: 1.2rem;}
+    .looking_for_area {min-height: 775px;}
+}
+
+@media screen and (max-width: 603px){
+    .newsletter_hex h3 {position: relative; top: 7px; font-size: 1rem;}
+    .newsletter_submit_btn {bottom: 26px;}
+    h2.section_ttl {font-size: 26px;}
+}
+
+@media screen and (max-width: 545px){
+    .newsletter_hex h3 {top: 0; font-size: 1.1rem;}
+
+    .newsletter_hex {background-size: cover;}
+    .newsletter_submit_btn {bottom: 17px;}
+}
+
+@media screen and (max-width: 450px){
+    .looking_for_inner_box {margin-top: 40%;}
+    h2.section_ttl {font-size: 22px;}
+}
+
+@media screen and (max-width: 414px){
+    h2.section_ttl {font-size: 18px;}
+    input.rb_newletter_input {width: 95%;}
+    .newsletter_hex h3 {font-size: 1rem;}
+    input.rb_newletter_input {font-size: 0.77rem;}
+}
+
+@media screen and (max-width: 366px){
+    .looking_for_area {min-height: 700px;}
+}
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- POSTINGS ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+@media screen and (max-width: 1255px){
+    .octagons_holder {padding-top: 30px;}
+}
+
+@media screen and (max-width: 1240px){
+    .postings_area_skewed {margin-top: -6%;}
+}
+
+@media screen and (max-width: 1160px){
+    .postings_area_skewed {margin-top: -16%;}
+    .octagons_holder {padding-top: 25px;}
+}
+
+@media screen and (max-width: 1099px){
+    .postings_area_str8 {padding-top: 100px;}
+    .octa {width: 170px; height: 170px;}
+    .octaboxx {margin-bottom: 70px;}
+}
+
+@media screen and (max-width: 991px){
+    .octahex_btn {width: 145px; height: 34px; font-size: 0.77rem !important; line-height: 0.1 !important;}
+    h4.octa_ttl {font-size: 1rem;}
+    .octa {width: 130px; height: 130px;}
+    .postings_area_skewed {min-height: 900px;}
+}
+
+@media screen and (max-width: 899px){
+    h2.section_ttl_2 {font-size: 32px; margin-bottom: 16px;}
+}
+
+@media screen and (max-width: 767px){
+    .octaboxx {width: 49%;}
+    .octa {width: 200px; height: 200px;}
+    .postings_area_skewed {min-height: 1800px;}
+}
+
+@media screen and (max-width: 490px){
+    .octa {width: 150px; height: 150px;}
+    .postings_area_skewed {min-height: 1600px;}
+}
+
+@media screen and (max-width: 366px){
+    .octaboxx {width: 100%;}
+    .octa {width: 205px; height: 205px;}
+    .postings_area_skewed {min-height: 3300px;}
+    .postings_area_str8 {padding-top: 45px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- WWA ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+@media screen and (max-width: 1370px){
+    .whoweare_area {margin-top: -12%;}
+}
+
+@media screen and (max-width: 1255px){
+    .whoweare_area {margin-top: -20%;}
+}
+
+@media screen and (max-width: 1150px){
+    .whoweare_area {margin-top: -25%; padding-top: 18%;}
+}
+
+@media screen and (max-width: 991px){
+    .whoweare_area {margin-top: -21%;}
+}
+
+@media screen and (max-width: 899px){
+    .whoweare_area {margin-top: -25%;}
+}
+
+@media screen and (max-width: 790px){
+    .whoweare_area {margin-top: -26%;}
+}
+
+@media screen and (max-width: 680px){
+    .whoweare_area {margin-top: -28%;}
+}
+
+@media screen and (max-width: 630px){
+    .whoweare_area {margin-top: -32%;}
+}
+
+@media screen and (max-width: 540px){
+    .whoweare_area {margin-top: -36%;}
+}
+
+@media screen and (max-width: 491px){
+    .whoweare_area {margin-top: -39%;}
+}
+
+@media screen and (max-width: 450px){
+    .whoweare_area {margin-top: -43%;}
+}
+
+@media screen and (max-width: 366px){
+    .whoweare_area {margin-top: -100%; padding-top: 35%;}
+}

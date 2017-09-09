@@ -159,6 +159,11 @@ img.rb_main_logo {
     width: 50%;
 }
 
+img.rb_main_logo_cropped {
+    display: none;
+    width: 50%;
+}
+
 .dropdown-menu {
     background-color: rgba(143,201,58,0.8);
 }
@@ -275,6 +280,17 @@ a.help_with_upload {
     color: #ffffff;
     text-align: left;
     text-transform: uppercase;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+a.help_with_upload:hover {
+    color: #dddddd;
 }
 
 @-moz-keyframes spin {
@@ -423,6 +439,7 @@ hr.micro_hr {
 }
 
 hr.micro_hr.green_hr {background-color: #8fc93a;}
+hr.micro_hr.blu_hr {background-color: #0d6ca8;}
 
 .looking_for_form {
     padding-top: 55px;
@@ -456,7 +473,6 @@ label.lookin_for_lbl {
 
 
 
-
 /* ===== */
 /* ------ POSTINGS AREA ------ */
 /* ===== */
@@ -466,7 +482,7 @@ label.lookin_for_lbl {
     min-height: 1110px;
     height: auto;
     background: url("../img/classified_ads_wornout.png") center center no-repeat;
-    background-size: 100%;
+    background-size: cover;
 
     -webkit-transform: skewY(2deg);
     -moz-transform: skewY(2deg);
@@ -553,8 +569,8 @@ h4.octa_ttl {
 /* ===== */
 
 .whoweare_area {
-    margin-top: -7.4%;
-    padding-top: 10%;
+    margin-top: -9%;
+    padding-top: 11%;
     min-height: 975px;
     height: auto;
     background: url('../img/whoweare_bgd.png') center center no-repeat;
@@ -716,6 +732,7 @@ p.blog_preview_txt {
     font-weight: 400;
     color: #666666;
     text-align: left;
+    margin-bottom: 14px;
 }
 
 a.readmore_btn {
@@ -749,7 +766,7 @@ a.readmore_btn:hover, a.readmore_btn:focus {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -135px;
+    bottom: -168px;
     padding-top: 16px;
     margin: auto;
     font-size: 0.8rem;
@@ -764,12 +781,376 @@ a.readmore_btn:hover, a.readmore_btn:focus {
     color: #ffffff;
 }
 
+.featured_box {
+    padding: 36px 18px 36px 18px;
+    margin-top: 56px;
+    width: 99%;
+    height: 820px;
+    background: #e4e4e4;
+    border-radius: 5px;
+}
+
+.featured_details_boxx {
+    margin-bottom: 30%;
+}
+
+.f_octa {
+    display: block;
+    height: 121px;
+    width: 121px;
+}
+
+.f_octa.financial {background: url('../img/f_octa_1.png') center center no-repeat; background-size: contain;}
+.f_octa.tech {background: url('../img/f_octa_2.png') center center no-repeat; background-size: contain;}
+.f_octa.lab {background: url('../img/f_octa_3.png') center center no-repeat; background-size: contain;}
+.f_octa.health {background: url('../img/f_octa_4.png') center center no-repeat; background-size: contain;}
+
+
+.f_octa_text_holder {
+    padding-top: 20px;
+}
+
+.f_octa_text_holder h4 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #666666;
+    text-align: left;
+}
+
+.category_rect {
+    display: inline-block;
+    width: 55%;
+    padding-top: 5px;
+    padding-left: 12px;
+    border-radius: 5px;
+    font-family: "BrandonGrotesque-Light", sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: left;
+    height: 30px;
+    background: #0d6ca8;
+    color: #ffffff;
+}
+
+a.f_seedetailz_btn {
+    display: block;
+    margin-top: 14px;
+    width: 28%;
+    font-weight: 600;
+    font-size: 0.788rem;
+    color: #000000;
+    border-bottom: 1px solid #0d6ca8;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+a.f_seedetailz_btn:hover, a.f_seedetailz_btn:focus {
+    color: #999999;
+}
+
+.seemorejobs_btn {
+    width: 200px;
+    display: block;
+    position: relative;
+    top: 53px;
+    left: 0;
+    right: 0;
+    bottom: 75px;
+    padding-top: 16px;
+    margin: auto;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #0d6ca8;
+    border: none;
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+}
+
+.seemorejobs_btn:hover, .seemorejobs_btn:focus {
+    text-decoration: none;
+    color: #0d6ca8;
+}
+
+hr.section_hr {
+    clear: both;
+    width: 98%;
+    margin-top: 89%;
+    border-color: #c3c3c3;
+}
 
 
 
 
 
 
+/* ===== */
+/* ------ CHARITY AREA ------ */
+/* ===== */
+
+.charity_area_skewed {
+    min-height: 365px;
+    height: auto;
+    background-color: #ffffff;
+
+    -webkit-transform: skewY(2deg);
+    -moz-transform: skewY(2deg);
+    -ms-transform: skewY(2deg);
+    -o-transform: skewY(2deg);
+    transform: skewY(2deg);
+
+    padding-bottom: 65px;
+
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility:     hidden;
+    -moz-backface-visibility:    hidden;
+    backface-visibility:         hidden;
+    outline: 1px solid transparent;
+}
+
+.charity_area_str8 {
+    padding-top: 85px;
+
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+
+    padding-bottom: 25px;
+
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility:     hidden;
+    -moz-backface-visibility:    hidden;
+    backface-visibility:         hidden;
+    outline: 1px solid transparent;
+}
 
 
 
+/* ===== */
+/* ------ FOOTER ------ */
+/* ===== */
+
+footer.rb_footer {
+    margin-top: -36px;
+    min-height: 390px;
+    height: auto;
+    background: url('../img/footer_background.png') center center no-repeat;
+    background-size: cover;
+
+}
+
+.rb_footer_inner_boxx {
+    padding-top: 115px;
+}
+
+img.footer_logo {
+    width: 75%;
+    margin-bottom: 26px;
+}
+
+.phone_holder {
+    margin-bottom: 18px;
+}
+
+.phone_holder a {
+    position: relative;
+    top: -2px;
+    color: #ffffff;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.phone_holder a:hover {
+    color: #dddddd;
+}
+
+.footer_phone_icon {
+    color: #8fc93a;
+    font-size: 1.4rem;
+}
+
+.email_holder a {
+    position: relative;
+    top: -2px;
+    color: #ffffff;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.email_holder a:hover {
+    color: #dddddd;
+}
+
+.footer_email_icon {
+    color: #8fc93a;
+    font-size: 1.4rem;
+}
+
+ul.footer_linxx {
+    border-left: 1px solid #ffffff;
+}
+
+ul.footer_linxx li {
+    list-style-type: none;
+}
+
+ul.footer_linxx li a {
+    font-size: 0.88rem;
+    font-weight: 300;
+    line-height: 3;
+    color: #ffffff;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+ul.footer_linxx li a:hover {
+    color: #dddddd;
+}
+
+.footer_hex_btn_green {
+    width: 200px;
+    display: block;
+    position: relative;
+    margin-bottom: 26px;
+    padding-top: 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+    border: none;
+    -webkit-filter: drop-shadow(2px 2px 2px #666666);
+    filter: drop-shadow(2px 2px 2px #666666);
+}
+
+.footer_hex_btn_green:hover, .seemorejobs_btn:focus {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer_hex_btn_white {
+    width: 200px;
+    display: block;
+    position: relative;
+    margin-bottom: 26px;
+    padding-top: 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #8fc93a;
+    border: none;
+    -webkit-filter: drop-shadow(2px 2px 2px #666666);
+    filter: drop-shadow(2px 2px 2px #666666);
+}
+
+.footer_hex_btn_white:hover, .footer_hex_btn_white:focus {
+    text-decoration: none;
+    color: #8fc93a;
+}
+
+.bottommost_stripe {
+    display: block;
+    position: relative;
+    bottom: -20px;
+    width: 100%;
+    height: 50px;
+    z-index: 200;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.microtext_holder {
+    padding-top: 14px;
+}
+
+small.microtext {
+    font-size: 0.80rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+}
+
+small.microtext span {color: #0d6ca8;}
+
+.socialz_holder {
+    padding-top: 8px;
+}
+
+ul.sozialz li {
+    list-style-type: none;
+    float: left;
+    margin-right: 24px;
+}
+
+ul.sozialz:last-child {
+    margin-right: 50px;
+}
+
+ul.sozialz li a {
+    font-size: 1.8rem;
+    color: #0d6ca8;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+ul.sozialz li a:hover, ul.sozialz li a:focus {
+    color: #8fc93a;
+}
+
+
+
+
+
+/* ===== */
+/* ------ UPLOAD HELP MODAL ------ */
+/* ===== */
+
+.modal-backdrop {
+    opacity: 0.8 !important;
+}
+
+.modal-dialog.upload_help_modal {
+    position: relative;
+    margin-top: 5%;
+    display: block;
+    min-height: 480px;
+    height: auto;
+    width: 50%;
+    border-radius: 6px;
+    background-color: #094a73;
+}
+
+.vidbox {
+    padding-top: 37px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
