@@ -348,7 +348,11 @@
 }
 
 @media screen and (max-width: 991px){
-    .whoweare_area {margin-top: -21%;}
+    .whoweare_area {margin-top: -21%; padding-top: 25%;}
+
+    .wwa_octa_box {padding-left: 0;}
+    .octa_1, .octa_2 {height: 300px; width: 300px;}
+    .octa_details {top: 45px;}
 }
 
 @media screen and (max-width: 899px){
@@ -357,6 +361,11 @@
 
 @media screen and (max-width: 790px){
     .whoweare_area {margin-top: -26%;}
+}
+
+@media screen and (max-width: 767px){
+    .octa_1, .octa_2 {height: 260px; width: 260px;}
+    .octa_details {top: 35px;}
 }
 
 @media screen and (max-width: 680px){
@@ -368,7 +377,13 @@
 }
 
 @media screen and (max-width: 540px){
-    .whoweare_area {margin-top: -36%;}
+    .whoweare_area {margin-top: -36%; min-height: 1115px;}
+    .octa_details {clear: both; top: -22px; padding-left: 2px;}
+    hr.micro_hr_xs {display: block; text-align: center;}
+    .octa_details h2 {text-align: center;}
+    .octa_details p {text-align: center;}
+    .octa_1, .octa_2 {display: block; margin: 0 auto; float: none;}
+    .wwa_octa_box {margin-bottom: 22px;}
 }
 
 @media screen and (max-width: 491px){
