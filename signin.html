@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
-    <title>Recruiterboss :: ABOUT</title>
+    <title>Recruiterboss :: SIGN IN</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Google fonts -->
@@ -29,10 +29,10 @@
 <div id="main" class="main">
 
     <!-- Appears on top of the page only when user is authorized (logged into the system) -->
-    <div class="uppermost_navbar animated fadeInUp">
-        <a href="#" class="btn-link signout_btn">Sign Out</a>
-        <small class="uppermost_user_info">Signed in as <span>James</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>
-    </div>
+    <!--<div class="uppermost_navbar animated fadeInUp">-->
+        <!--<a href="#" class="btn-link signout_btn">Sign Out</a>-->
+        <!--<small class="uppermost_user_info">Signed in as <span>James</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>-->
+    <!--</div>-->
 
     <nav class="navbar navbar-default rb_navigation_inner">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -88,29 +88,44 @@
         </div><!-- /.navbar-collapse -->
     </nav>
 
-    <div class="about_area">
+    <div class="signin_area">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 about_info_box">
-                    <h3>About Recruiterboss</h3>
-                    <hr class="micro_hr green_hr">
-                    <p>
-                        We are affordable and easy to use matchmaking service bringing the right people and business together.
-                        <br>
-                        <span>Employers</span> - rather than read hundreds of resumes, we have an innovative approach by having video resumes
-                        as a quicker way to find the right candidate to fill your position.
-                        <br>
-                        <span>Candidates</span> - use our website to find the perfect career for you!
-                        <br>
-                        It’s free! It’s simple!
-                    </p>
-                </div>
-                <div class="col-sm-4 about_hex_holder">
-                    <div class="about_hex"></div>
+                <div class="signin_box_holder">
+                    <div class="signin_boxx">
+                        <h3>Sign In</h3>
+                        <form id="signInForm" class="signin_form" role="form">
+                            <div class="form-group center-block signin_form_group">
+                                <label for="email" class="lookin_for_lbl"></label>
+                                <input id="email" type="text" class="signin_input" placeholder="Email" onfocus="placeholder='' " onblur="placeholder='Email' ">
+                            </div>
+                            <div class="form-group center-block signin_form_group">
+                                <label for="pswd" class="lookin_for_lbl"></label>
+                                <input id="pswd" type="password" class="signin_input" placeholder="Password" onfocus="placeholder='' " onblur="placeholder='Password' ">
+                            </div>
+                            <div class="center-block submit_btn_holder">
+                                <button type="submit" id="signInBtn" class="btn signin_submit_btn">Submit</button>
+                            </div>
+                        </form>
+                        <div class="signin_checkbox_holder">
+                            <form action="#" class="rb_checkboxx_form">
+                                <p>
+                                    <input class="t3t" type="checkbox" id="keepLoggedIn" />
+                                    <label class="l3l" for="keepLoggedIn">Keep me logged in</label>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="forgot_pswd_holder">
+                            <a href="#" class="forgot_pswd">Forgot Password?</a>
+                        </div>
+                        <div class="signup_suggestion_holder">
+                            <p>No account? <a href="#">Sign Up (Employers)</a> | <a href="#">Sign Up (Job Seekers)</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> <!-- About Area END -->
+    </div> <!-- Sign In Area END -->
 
     <div class="skewed_layer_support"></div> <!-- Invisible utility for supporting following skewed layout -->
 

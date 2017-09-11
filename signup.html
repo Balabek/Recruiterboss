@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
-    <title>Recruiterboss :: ABOUT</title>
+    <title>Recruiterboss :: SIGN UP</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Google fonts -->
@@ -29,10 +29,10 @@
 <div id="main" class="main">
 
     <!-- Appears on top of the page only when user is authorized (logged into the system) -->
-    <div class="uppermost_navbar animated fadeInUp">
-        <a href="#" class="btn-link signout_btn">Sign Out</a>
-        <small class="uppermost_user_info">Signed in as <span>James</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>
-    </div>
+    <!--<div class="uppermost_navbar animated fadeInUp">-->
+    <!--<a href="#" class="btn-link signout_btn">Sign Out</a>-->
+    <!--<small class="uppermost_user_info">Signed in as <span>James</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>-->
+    <!--</div>-->
 
     <nav class="navbar navbar-default rb_navigation_inner">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -88,29 +88,58 @@
         </div><!-- /.navbar-collapse -->
     </nav>
 
-    <div class="about_area">
+    <div class="signup_area">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 about_info_box">
-                    <h3>About Recruiterboss</h3>
-                    <hr class="micro_hr green_hr">
-                    <p>
-                        We are affordable and easy to use matchmaking service bringing the right people and business together.
-                        <br>
-                        <span>Employers</span> - rather than read hundreds of resumes, we have an innovative approach by having video resumes
-                        as a quicker way to find the right candidate to fill your position.
-                        <br>
-                        <span>Candidates</span> - use our website to find the perfect career for you!
-                        <br>
-                        It’s free! It’s simple!
-                    </p>
-                </div>
-                <div class="col-sm-4 about_hex_holder">
-                    <div class="about_hex"></div>
+                <div class="signup_boxx_holder">
+                    <div class="signup_boxx">
+                        <h3>Sign Up</h3>
+                        <p class="mandatory_warning">All fields marked with <span>&ast;</span> are required</p>
+                        <form id="signUpForm" class="signup_form" role="form">
+                            <div class="col-sm-6 form-group signup_form_group">
+                                <label for="firstName" class="sgnp_lbl">First Name<span class="asterisk">&ast;</span></label>
+                                <input id="firstName" type="text" class="signin_input">
+                            </div>
+                            <div class="col-sm-6 form-group signup_form_group">
+                                <label for="lastName" class="sgnp_lbl">Last Name<span class="asterisk">&ast;</span></label>
+                                <input id="lastName" type="text" class="signin_input">
+                            </div>
+                            <div class="col-sm-6 form-group signup_form_group">
+                                <label for="eMail" class="sgnp_lbl">Email<span class="asterisk">&ast;</span></label>
+                                <input id="eMail" type="email" class="signin_input">
+                            </div>
+                            <div class="col-sm-6 form-group signup_form_group">
+                                <label for="phone" class="sgnp_lbl">Phone</label><span class="asterisk"></span>
+                                <input id="phone" type="text" class="signin_input">
+                            </div>
+                            <div class="col-sm-6 form-group signup_form_group">
+                                <label for="password" class="sgnp_lbl">Password<span class="asterisk">&ast;</span></label>
+                                <input id="password" type="password" class="signin_input">
+                            </div>
+                            <div class="col-sm-6 form-group signup_form_group">
+                                <label for="confirmPassword" class="sgnp_lbl">Confirm Password<span class="asterisk">&ast;</span></label>
+                                <input id="confirmPassword" type="password" class="signin_input">
+                            </div>
+                            <div class="signin_checkbox_holder">
+                                <form action="#" class="rb_checkboxx_form">
+                                    <p>
+                                        <input class="t3t" type="checkbox" id="keepLoggedIn" />
+                                        <label class="l3l l3l_secondary" for="keepLoggedIn">Resume Alerts (resumes will be sent to your email address)</label>
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="center-block submit_btn_holder_2">
+                                <button type="submit" id="signInBtn" class="btn signin_submit_btn">Submit</button>
+                            </div>
+                            <div class="signup_suggestion_holder">
+                                <p>Already registered? <br class="invisible_break"> <a href="#">Sign In (Employers)</a> | <a href="#">Sign In (Job Seekers)</a></p>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> <!-- About Area END -->
+    </div> <!-- Sign Up Area END -->
 
     <div class="skewed_layer_support"></div> <!-- Invisible utility for supporting following skewed layout -->
 

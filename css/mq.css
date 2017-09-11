@@ -680,6 +680,10 @@
 
 
 
+/* • • • • • • • */
+
+
+
 /* • • • • • • • • • • • • • • • • • • • • • • • • */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* ABOUT */
@@ -687,7 +691,7 @@
 /* • • • • • • • • • • • • • • • • • • • • • • • • */
 
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
-/* -------- NAV & HEADER ---------- */
+/* -------- Navigation Bar ---------- */
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 
 
@@ -725,6 +729,41 @@
 
 
 
+/* • • • • • • • */
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* SIGN IN */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Sign In Box ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+@media screen and (max-width: 699px){
+    .signin_boxx {width: 80%;}
+}
+
+@media screen and (max-width: 485px){
+    .signin_boxx {width: 95%;}
+    .signup_suggestion_holder p {font-size: 0.8rem;}
+}
+
+@media screen and (max-width: 380px){
+    .signin_form_group {width: 90%;}
+    .submit_btn_holder {width: 90%;}
+}
+
+@media screen and (max-width: 365px){
+    .signup_suggestion_holder p {font-size: 0.7rem;}
+}
 
 
 
@@ -732,8 +771,90 @@
 
 
 
+/* • • • • • • • */
 
 
 
 
 
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* SIGN IN */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Sign In Box ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .signup_boxx {width: 95%;}
+}
+
+@media screen and (max-width: 767px){
+    .signup_boxx {min-height: 850px;}
+}
+
+@media screen and (max-width: 530px){
+    .submit_btn_holder_2 {width: 50%;}
+}
+
+@media screen and (max-width: 396px){
+    .submit_btn_holder_2 {width: 60%;}
+    label.l3l.l3l_secondary {font-size: 0.7rem;}
+}
+
+@media screen and (max-width: 340px){
+    .signup_boxx {min-height: 880px;}
+    br.invisible_break {display: block;}
+}
+
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* CONTACT  */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Contact Form Box ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .contact_boxx {width: 95%;}
+}
+
+@media screen and (max-width: 699px){
+    p.support_info_txt {font-size: 1rem;}
+}
+
+@media screen and (max-width: 599px){
+    p.support_info_txt {font-size: 0.9rem;}
+}
+
+@media screen and (max-width: 560px){
+    br.invisible_break_2 {display: block;}
+}
+
+@media screen and (max-width: 340px){
+    p.support_info_txt {font-size: 0.8rem;}
+}

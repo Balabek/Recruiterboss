@@ -1191,6 +1191,8 @@ ul.sozialz li a:hover, ul.sozialz li a:focus {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+img.rb_main_logo_cropped_inner {display: none;}
+
 ul.rb_navstripe_inner li {
     margin-right: 20px;
 }
@@ -1311,27 +1313,231 @@ img.rb_main_logo_inner {
     outline: 1px solid transparent;
 }
 
-/*.charity_area_str8 {*/
-    /*padding-top: 85px;*/
-
-    /*-webkit-transform: skewY(-2deg);*/
-    /*-moz-transform: skewY(-2deg);*/
-    /*-ms-transform: skewY(-2deg);*/
-    /*-o-transform: skewY(-2deg);*/
-    /*transform: skewY(-2deg);*/
-
-    /*padding-bottom: 25px;*/
-
-    /*-webkit-backface-visibility: hidden;*/
-    /*-ms-backface-visibility:     hidden;*/
-    /*-moz-backface-visibility:    hidden;*/
-    /*backface-visibility:         hidden;*/
-    /*outline: 1px solid transparent;*/
-/*}*/
 
 
 
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = SIGN IN (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.signin_area {
+    min-height: 603px;
+    height: auto;
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+
+.signin_boxx {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+    height: 465px;
+    background: #f8f8f8;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding-top: 45px;
+}
+
+.signin_boxx h3 {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #0d6ca8;
+    text-transform: uppercase;
+}
+
+.signin_form_group {
+    width: 75%;
+    margin-bottom: -3px;
+}
+
+input.signin_input {
+    display: block;
+    margin: 0 auto;
+    font-size: 0.88rem;
+    font-weight: 300;
+    padding-left: 12px;
+    height: 44px;
+    width: 100%;
+    background: #ffffff;
+    color: #999999;
+    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+}
+
+input.signin_input:focus {
+    border: 1px solid #cfcfcf;
+}
+
+.submit_btn_holder {
+    width: 75%;
+    padding-top: 32px;
+}
+
+button.signin_submit_btn {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 100%;
+    height: 44px;
+    background: #8fc93a;
+    color: #ffffff;
+    text-transform: uppercase;
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+button.signin_submit_btn:hover, button.signin_submit_btn:focus {
+    background: #83D6DE;
+    color: #ffffff;
+}
+
+.signin_checkbox_holder {
+    text-align: center;
+    padding-top: 1px;
+}
+
+
+form.rb_checkboxx_form {
+    padding-top: 12px;
+}
+
+label.l3l {
+    font-weight: 400;
+    line-height: 2.6;
+    font-size: 0.8rem;
+    color: #888;
+    text-indent: 8px;
+}
+
+/* Base for label styling */
+input.t3t[type="checkbox"]:not(:checked),
+input.t3t[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+input.t3t[type="checkbox"]:not(:checked) + label,
+input.t3t[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+/* checkbox aspect */
+input.t3t:not(:checked) + label:before,
+input.t3t:checked + label:before {
+    content: '';
+    position: absolute;
+    left:0; top: 2px;
+    width: 22px; height: 22px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+    border-radius: 3px;
+}
+/* checked mark aspect */
+input.t3t:not(:checked) + label:after,
+input.t3t:checked + label:after {
+    font-family: "FontAwesome";
+    content: '\f00c';
+    position: absolute;
+    top: 6px;
+    left: -6px;
+    font-size: 18px;
+    line-height: 0.8;
+    color: #e16846;
+    transition: all .2s;
+}
+/* checked mark aspect changes */
+input.t3t:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+input.t3t:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+/* disabled checkbox */
+input.t3t:disabled:not(:checked) + label:before,
+input.t3t:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+}
+input.t3t:disabled:checked + label:after {
+    color: #999;
+}
+input.t3t:disabled + label {
+    color: #aaa;
+}
+
+.forgot_pswd_holder {
+    padding-top: 4px;
+    text-align: center;
+}
+
+a.forgot_pswd {
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: #999999;
+    text-align: center;
+    border-bottom: 1px dotted #0d6ca8;
+    text-decoration: none !important;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a.forgot_pswd:hover {
+    color: #666666;
+    border-bottom: 1px dotted #8fc93a;
+}
+
+.signup_suggestion_holder {
+    position: relative;
+    bottom: -52px;
+    text-align: center;
+}
+
+.signup_suggestion_holder p {
+    font-size: 0.88rem;
+    color: #999999;
+    font-weight: 400;
+    text-align: center;
+}
+
+.signup_suggestion_holder p a {
+    color: #0d6ca8;
+    font-weight: 600;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.signup_suggestion_holder p a:hover {
+    color: #8fc93a;
+}
 
 
 
@@ -1340,9 +1546,205 @@ img.rb_main_logo_inner {
 
 
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = SIGN UP (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.signup_area {
+    min-height: 603px;
+    height: auto;
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+
+.signup_boxx {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    min-height: 585px;
+    height: auto;
+    background: #f8f8f8;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding-top: 45px;
+}
+
+.signup_boxx h3 {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #0d6ca8;
+    text-transform: uppercase;
+}
+
+p.mandatory_warning {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #363636;
+    text-align: center;
+}
+
+p.mandatory_warning span {
+    position: relative;
+    top: 3px;
+    line-height: 1.2;
+    font-size: 2rem;
+    color: #e16846;
+}
+
+form.signup_form {
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+label.sgnp_lbl {
+    font-size: 0.9rem;
+    color: #000000;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+span.asterisk {
+    position: relative;
+    top: 3px;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    color: #e16846;
+}
+
+.submit_btn_holder_2 {
+    width: 30%;
+    padding-top: 2px;
+}
+
+br.invisible_break {display: none;}
 
 
 
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = CONTACT US (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.contact_area {
+    min-height: 603px;
+    height: auto;
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+
+.contact_boxx {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    min-height: 690px;
+    height: auto;
+    background: #f8f8f8;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+
+.contact_area_title_holder {
+    margin-bottom: 85px;
+}
+
+h2.contact_area_ttl {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #0d6ca8;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.contact_boxx h3 {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #0d6ca8;
+    text-transform: uppercase;
+}
+
+p.support_info_txt {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #363636;
+    text-align: center;
+}
+
+p.support_info_txt a {
+    color: #0d6ca8;
+}
+
+p.mandatory_warning {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #363636;
+    text-align: center;
+}
+
+p.mandatory_warning span {
+    position: relative;
+    top: 3px;
+    line-height: 1.2;
+    font-size: 2rem;
+    color: #e16846;
+}
+
+form.contact_form {
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+textarea.signin_input {
+    display: block;
+    margin: 0 auto;
+    font-size: 0.88rem;
+    font-weight: 300;
+    padding-left: 12px;
+    padding-top: 12px;
+    height: 220px;
+    width: 100%;
+    background: #ffffff;
+    resize: none;
+    color: #999999;
+    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 20px;
+}
+
+textarea.signin_input:focus {
+    border: 1px solid #cfcfcf;
+}
+
+br.invisible_break_2 {
+    display: none;
+}
 
 
 
