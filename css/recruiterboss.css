@@ -386,8 +386,8 @@ a.hexaplay {
 input.rb_newletter_input {
     display: block;
     margin: 0 auto;
-    font-size: 0.88rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 400;
     padding-left: 12px;
     height: 44px;
     width: 60%;
@@ -1363,8 +1363,8 @@ img.rb_main_logo_inner {
 input.signin_input {
     display: block;
     margin: 0 auto;
-    font-size: 0.88rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 400;
     padding-left: 12px;
     height: 44px;
     width: 100%;
@@ -1724,8 +1724,8 @@ form.contact_form {
 textarea.signin_input {
     display: block;
     margin: 0 auto;
-    font-size: 0.88rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 400;
     padding-left: 12px;
     padding-top: 12px;
     height: 220px;
@@ -1744,6 +1744,583 @@ textarea.signin_input:focus {
 
 br.invisible_break_2 {
     display: none;
+}
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = MAIN ACTIONS (EMPLOYER) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.employer_main_actions_area {
+    min-height: 960px;
+    height: auto;
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 18px;
+}
+
+.employer_main_actions_area_ttl_holder {
+    margin-bottom: 24px;
+}
+
+h2.main_actions_ttl {
+    font-family: "BrandonGrotesque-Regular",sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+a.ma_octa_ttl {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a.ma_octa_ttl:hover, a.ma_octa_ttl:focus {
+    color: #8fc93a;
+}
+
+.main_actions_holder {
+    padding-top: 85px;
+}
+
+.ma_octa {
+    display: block;
+    width: 195px;
+    height: 195px;
+    margin: 0 auto;
+}
+
+.ma_octa.post_a_job {background: url('../img/ma_octa_1.png') center center no-repeat; background-size: contain;}
+.ma_octa.manage_job_postings {background: url('../img/ma_octa_2.png') center center no-repeat; background-size: contain;}
+.ma_octa.resume_search {background: url('../img/ma_octa_3.png') center center no-repeat; background-size: contain;}
+.ma_octa.saved_searches {background: url('../img/ma_octa_4.png') center center no-repeat; background-size: contain;}
+.ma_octa.saved_canditates {background: url('../img/ma_octa_5.png') center center no-repeat; background-size: contain;}
+.ma_octa.account_settings {background: url('../img/ma_octa_6.png') center center no-repeat; background-size: contain;}
+
+.ma_octa_boxx {
+    margin-bottom: 85px;
+}
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = POST A JOB (EMPLOYER) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.post_a_job_area {
+    padding-top: 85px;
+}
+
+.post_a_job_title_holder {
+    margin-bottom: 28px;
+}
+
+.post_a_job_boxx {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    min-height: 1555px;
+    height: auto;
+    background: #f8f8f8;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding-top: 45px;
+    padding-bottom: 35px;
+    margin-bottom: 55px;
+}
+
+form.post_a_job_form {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+textarea.post_a_job_txt_area {
+    display: block;
+    margin: 0 auto;
+    font-size: 0.88rem;
+    font-weight: 300;
+    padding-left: 12px;
+    padding-top: 12px;
+    height: 240px;
+    width: 100%;
+    background: #ffffff;
+    resize: none;
+    color: #999999;
+    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+}
+
+input.taginput {
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 42px;
+    height: 44px;
+    width: 100%;
+    background: #ffffff;
+    color: #999999;
+    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+}
+
+label.lbl_datepikker {
+    font-size: 0.9rem;
+    color: #000000;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+input.date_picker_input {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 38px;
+    height: 44px;
+    width: 100%;
+    background: #ffffff;
+    color: #999999;
+    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+}
+
+span.calendarr {
+    position: absolute;
+    z-index: 3;
+    display: block;
+    left: 23px;
+    top: 36px;
+    width: 24px;
+    height: 24px;
+    background: url('../img/calendar.png') center center no-repeat;
+    background-size: contain;
+}
+
+button.job_preview_btn {
+    margin-top: 22px;
+    font-size: 0.686rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    color: #0d6ca8;
+    border: 1px solid #0d6ca8;
+    text-transform: uppercase;
+    /*-webkit-filter: drop-shadow(2px 2px 3px #dddddd);*/
+    /*filter: drop-shadow(2px 2px 3px #dddddd);*/
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+button.job_preview_btn:hover, button.job_preview_btn:focus {
+    background: #0d6ca8;
+    color: #ffffff;
+}
+
+.postajob_form_group {
+    margin-bottom: 26px;
+}
+
+.submit_btn_holder_3 {
+    width: 30%;
+    padding-top: 36px;
+    margin-bottom: 4px;
+}
+
+
+div.ap_fileinputs {
+    position: relative;
+}
+
+div.ap_fakefile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+div.ap_fakefile input[type=button] {
+    /* enough width to completely overlap the real hidden file control */
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    height: 44px;
+    border-radius: 4px;
+    border: none !important;
+
+    background: rgba(5,101,160,1);
+    background: -moz-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(5,101,160,1)), color-stop(100%, rgba(144,201,58,1)));
+    background: -webkit-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: -o-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: -ms-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: linear-gradient(to right, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0565a0', endColorstr='#90c93a', GradientType=1 );
+
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+div.ap_fileinputs input.ap_file {
+    position: relative;
+    text-align: right;
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+    height: 38px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = MANAGE JOB POSTINGS (EMPLOYER) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.manage_job_postings_area {
+    min-height: 960px;
+    height: auto;
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 18px;
+}
+
+h2.manage_job_postings_area_ttl {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    color: #0d6ca8;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.postings_toolbox_holder {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+button.rb_admin_delete_btn {
+    display: inline-block;
+    height: 30px;
+    width: 135px;
+    border-radius: 5px;
+    border: 1px solid #d33257;
+    color: #d33257;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button.rb_admin_delete_btn:hover, button.rb_admin_delete_btn:focus {
+    background: #d33257;
+    color: #ffffff;
+}
+
+button.rb_admin_renew_btn {
+    display: inline-block;
+    height: 30px;
+    width: 135px;
+    border-radius: 5px;
+    border: 1px solid #268ff0;
+    color: #268ff0;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 16px;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button.rb_admin_renew_btn:hover, button.rb_admin_renew_btn:focus {
+    background: #268ff0;
+    color: #ffffff;
+}
+
+.status_holder {
+    top: 2px;
+    position: relative;
+    display: inline-block;
+    margin-right: 46px;
+    padding-top: 3px;
+}
+
+.status_holder p {
+    position: relative;
+    display: inline-block;
+    top: -2px;
+    left: 4px;
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+span.active_indicator_static {
+    width: 16px;
+    height: 16px;
+    background: #8fc93a;
+    border-radius: 100%;
+    float: left;
+}
+
+span.xpired_indicator_static {
+    width: 16px;
+    height: 16px;
+    background: #fec606;
+    border-radius: 100%;
+    float: left;
+}
+
+span.active_indicator {
+    width: 16px;
+    height: 16px;
+    background: #8fc93a;
+    border-radius: 100%;
+    float: left;
+}
+
+span.xpired_indicator {
+    width: 16px;
+    height: 16px;
+    background: #fec606;
+    border-radius: 100%;
+    float: left;
+}
+
+.titles_well {
+    background: #ffffff;
+    height: 42px;
+    border: none !important;
+    padding-top: 55px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.pseudo_ttl {
+    padding-left: 0;
+}
+
+small.pseudo_ttl_xs {
+    font-family: "BrandonGrotesque-Regular",sans-serif;
+    /*padding: 0 0 0 7px;*/
+    font-size: 0.77rem;
+    color: #222222;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 0;
+    display: none;
+}
+
+.pseudo_ttl h5 {
+    font-family: "BrandonGrotesque-Regular",sans-serif;
+    padding: 0 0 0 7px;
+    font-size: 1rem;
+    color: #222222;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+.rb_admin_stripe.strp_grey {background-color: #f7f7f7;}
+.rb_admin_stripe.strp_white {background-color: #ffffff; border: 1px solid #f2f2f2;}
+
+.rb_admin_stripe {
+    padding-left: 10px;
+    padding-top: 17px;
+    width: 100%;
+    height: 55px;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+}
+
+.rb_admin_stripe.strp_grey {background-color: #f7f7f7;}
+.rb_admin_stripe.strp_white {background-color: #ffffff; border: 1px solid #f2f2f2;}
+
+.admin_checkboxx_holder {
+    padding-left: 1px;
+}
+
+form.rb_admin_checkboxx_form {
+    position: relative;
+    top: -11px;
+}
+
+.admin_jobname_holder {
+    padding-left: 1px;
+}
+
+p.jobname {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: left;
+}
+
+p.jobdate {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+}
+
+.admin_status_holder {
+    padding-left: 18px;
+}
+
+.admin_jobviews_holder, .admin_jobdate_holder {
+    padding-left: 12px;
+}
+
+.admin_jobapplied_holder {
+    padding-left: 22px;
+}
+
+.admin_controls_holder {
+    position: relative;
+    top: -6px;
+}
+
+a.rb_admin_tool_control {
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+    color: #5c5c5c;
+    font-size: 1.5rem;
+
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -ms-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+}
+
+a.rb_admin_tool_control:hover {
+    color: #e16846;
+}
+
+.rb_pagination_holder {
+    padding-top: 32px;
+}
+
+
+ul.pagination.rb_pagination > li > a {
+    font-size: 0.88rem;
+    font-weight: 400;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: #5c5c5c;
+    background: #f7f7f7;
+
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -ms-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+}
+
+ul.pagination.rb_pagination > li > a:hover {
+    color: #0d6ca8;
+}
+
+ul.pagination.rb_pagination > li > a:focus,
+ul.pagination.rb_pagination > li > a.active {
+    color: #ffffff;
+    background: #0d6ca8;
+    border: 1px solid #0d6ca8 !important;
+}
+
+ul.pagination.rb_pagination > li:first-child > a:hover {
+    color: #0d6ca8;
+}
+ul.pagination.rb_pagination > li:first-child > a:focus {
+    color: #5c5c5c;
+    background: #f7f7f7;
+}
+
+ul.pagination.rb_pagination > li:last-child > a:hover {
+    color: #0d6ca8;
+}
+ul.pagination.rb_pagination > li:last-child > a:focus {
+    color: #5c5c5c;
+    background: #f7f7f7;
+}
+
+/* Apply this class to any link/button that should be disabled */
+.frozen {
+    cursor: default !important;
+    pointer-events: none !important;
+    opacity: 0.4;
 }
 
 

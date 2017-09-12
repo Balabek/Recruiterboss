@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+    <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
+    <title>Recruiterboss :: MANAGE JOB POSTINGS</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap + Custom Stylez -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="css/animate.css" rel="stylesheet" media="all">
+    <link href="css/webfonts.css" rel="stylesheet" media="all">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/recruiterboss.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="main" class="main">
+
+    <!-- Appears on top of the page only when user is authorized (logged into the system) -->
+    <div class="uppermost_navbar animated fadeInUp">
+        <a href="#" class="btn-link signout_btn">Sign Out</a>
+        <small class="uppermost_user_info">Signed in as <span>James</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>
+    </div>
+
+    <nav class="navbar navbar-default rb_navigation_inner">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#rb_bcollapse_2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated bounceInLeft" href="#">
+                <img src="img/rb_logo.png" class="rb_main_logo_inner">
+                <img src="img/rb_logo_crop.png" class="rb_main_logo_cropped_inner">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="rb_bcollapse_2">
+            <ul class="nav navbar-nav rb_navstripe_inner navbar-right animated bounceInLeft">
+                <li class="dropdown">
+                    <a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
+                    <ul class="dropdown-menu animated fadeIn">
+                        <li>
+                            <a class="dropdown-item" href="#">Sign In</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jobseekers <span class="caret"></span></a>
+                    <ul class="dropdown-menu animated fadeIn">
+                        <li>
+                            <a class="dropdown-item" href="#">Sign In</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Resume</a>
+                </li>
+                <li>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Video Resume</a>
+                </li>
+                <li>
+                    <a class="rb_hexagon_button white hvr-shrink navbarhex" href="#">Post Your Job</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div class="manage_job_postings_area">
+        <div class="container">
+            <div class="row">
+                <div class="contact_area_title_holder">
+                    <h2 class="manage_job_postings_area_ttl">Manage job postings</h2>
+                </div>
+                <div class="rb_postings_main_holder">
+                    <div class="postings_toolbox_holder">
+                        <div class="postings_toolbox pull-right">
+                            <div class="status_holder">
+                                <span class="active_indicator_static"></span>
+                                <p>Active</p>
+                            </div>
+                            <div class="status_holder">
+                                <span class="xpired_indicator_static"></span>
+                                <p>Expired</p>
+                            </div>
+                            <button id="renewJobPosting" class="btn rb_admin_renew_btn">Renew</button>
+                            <button id="deleteJobPosting" class="btn rb_admin_delete_btn">Delete</button>
+                        </div>
+                    </div>
+                    <div class="rb_main_pseudotable">
+                        <div class="well titles_well">
+                            <section class="col-sm-1 pseudo_ttl"></section>
+                            <section class="col-sm-5 pseudo_ttl"><h5>Job Name</h5></section>
+                            <section class="col-sm-1 pseudo_ttl"><h5>Status</h5></section>
+                            <section class="col-sm-1 pseudo_ttl"><h5>Views</h5></section>
+                            <section class="col-sm-1 pseudo_ttl"><h5>Applied</h5></section>
+                            <section class="col-sm-2 pseudo_ttl"><h5>Date Created</h5></section>
+                            <section class="col-sm-1 pseudo_ttl"></section>
+                        </div>
+                        <div class="well rb_admin_stripe strp_grey">
+                            <section class="col-sm-1 admin_checkboxx_holder">
+                                <form action="#" class="rb_admin_checkboxx_form">
+                                    <p>
+                                        <input class="t3t" type="checkbox" id="multiSelectorRow01" />
+                                        <label class="l3l" for="multiSelectorRow01"></label>
+                                    </p>
+                                </form>
+                            </section>
+                            <section class="col-sm-5 admin_jobname_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Job Name</small>
+                                <p class="jobname">Senior C# Developer</p>
+                            </section>
+                            <section class="col-sm-1 admin_status_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Status</small>
+                                <span class="active_indicator"></span>
+                            </section>
+                            <section class="col-sm-1 admin_jobviews_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Views</small>
+                                <p class="jobname job_views">55k</p>
+                            </section>
+                            <section class="col-sm-1 admin_jobapplied_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Applied</small>
+                                <p class="jobname job_applied">12</p>
+                            </section>
+                            <section class="col-sm-2 admin_jobdate_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Date Created</small>
+                                <p class="jobdate date_added">08/10/2017</p>
+                            </section>
+                            <section class="col-sm-1 admin_controls_holder pull-right">
+                                <a href="javascript:void(0)" class="rb_admin_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Edit"><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:void(0)" class="rb_admin_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                            </section>
+                        </div>
+                        <div class="well rb_admin_stripe strp_white">
+                            <section class="col-sm-1 admin_checkboxx_holder">
+                                <form action="#" class="rb_admin_checkboxx_form">
+                                    <p>
+                                        <input class="t3t" type="checkbox" id="multiSelectorRow02" />
+                                        <label class="l3l" for="multiSelectorRow02"></label>
+                                    </p>
+                                </form>
+                            </section>
+                            <section class="col-sm-5 admin_jobname_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Job Name</small>
+                                <p class="jobname">Chief Financial Officer</p>
+                            </section>
+                            <section class="col-sm-1 admin_status_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Status</small>
+                                <span class="active_indicator"></span>
+                            </section>
+                            <section class="col-sm-1 admin_jobviews_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Views</small>
+                                <p class="jobname job_views">14k</p>
+                            </section>
+                            <section class="col-sm-1 admin_jobapplied_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Applied</small>
+                                <p class="jobname job_applied">--</p>
+                            </section>
+                            <section class="col-sm-2 admin_jobdate_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Date Created</small>
+                                <p class="jobdate date_added">08/12/2017</p>
+                            </section>
+                            <section class="col-sm-1 admin_controls_holder pull-right">
+                                <a href="javascript:void(0)" class="rb_admin_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Edit"><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:void(0)" class="rb_admin_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                            </section>
+                        </div>
+                        <div class="well rb_admin_stripe strp_grey">
+                            <section class="col-sm-1 admin_checkboxx_holder">
+                                <form action="#" class="rb_admin_checkboxx_form">
+                                    <p>
+                                        <input class="t3t" type="checkbox" id="multiSelectorRow03" />
+                                        <label class="l3l" for="multiSelectorRow03"></label>
+                                    </p>
+                                </form>
+                            </section>
+                            <section class="col-sm-5 admin_jobname_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Job Name</small>
+                                <p class="jobname">Graphic Designer</p>
+                            </section>
+                            <section class="col-sm-1 admin_status_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Status</small>
+                                <span class="active_indicator"></span>
+                            </section>
+                            <section class="col-sm-1 admin_jobviews_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Views</small>
+                                <p class="jobname job_views">715k</p>
+                            </section>
+                            <section class="col-sm-1 admin_jobapplied_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Applied</small>
+                                <p class="jobname job_applied">209</p>
+                            </section>
+                            <section class="col-sm-2 admin_jobdate_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Date Created</small>
+                                <p class="jobdate date_added">08/13/2017</p>
+                            </section>
+                            <section class="col-sm-1 admin_controls_holder pull-right">
+                                <a href="javascript:void(0)" class="rb_admin_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Edit"><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:void(0)" class="rb_admin_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                            </section>
+                        </div>
+                        <div class="well rb_admin_stripe strp_white">
+                            <section class="col-sm-1 admin_checkboxx_holder">
+                                <form action="#" class="rb_admin_checkboxx_form">
+                                    <p>
+                                        <input class="t3t" type="checkbox" id="multiSelectorRow04" />
+                                        <label class="l3l" for="multiSelectorRow04"></label>
+                                    </p>
+                                </form>
+                            </section>
+                            <section class="col-sm-5 admin_jobname_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Job Name</small>
+                                <p class="jobname">Waitress/Barkeeper</p>
+                            </section>
+                            <section class="col-sm-1 admin_status_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Status</small>
+                                <span class="xpired_indicator"></span>
+                            </section>
+                            <section class="col-sm-1 admin_jobviews_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Views</small>
+                                <p class="jobname job_views">695</p>
+                            </section>
+                            <section class="col-sm-1 admin_jobapplied_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Applied</small>
+                                <p class="jobname job_applied">88</p>
+                            </section>
+                            <section class="col-sm-2 admin_jobdate_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Date Created</small>
+                                <p class="jobdate date_added">02/09/2017</p>
+                            </section>
+                            <section class="col-sm-1 admin_controls_holder pull-right">
+                                <a href="javascript:void(0)" class="rb_admin_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Edit"><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:void(0)" class="rb_admin_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                            </section>
+                        </div>
+                        <div class="well rb_admin_stripe strp_grey">
+                            <section class="col-sm-1 admin_checkboxx_holder">
+                                <form action="#" class="rb_admin_checkboxx_form">
+                                    <p>
+                                        <input class="t3t" type="checkbox" id="multiSelectorRow05" />
+                                        <label class="l3l" for="multiSelectorRow05"></label>
+                                    </p>
+                                </form>
+                            </section>
+                            <section class="col-sm-5 admin_jobname_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Job Name</small>
+                                <p class="jobname">Requirement Manager</p>
+                            </section>
+                            <section class="col-sm-1 admin_status_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Status</small>
+                                <span class="active_indicator"></span>
+                            </section>
+                            <section class="col-sm-1 admin_jobviews_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Views</small>
+                                <p class="jobname job_views">11k</p>
+                            </section>
+                            <section class="col-sm-1 admin_jobapplied_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Applied</small>
+                                <p class="jobname job_applied">39</p>
+                            </section>
+                            <section class="col-sm-2 admin_jobdate_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Date Created</small>
+                                <p class="jobdate date_added">08/16/2017</p>
+                            </section>
+                            <section class="col-sm-1 admin_controls_holder pull-right">
+                                <a href="javascript:void(0)" class="rb_admin_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Edit"><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:void(0)" class="rb_admin_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                            </section>
+                        </div>
+                        <div class="well rb_admin_stripe strp_white">
+                            <section class="col-sm-1 admin_checkboxx_holder">
+                                <form action="#" class="rb_admin_checkboxx_form">
+                                    <p>
+                                        <input class="t3t" type="checkbox" id="multiSelectorRow06" />
+                                        <label class="l3l" for="multiSelectorRow06"></label>
+                                    </p>
+                                </form>
+                            </section>
+                            <section class="col-sm-5 admin_jobname_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Job Name</small>
+                                <p class="jobname">Professional Session Drummer</p>
+                            </section>
+                            <section class="col-sm-1 admin_status_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Status</small>
+                                <span class="active_indicator"></span>
+                            </section>
+                            <section class="col-sm-1 admin_jobviews_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Views</small>
+                                <p class="jobname job_views">2.2k</p>
+                            </section>
+                            <section class="col-sm-1 admin_jobapplied_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Applied</small>
+                                <p class="jobname job_applied">41</p>
+                            </section>
+                            <section class="col-sm-2 admin_jobdate_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Date Created</small>
+                                <p class="jobdate date_added">09/02/2017</p>
+                            </section>
+                            <section class="col-sm-1 admin_controls_holder pull-right">
+                                <a href="javascript:void(0)" class="rb_admin_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Edit"><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:void(0)" class="rb_admin_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                            </section>
+                        </div>
+                        <div class="well rb_admin_stripe strp_grey">
+                            <section class="col-sm-1 admin_checkboxx_holder">
+                                <form action="#" class="rb_admin_checkboxx_form">
+                                    <p>
+                                        <input class="t3t" type="checkbox" id="multiSelectorRow07" />
+                                        <label class="l3l" for="multiSelectorRow07"></label>
+                                    </p>
+                                </form>
+                            </section>
+                            <section class="col-sm-5 admin_jobname_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Job Name</small>
+                                <p class="jobname">Network Engineer</p>
+                            </section>
+                            <section class="col-sm-1 admin_status_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Status</small>
+                                <span class="xpired_indicator"></span>
+                            </section>
+                            <section class="col-sm-1 admin_jobviews_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Views</small>
+                                <p class="jobname job_views">14k</p>
+                            </section>
+                            <section class="col-sm-1 admin_jobapplied_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Applied</small>
+                                <p class="jobname job_applied">202</p>
+                            </section>
+                            <section class="col-sm-2 admin_jobdate_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Date Created</small>
+                                <p class="jobdate date_added">01/17/2017</p>
+                            </section>
+                            <section class="col-sm-1 admin_controls_holder pull-right">
+                                <a href="javascript:void(0)" class="rb_admin_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Edit"><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:void(0)" class="rb_admin_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                            </section>
+                        </div>
+                        <div class="well rb_admin_stripe strp_white">
+                            <section class="col-sm-1 admin_checkboxx_holder">
+                                <form action="#" class="rb_admin_checkboxx_form">
+                                    <p>
+                                        <input class="t3t" type="checkbox" id="multiSelectorRow08" />
+                                        <label class="l3l" for="multiSelectorRow08"></label>
+                                    </p>
+                                </form>
+                            </section>
+                            <section class="col-sm-5 admin_jobname_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Job Name</small>
+                                <p class="jobname">Bodyguard</p>
+                            </section>
+                            <section class="col-sm-1 admin_status_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Status</small>
+                                <span class="active_indicator"></span>
+                            </section>
+                            <section class="col-sm-1 admin_jobviews_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Views</small>
+                                <p class="jobname job_views">8.5k</p>
+                            </section>
+                            <section class="col-sm-1 admin_jobapplied_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Applied</small>
+                                <p class="jobname job_applied">382</p>
+                            </section>
+                            <section class="col-sm-2 admin_jobdate_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Date Created</small>
+                                <p class="jobdate date_added">09/12/2017</p>
+                            </section>
+                            <section class="col-sm-1 admin_controls_holder pull-right">
+                                <a href="javascript:void(0)" class="rb_admin_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Edit"><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:void(0)" class="rb_admin_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                            </section>
+                        </div>
+                        <div class="well rb_admin_stripe strp_grey">
+                            <section class="col-sm-1 admin_checkboxx_holder">
+                                <form action="#" class="rb_admin_checkboxx_form">
+                                    <p>
+                                        <input class="t3t" type="checkbox" id="multiSelectorRow09" />
+                                        <label class="l3l" for="multiSelectorRow09"></label>
+                                    </p>
+                                </form>
+                            </section>
+                            <section class="col-sm-5 admin_jobname_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Job Name</small>
+                                <p class="jobname">Project Manager</p>
+                            </section>
+                            <section class="col-sm-1 admin_status_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Status</small>
+                                <span class="active_indicator"></span>
+                            </section>
+                            <section class="col-sm-1 admin_jobviews_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Views</small>
+                                <p class="jobname job_views">2.3k</p>
+                            </section>
+                            <section class="col-sm-1 admin_jobapplied_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Applied</small>
+                                <p class="jobname job_applied">62</p>
+                            </section>
+                            <section class="col-sm-2 admin_jobdate_holder">
+                                <small class="pseudo_ttl_xs visible_xs">Date Created</small>
+                                <p class="jobdate date_added">09/20/2017</p>
+                            </section>
+                            <section class="col-sm-1 admin_controls_holder pull-right">
+                                <a href="javascript:void(0)" class="rb_admin_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Edit"><i class="fa fa-pencil"></i></a>
+                                <a href="javascript:void(0)" class="rb_admin_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="rb_pagination_holder">
+                        <nav>
+                            <ul class="pagination rb_pagination">
+                                <li>
+                                    <a href="javascript:void(0)" aria-label="Previous" class="frozen">
+                                        <span aria-hidden="true">Previous</span>
+                                    </a>
+                                </li>
+                                <li><a href="javascript:void(0)" class="active">1</a></li>
+                                <li><a href="javascript:void(0)">2</a></li>
+                                <li><a href="javascript:void(0)">3</a></li>
+                                <li>
+                                    <a href="javascript:void(0)" aria-label="Next">
+                                        <span aria-hidden="true">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> <!-- Contact Area END -->
+
+    <div class="skewed_layer_support"></div> <!-- Invisible utility for supporting following skewed layout -->
+
+    <footer class="rb_footer">
+        <div class="container">
+            <div class="row">
+                <div class="rb_footer_inner_boxx">
+                    <div class="col-sm-3 col-xs-3 footer_logo_holder">
+                        <a href="#">
+                            <img src="img/rb_logo.png" class="footer_logo">
+                        </a>
+                        <div class="phone_holder">
+                            <i class="fa fa-phone footer_phone_icon"></i>
+                            <a href="tel:+1-541-754-3010">+1-541-754-3010</a>
+                        </div>
+                        <div class="email_holder">
+                            <i class="fa fa-envelope footer_email_icon"></i>
+                            <a href="mailto:info@recruiterboss.com">info@recruiterboss.com</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_linxx_holder">
+                        <ul class="footer_linxx">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Video Resume</a></li>
+                            <li><a href="#">Employers</a></li>
+                            <li><a href="#">Job Seekers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_linxx_holder">
+                        <ul class="footer_linxx">
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Manage email</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_buttons_holder">
+                        <a href="#" class="footer_hex_btn_green rb_hexagon_button green hvr-shrink">Post Video Resume</a>
+                        <a href="#" class="footer_hex_btn_white rb_hexagon_button white hvr-shrink">Post Your Job</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottommost_stripe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6 microtext_holder">
+                        <small class="microtext">&copy; 2017 <span>Recruiterboss</span> All Rights Reserved</small>
+                    </div>
+                    <div class="col-sm-6 col-xs-6 socialz_holder">
+                        <ul class="sozialz pull-right">
+                            <li><a href="#"><i class="fa fa-facebook-square"></i> </a> </li>
+                            <li><a href="#"><i class="fa fa-linkedin-square"></i> </a> </li>
+                            <li><a href="#"><i class="fa fa-google-plus-square"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Footer END -->
+
+</div> <!-- Main END -->
+
+<!-- jQuery'z -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+<!-- JSz -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/recruiterboss.js"></script>
+<script src="js/select2.full.js"></script>
+
+</body>
+</html>

@@ -858,3 +858,136 @@
 @media screen and (max-width: 340px){
     p.support_info_txt {font-size: 0.8rem;}
 }
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* POST A JOB  */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Post a Job Box ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .post_a_job_boxx {width: 85%;}
+}
+
+@media screen and (max-width: 991px){
+    label.lbl_datepikker {font-size: 0.77rem;}
+}
+
+@media screen and (max-width: 767px){
+    .submit_btn_holder_3 {padding-top: 4px;}
+    label.lbl_datepikker {font-size: 0.9rem;}
+}
+
+@media screen and (max-width: 530px){
+    .submit_btn_holder_3 {width: 50%;}
+}
+
+@media screen and (max-width: 414px){
+    .post_a_job_boxx {width: 98%;}
+}
+
+@media screen and (max-width: 396px){
+    .submit_btn_holder_3 {width: 60%;}
+}
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* MANAGE JOB POSTINGS  */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Admin Pseudotable ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+@media screen and (max-width: 1199px){
+    a.rb_admin_tool_control {margin-right: 6px;}
+    .edit_ctrl {position: relative; left: 12px;}
+}
+
+@media screen and (max-width: 991px){
+    .pseudo_ttl h5 {font-size: 0.8rem;}
+    .edit_ctrl {left: initial;}
+
+    .rb_admin_stripe {height: 70px; padding-top: 25px;}
+    .admin_controls_holder {top: -22px;}
+}
+
+@media screen and (max-width: 767px){
+    small.pseudo_ttl_xs {display: block;}
+    .manage_job_postings_area {padding-left: 8px; padding-right: 8px;}
+
+    .titles_well {display: none;}
+    .rb_main_pseudotable {padding-top: 16px;}
+    .pseudo_ttl {display: none;}
+    .rb_admin_stripe {min-height: 190px; height: auto; padding-bottom: 2px;}
+    .admin_status_holder {padding-left: 2px;}
+    .admin_jobviews_holder, .admin_jobdate_holder {padding-left: 2px;}
+    .admin_jobapplied_holder {padding-left: 2px;}
+    span.active_indicator {display: block; float: none; clear: both; margin-top: 2px; margin-bottom: 20px;}
+    .admin_controls_holder {padding-left: 2px; padding-top: 22px; float: none !important;}
+    a.rb_admin_tool_control {float: none !important;}
+    .postings_toolbox {float: none !important;}
+}
+
+@media screen and (max-width: 530px){
+    .postings_toolbox_holder {height: 120px;}
+    button.rb_admin_renew_btn {display: block; clear: both; width: 33%; margin-bottom: 12px;}
+    button.rb_admin_delete_btn {display: block; clear: both; width: 33%; margin-bottom: 12px;}
+}
+
+@media screen and (max-width: 430px){
+    button.rb_admin_renew_btn {display: block; clear: both; width: 42%; margin-bottom: 12px;}
+    button.rb_admin_delete_btn {display: block; clear: both; width: 42%; margin-bottom: 12px;}
+}
+
+@media screen and (max-width: 396px){
+    button.rb_admin_renew_btn {display: block; clear: both; width: 52%; margin-bottom: 12px;}
+    button.rb_admin_delete_btn {display: block; clear: both; width: 52%; margin-bottom: 12px;}
+}
+
+@media screen and (max-width: 350px){
+    button.rb_admin_renew_btn {display: block; clear: both; width: 65%; margin-bottom: 12px;}
+    button.rb_admin_delete_btn {display: block; clear: both; width: 65%; margin-bottom: 12px;}
+}
+
+
+
+
+
+
+
+
+

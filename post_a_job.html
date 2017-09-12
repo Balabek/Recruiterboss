@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+    <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
+    <title>Recruiterboss :: POST A JOB</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap + Custom Stylez -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="css/animate.css" rel="stylesheet" media="all">
+    <link href="css/webfonts.css" rel="stylesheet" media="all">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/jquery-ui.theme.css" rel="stylesheet">
+    <link href="css/bootstrap-tagsinput.css" rel="stylesheet">
+    <link href="css/recruiterboss.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="main" class="main">
+
+    <!-- Appears on top of the page only when user is authorized (logged into the system) -->
+    <div class="uppermost_navbar animated fadeInUp">
+        <a href="#" class="btn-link signout_btn">Sign Out</a>
+        <small class="uppermost_user_info">Signed in as <span>James</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>
+    </div>
+
+    <nav class="navbar navbar-default rb_navigation_inner">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#rb_bcollapse_2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated bounceInLeft" href="#">
+                <img src="img/rb_logo.png" class="rb_main_logo_inner">
+                <img src="img/rb_logo_crop.png" class="rb_main_logo_cropped_inner">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="rb_bcollapse_2">
+            <ul class="nav navbar-nav rb_navstripe_inner navbar-right animated bounceInLeft">
+                <li class="dropdown">
+                    <a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
+                    <ul class="dropdown-menu animated fadeIn">
+                        <li>
+                            <a class="dropdown-item" href="#">Sign In</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jobseekers <span class="caret"></span></a>
+                    <ul class="dropdown-menu animated fadeIn">
+                        <li>
+                            <a class="dropdown-item" href="#">Sign In</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Resume</a>
+                </li>
+                <li>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Video Resume</a>
+                </li>
+                <li>
+                    <a class="rb_hexagon_button white hvr-shrink navbarhex" href="#">Post Your Job</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div class="post_a_job_area">
+        <div class="container">
+            <div class="row">
+                <div class="post_a_job_title_holder center-block">
+                    <h2 class="contact_area_ttl">Post a Job</h2>
+                    <p class="mandatory_warning">All fields marked with <span>&ast;</span> are required</p>
+                </div>
+                <div class="post_a_job_boxx_holder">
+                    <div class="post_a_job_boxx">
+                        <form id="postJobForm" class="post_a_job_form" role="form">
+                            <div class="col-sm-6 form-group signup_form_group">
+                                <label for="jobTitle" class="sgnp_lbl">Job Title<span class="asterisk">&ast;</span></label>
+                                <input id="jobTitle" type="text" class="signin_input">
+                            </div>
+                            <div class="col-sm-6 form-group signup_form_group">
+                                <label for="contractType" class="sgnp_lbl">Contract Type<span class="asterisk">&ast;</span></label>
+                                <select id="contractType" type="text">
+                                    <option>Full Time</option>
+                                    <option>Part Time</option>
+                                    <option>Remote</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-8 form-group postajob_form_group">
+                                <label for="summary" class="sgnp_lbl">Summary<span class="asterisk">&ast;</span></label>
+                                <input id="summary" type="text" class="signin_input">
+                            </div>
+                            <div class="col-sm-4 form-group postajob_form_group">
+                                <label for="uploadButton" class="sgnp_lbl">Upload Logo<span class="asterisk"></span></label>
+                                <div class="ap_fileinputs">
+                                    <input id="uploadButton" type="file" class="ap_file" />
+                                    <div class="ap_fakefile">
+                                        <input type="button" value="Browse..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 form-group postajob_form_group">
+                                <label for="jobDescription" class="sgnp_lbl">Job Description (up to 250 characters)</label><span class="asterisk">&ast;</span>
+                                <textarea id="jobDescription" type="text" class="post_a_job_txt_area" maxlength="250"></textarea>
+                            </div>
+                            <div class="col-sm-12 form-group postajob_form_group">
+                                <label for="primaryResponsibilities" class="sgnp_lbl">Primary Responsibilities (up to 250 characters)</label><span class="asterisk">&ast;</span>
+                                <textarea id="primaryResponsibilities" type="text" class="post_a_job_txt_area" maxlength="250"></textarea>
+                            </div>
+                            <div class="col-sm-12 form-group postajob_form_group">
+                                <label for="skillsAndExpertise" class="sgnp_lbl">Skills & Expertise (up to 250 characters)</label><span class="asterisk">&ast;</span>
+                                <textarea id="skillsAndExpertise" type="text" class="post_a_job_txt_area" maxlength="250"></textarea>
+                            </div>
+                            <div class="col-sm-12 form-group postajob_form_group">
+                                <label for="tagsInput" class="sgnp_lbl">Keywords (up to 5)<span class="asterisk"></span></label>
+                                <input id="tagsInput" type="text" value="" data-role="tagsinput" class="taginput">
+                            </div>
+                            <div class="col-sm-6 form-group postajob_form_group">
+                                <label for="location_2" class="sgnp_lbl">Location<span class="asterisk"></span></label>
+                                <select id="location_2" type="text" class="signin_input">
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District Of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 form-group postajob_form_group">
+                                <label for="category_2" class="sgnp_lbl">Category<span class="asterisk"></span></label>
+                                <select id="category_2" type="text" class="signin_input">
+                                    <option>Agriculture</option>
+                                    <option>Automotive</option>
+                                    <option>Climate</option>
+                                    <option>Consumer</option>
+                                    <option>Education</option>
+                                    <option>Energie</option>
+                                    <option>Finance</option>
+                                    <option>Healthcare</option>
+                                    <option>IT & Technology</option>
+                                    <option>Science</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 form-group postajob_form_group">
+                                <label for="degree" class="sgnp_lbl">Degree<span class="asterisk"></span></label>
+                                <select id="degree" type="text" class="signin_input">
+                                    <option>Sucker</option>
+                                    <option>Bachelor</option>
+                                    <option>Master</option>
+                                    <option>PhD</option>
+                                    <option>Guru</option>
+                                    <option>Braniac</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3 form-group postajob_form_group">
+                                <label for="postingFrom" class="lbl_datepikker">Posting Period (From)<span class="asterisk"></span></label>
+                                <span class="calendarr"></span>
+                                <input id="postingFrom" class="date_picker_input">
+                            </div>
+                            <div class="col-sm-3 form-group postajob_form_group">
+                                <label for="postingTo" class="lbl_datepikker">Posting Period (To)<span class="asterisk"></span></label>
+                                <span class="calendarr"></span>
+                                <input id="postingTo" class="date_picker_input">
+                            </div>
+
+                            <div class="center-block submit_btn_holder_3">
+                                <button id="jobPreview" class="btn job_preview_btn">Preview</button>
+                            </div>
+                            <div class="center-block submit_btn_holder_2">
+                                <button type="submit" id="postDaJob" class="btn signin_submit_btn">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Contact Area END -->
+
+    <div class="skewed_layer_support"></div> <!-- Invisible utility for supporting following skewed layout -->
+
+    <footer class="rb_footer">
+        <div class="container">
+            <div class="row">
+                <div class="rb_footer_inner_boxx">
+                    <div class="col-sm-3 col-xs-3 footer_logo_holder">
+                        <a href="#">
+                            <img src="img/rb_logo.png" class="footer_logo">
+                        </a>
+                        <div class="phone_holder">
+                            <i class="fa fa-phone footer_phone_icon"></i>
+                            <a href="tel:+1-541-754-3010">+1-541-754-3010</a>
+                        </div>
+                        <div class="email_holder">
+                            <i class="fa fa-envelope footer_email_icon"></i>
+                            <a href="mailto:info@recruiterboss.com">info@recruiterboss.com</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_linxx_holder">
+                        <ul class="footer_linxx">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Video Resume</a></li>
+                            <li><a href="#">Employers</a></li>
+                            <li><a href="#">Job Seekers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_linxx_holder">
+                        <ul class="footer_linxx">
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Manage email</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_buttons_holder">
+                        <a href="#" class="footer_hex_btn_green rb_hexagon_button green hvr-shrink">Post Video Resume</a>
+                        <a href="#" class="footer_hex_btn_white rb_hexagon_button white hvr-shrink">Post Your Job</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottommost_stripe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6 microtext_holder">
+                        <small class="microtext">&copy; 2017 <span>Recruiterboss</span> All Rights Reserved</small>
+                    </div>
+                    <div class="col-sm-6 col-xs-6 socialz_holder">
+                        <ul class="sozialz pull-right">
+                            <li><a href="#"><i class="fa fa-facebook-square"></i> </a> </li>
+                            <li><a href="#"><i class="fa fa-linkedin-square"></i> </a> </li>
+                            <li><a href="#"><i class="fa fa-google-plus-square"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Footer END -->
+
+</div> <!-- Main END -->
+
+<!-- jQuery'z -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/bootstrap-tagsinput.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript">
+
+    $(function() {
+        $( "#postingFrom, #postingTo").datepicker();
+    });
+
+    $('#tagsInput').tagsinput({
+        maxTags: 5
+    });
+
+</script>
+
+
+<!-- JSz -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/recruiterboss.js"></script>
+<script src="js/select2.full.js"></script>
+    <script>
+        $('#location_2, #category_2, #degree, #contractType').select2({
+            width: '100%',
+            minimumResultsForSearch: -1
+        });
+    </script>
+
+</body>
+</html>
