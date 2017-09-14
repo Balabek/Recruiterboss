@@ -516,7 +516,7 @@
     .featured_box {min-height: 1370px;}
     .octa_details_holder {width: 100%;}
     .f_octa {width: 150px; height: 150px; margin: 0 auto; display: block;}
-    .f_octa_text_holder {padding-left: 0;}
+    .f_octa_text_holder {padding-left: 0; padding-right: 0;}
     .f_octa_text_holder h4 {text-align: center;}
     .category_rect {text-align: center;}
     a.f_seedetailz_btn {text-align: center; display: block; margin: 0 auto; position: relative; top: 18px; margin-bottom: 75px;}
@@ -528,6 +528,59 @@
 @media screen and (max-width: 340px){
     a.readmore_btn {width: 30%;}
 }
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- CHARITY ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .charity_textual_detailz {padding-left: 55px;}
+}
+
+@media screen and (max-width: 991px){
+    .charity_hex_holder {padding-top: 0;}
+    .charity_hex {height: 190px; width: 190px;}
+}
+
+@media screen and (max-width: 767px){
+    .charity_hex {margin: 0 auto; width: 240px; height: 240px; margin-bottom: 46px;}
+    .charity_textual_detailz {padding-left: 12px; padding-right: 12px;}
+    .charity_textual_detailz h2 {text-align: center;}
+    .charity_textual_detailz h5 {text-align: center;}
+    .charity_textual_detailz p {text-align: center;}
+    a.charity_learnmore_btn {text-align: center; margin: 0 auto; width: 25%;}
+}
+
+@media screen and (max-width: 430px){
+    .charity_textual_detailz h2 {font-size: 2.5rem;}
+    a.charity_learnmore_btn {width: 35%;}
+}
+
+@media screen and (max-width: 349px){
+    .charity_textual_detailz h2 {font-size: 2.2rem;}
+    .charity_textual_detailz h5 {font-size: 1.1rem;}
+    a.charity_learnmore_btn {width: 45%;}
+}
+
+
+
+
+
+
 
 
 
@@ -588,7 +641,7 @@
 }
 
 @media screen and (max-width: 620px){
-    footer.rb_footer {min-height: 580px;}
+    footer.rb_footer {min-height: 580px; margin-top: -50px;}
 
     .footer_logo_holder {width: 99%;}
     img.footer_logo {width: 55%; display: block; margin: 0 auto;}
@@ -603,7 +656,7 @@
 }
 
 @media screen and (max-width: 530px){
-    footer.rb_footer {min-height: 710px;}
+    footer.rb_footer {min-height: 710px; margin-top: -75px;}
 
     .footer_linxx_holder {width: 49%; margin-bottom: 24px;}
     ul.footer_linxx li a {font-size: 0.89rem;}
@@ -983,6 +1036,248 @@
     button.rb_admin_delete_btn {display: block; clear: both; width: 65%; margin-bottom: 12px;}
 }
 
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* JOB POSTED */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Job Posted! Box ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .success_boxx {width: 95%;}
+}
+
+@media screen and (max-width: 599px){
+    .success_boxx {width: 96%;}
+    .two_button_holder {width: 55%;}
+}
+
+@media screen and (max-width: 444px){
+    .two_button_holder {width: 65%;}
+}
+
+@media screen and (max-width: 388px){
+    .two_button_holder {width: 70%;}
+}
+
+@media screen and (max-width: 345px){
+    .two_button_holder {width: 80%;}
+}
+
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* SEARCH RESUME */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Search Resume Box ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px) {
+    .search_resume_boxx {width: 75%;}
+}
+
+@media screen and (max-width: 991px) {
+    .search_resume_boxx {width: 99%;}
+}
+
+@media screen and (max-width: 767px) {
+    .search_resume_boxx {width: 95%;}
+    hr.margin_hr {margin-top: -16px;}
+}
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* SEARCH RESULTS */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Search Results Aside ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .rb_user_image_holder {padding-left: 1px;}
+}
+
+@media screen and (max-width: 991px){
+    .rb_user_badge {min-height: 300px;}
+    a.badge_btn {margin-right: 6px;}
+    .rb_user_image {width: 96px; height: 96px;}
+    span.yearz_of_xperience_spot {left: -13px;}
+}
+
+@media screen and (max-width: 767px){
+    .search_results_midmain_holder {padding-left: 12px; padding-right: 12px;}
+    .rb_user_badge_holder {padding-left: 0; padding-right: 0;}
+    aside.search_results_parameters {margin-bottom: 24px;}
+
+    .rb_user_image {width:146px; height: 146px; margin-bottom: 16px;}
+    span.yearz_of_xperience_spot {margin: initial; width: 24%; left: 1px;}
+    .rb_user_image_holder {padding-left: 12px;}
+    hr.badge_hr {margin-top: 24px;}
+    .rb_user_badge {min-height: 595px; padding-bottom: 70px;}
+    .badge_btnz_holder {margin-bottom: 28px;}
+    a.badge_btn {margin-right: 16px;}
+}
+
+@media screen and (max-width: 700px){
+    span.yearz_of_xperience_spot {position: relative; top: -30px;}
+}
+
+@media screen and (max-width: 620px){
+    span.yearz_of_xperience_spot {width: 26%;}
+}
+
+@media screen and (max-width: 570px){
+    span.yearz_of_xperience_spot {width: 140px;}
+}
+
+
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* ACCOUNT SETTINGS */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Account Settings Box ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+@media screen and (max-width: 991px){
+    .avatar_uploader_holder_outer {width: 40%; margin-left: 45px;}
+    .savechanges_btn_holder {width: 25%;}
+}
+
+@media screen and (max-width: 767px){
+    .avatar_uploader_holder_outer {width: 40%; margin-left: 0; margin-top: 20px;}
+    fieldset.riteside_fld {padding-left: 0; padding-right: 0;}
+    fieldset.lefside_fld {padding-left: 0; padding-right: 0;}
+}
+
+@media screen and (max-width: 540px){
+    .avatar_uploader_holder_outer {width: 50%;}
+    .savechanges_btn_holder {width: 35%;}
+    .uppermost_part {margin-bottom: 0;}
+    #saveChanges_1 {display: none;}
+}
+
+@media screen and (max-width: 450px){
+    .avatar_uploader_holder_outer {width: 60%;}
+
+    h2.account_settings_ttl {float: none; clear: both;}
+    .savechanges_btn_holder {float: none !important; width: 50%;}
+    .btn-savechanges_btn {clear: both !important; float: left !important;}
+}
+
+@media screen and (max-width: 370px){
+    .avatar_uploader_holder_outer {width: 70%;}
+
+    h2.account_settings_ttl {float: none; clear: both;}
+    .savechanges_btn_holder {float: none !important; width: 60%;}
+    .btn-savechanges_btn {clear: both !important; float: left !important;}
+}
+
+
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* SAVED CANDIDATES */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Saved Candidates Table ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    .rb_admin_stripe_xl {min-height: 285px; height: auto; padding-bottom: 2px;}
+    .admin_checkboxx_holder_xl {padding-top: 2px; margin-bottom: 24px;}
+    p.candidate_name {margin-bottom: 3px; margin-top: 6px;}
+    .admin_jobdate_holder_xl {padding-left: 2px;}
+    .admin_controls_holder_xl {top: 20px;}
+    .admin_controls_holder_xl {top: 20px; float: none !important; padding-left: 2px;}
+}
 
 
 

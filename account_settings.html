@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+    <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
+    <title>Recruiterboss :: ACCOUNT SETTINGS</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap + Custom Stylez -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="css/animate.css" rel="stylesheet" media="all">
+    <link href="css/webfonts.css" rel="stylesheet" media="all">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/recruiterboss.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="main" class="main">
+
+    <!-- Appears on top of the page only when user is authorized (logged into the system) -->
+    <div class="uppermost_navbar animated fadeInUp">
+        <a href="#" class="btn-link signout_btn">Sign Out</a>
+        <small class="uppermost_user_info">Signed in as <span>James</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>
+    </div>
+
+    <nav class="navbar navbar-default rb_navigation_inner">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#rb_bcollapse_2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated bounceInLeft" href="#">
+                <img src="img/rb_logo.png" class="rb_main_logo_inner">
+                <img src="img/rb_logo_crop.png" class="rb_main_logo_cropped_inner">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="rb_bcollapse_2">
+            <ul class="nav navbar-nav rb_navstripe_inner navbar-right animated bounceInLeft">
+                <li class="dropdown">
+                    <a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
+                    <ul class="dropdown-menu animated fadeIn">
+                        <li>
+                            <a class="dropdown-item" href="#">Sign In</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jobseekers <span class="caret"></span></a>
+                    <ul class="dropdown-menu animated fadeIn">
+                        <li>
+                            <a class="dropdown-item" href="#">Sign In</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Resume</a>
+                </li>
+                <li>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Video Resume</a>
+                </li>
+                <li>
+                    <a class="rb_hexagon_button white hvr-shrink navbarhex" href="#">Post Your Job</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div class="account_settings_area">
+        <div class="container">
+            <div class="row">
+                <div class="account_settings_boxx_holder">
+                    <div class="account_settings_boxx">
+                        <div class="uppermost_part">
+                            <h2 class="account_settings_ttl">Account settings</h2>
+                            <div class="savechanges_btn_holder pull-right">
+                                <button id="saveChanges_1" type="submit" class="btn btn-savechanges_btn pull-right">Save changes</button>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="avatar_and_main_info_holder">
+                            <div class="avatar_holder">
+                                <div class="col-sm-2 rb_avatar_holder">
+                                    <div class="rb_avatar" style="background: url('img/fakelogo.png') center center no-repeat; background-size: cover;"></div>
+                                </div>
+                                <div class="col-sm-3 avatar_uploader_holder_outer">
+                                    <div class="avatar_uploader_holder_inner">
+                                        <label for="uploadButton2" class="sgnp_lbl"></label>
+                                        <div class="ap_fileinputs_xs">
+                                            <input id="uploadButton2" type="file" class="ap_file_xs" />
+                                            <div class="ap_fakefile_xs">
+                                                <input type="button" value="Change Avatar" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="uploader_txt">
+                                        Please make sure the image you’re about to upload is not
+                                        larger than 2000px and not smaller than 200px.
+                                        JPEG or PNG file formats are accepted.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account_settings_midmain_holder">
+                            <h3 class="subsection_ttl">Main details</h3>
+                            <form id="accountSettingsForm" class="account_settings_form" role="form">
+                                <fieldset class="col-sm-6 lefside_fld">
+                                    <div class="form-group signup_form_group">
+                                        <label for="myName" class="sgnp_lbl">Name</label>
+                                        <input id="myName" type="text" class="signin_input" value="James Goldsmith">
+                                    </div>
+                                    <div class="form-group signup_form_group">
+                                        <label for="myCompanyName" class="sgnp_lbl">Company Name</label>
+                                        <input id="myCompanyName" type="text" class="signin_input" value="Pleasurekraft Technologies Inc.">
+                                    </div>
+                                    <div class="form-group signup_form_group">
+                                        <label for="myEmail" class="sgnp_lbl">Email</label>
+                                        <input id="myEmail" type="text" class="signin_input" value="james.goldsmith@yahoo.com">
+                                    </div>
+                                    <div class="form-group signup_form_group">
+                                        <label for="myAddress" class="sgnp_lbl">Address</label>
+                                        <input id="myAddress" type="text" class="signin_input" value="31 Main Gate Dr. 400, Office 400B">
+                                    </div>
+                                    <div class="form-group signup_form_group">
+                                        <label for="myPhone" class="sgnp_lbl">Phone</label>
+                                        <input id="myPhone" type="text" class="signin_input" value="+1(718)990-500-120">
+                                    </div>
+                                    <div class="form-group signup_form_group">
+                                        <label for="myWebsite" class="sgnp_lbl">Website</label>
+                                        <input id="myWebsite" type="text" class="signin_input" value="www.pleasurekraft.com">
+                                    </div>
+                                    <div class="form-group signup_form_group">
+                                        <label for="myCompanySize" class="sgnp_lbl">Company Size</label>
+                                        <select id="myCompanySize" type="text">
+                                            <option>2 - 5 Employees</option>
+                                            <option>5 - 10 Employees</option>
+                                            <option>15 - 30 Employees</option>
+                                            <option>30 - 70 Employees</option>
+                                            <option>70 - 150 Employees</option>
+                                            <option>200+ Employees</option>
+                                            <option>500+ Employees</option>
+                                            <option>1k+ Employees</option>
+                                            <option>2k+ Employees</option>
+                                            <option selected>5k+ Employees</option>
+                                            <option>10k+ Employees</option>
+                                            <option>20k+ Employees</option>
+                                            <option>30k+ Employees</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="col-sm-6 riteside_fld">
+                                    <div class="form-group signup_form_group">
+                                        <label for="myDetailz" class="sgnp_lbl">Company Details</label>
+                                        <textarea id="myDetailz" class="signin_input_2">
+I run a small startup company called Pleasurekraft, which is oriented at developing entertainment applications for both iOS and Android. We are rapidly growing company and we currently need to hire a lot of personnel for various postions - from bulldozer driver to artificial intelligence developer.
+                                        </textarea>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="update_password_holder">
+                            <h3 class="subsection_ttl">Update password</h3>
+                            <form id="updatePasswordForm" class="update_password_form" role="form">
+                                <div class="col-sm-4 form-group signup_form_group">
+                                    <label for="currentPswd" class="sgnp_lbl">Current Password</label>
+                                    <input id="currentPswd" type="password" class="signin_input">
+                                </div>
+                                <div class="col-sm-4 form-group signup_form_group">
+                                    <label for="newPswd" class="sgnp_lbl">New Password</label>
+                                    <input id="newPswd" type="password" class="signin_input">
+                                </div>
+                                <div class="col-sm-4 form-group signup_form_group">
+                                    <label for="confirmNewPswd" class="sgnp_lbl">Confirm New Password</label>
+                                    <input id="confirmNewPswd" type="password" class="signin_input">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="bottommost_part">
+                            <div class="savechanges_btn_holder pull-right">
+                                <button id="saveChanges_2" type="submit" class="btn btn-savechanges_btn pull-right">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Contact Area END -->
+
+    <div class="skewed_layer_support litegrey"></div> <!-- Invisible utility for supporting following skewed layout -->
+
+    <footer class="rb_footer">
+        <div class="container">
+            <div class="row">
+                <div class="rb_footer_inner_boxx">
+                    <div class="col-sm-3 col-xs-3 footer_logo_holder">
+                        <a href="#">
+                            <img src="img/rb_logo.png" class="footer_logo">
+                        </a>
+                        <div class="phone_holder">
+                            <i class="fa fa-phone footer_phone_icon"></i>
+                            <a href="tel:+1-541-754-3010">+1-541-754-3010</a>
+                        </div>
+                        <div class="email_holder">
+                            <i class="fa fa-envelope footer_email_icon"></i>
+                            <a href="mailto:info@recruiterboss.com">info@recruiterboss.com</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_linxx_holder">
+                        <ul class="footer_linxx">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Video Resume</a></li>
+                            <li><a href="#">Employers</a></li>
+                            <li><a href="#">Job Seekers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_linxx_holder">
+                        <ul class="footer_linxx">
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Manage email</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_buttons_holder">
+                        <a href="#" class="footer_hex_btn_green rb_hexagon_button green hvr-shrink">Post Video Resume</a>
+                        <a href="#" class="footer_hex_btn_white rb_hexagon_button white hvr-shrink">Post Your Job</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottommost_stripe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6 microtext_holder">
+                        <small class="microtext">&copy; 2017 <span>Recruiterboss</span> All Rights Reserved</small>
+                    </div>
+                    <div class="col-sm-6 col-xs-6 socialz_holder">
+                        <ul class="sozialz pull-right">
+                            <li><a href="#"><i class="fa fa-facebook-square"></i> </a> </li>
+                            <li><a href="#"><i class="fa fa-linkedin-square"></i> </a> </li>
+                            <li><a href="#"><i class="fa fa-google-plus-square"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Footer END -->
+
+</div> <!-- Main END -->
+
+<!-- jQuery'z -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+<!-- JSz -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/recruiterboss.js"></script>
+<script src="js/select2.full.js"></script>
+<script>
+    $('#myCompanySize').select2({
+        width: '100%',
+        minimumResultsForSearch: -1
+    });
+</script>
+
+</body>
+</html>

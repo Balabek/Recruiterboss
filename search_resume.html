@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
-    <title>Recruiterboss :: POST A JOB</title>
+    <title>Recruiterboss :: SEARCH RESUME</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Google fonts -->
@@ -91,61 +91,23 @@
         </div><!-- /.navbar-collapse -->
     </nav>
 
-    <div class="post_a_job_area">
+    <div class="search_resume_area">
         <div class="container">
             <div class="row">
-                <div class="post_a_job_title_holder center-block">
-                    <h2 class="contact_area_ttl">Post a Job</h2>
+                <div class="search_resume_area_title_holder center-block">
+                    <h2 class="contact_area_ttl">Search Resume</h2>
                     <p class="mandatory_warning">All fields marked with <span>&ast;</span> are required</p>
                 </div>
-                <div class="post_a_job_boxx_holder">
-                    <div class="post_a_job_boxx">
-                        <form id="postJobForm" class="post_a_job_form" role="form">
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="jobTitle" class="sgnp_lbl">Job Title<span class="asterisk">&ast;</span></label>
-                                <input id="jobTitle" type="text" class="signin_input">
+                <div class="search_resume_boxx_holder">
+                    <div class="search_resume_boxx">
+                        <form id="searchResumeForm" class="search_resume_form" role="form">
+                            <div class="col-sm-12 form-group signup_form_group">
+                                <label for="nameYaSearch" class="sgnp_lbl">Name Your Search<span class="asterisk">&ast;</span></label>
+                                <input id="nameYaSearch" type="text" class="signin_input" placeholder="e.g. Senior Software Architect" onfocus="placeholder='' " onblur="placeholder='e.g. Senior Software Architect' ">
                             </div>
                             <div class="col-sm-6 form-group signup_form_group">
-                                <label for="contractType" class="sgnp_lbl">Contract Type<span class="asterisk">&ast;</span></label>
-                                <select id="contractType" type="text">
-                                    <option></option>
-                                    <option>Full Time</option>
-                                    <option>Part Time</option>
-                                    <option>Remote</option>
-                                </select>
-                            </div>
-                            <div class="col-sm-8 form-group postajob_form_group">
-                                <label for="summary" class="sgnp_lbl">Summary<span class="asterisk">&ast;</span></label>
-                                <input id="summary" type="text" class="signin_input">
-                            </div>
-                            <div class="col-sm-4 form-group postajob_form_group">
-                                <label for="uploadButton" class="sgnp_lbl">Upload Logo<span class="asterisk"></span></label>
-                                <div class="ap_fileinputs">
-                                    <input id="uploadButton" type="file" class="ap_file" />
-                                    <div class="ap_fakefile">
-                                        <input type="button" value="Browse..." />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 form-group postajob_form_group">
-                                <label for="jobDescription" class="sgnp_lbl">Job Description (up to 250 characters)</label><span class="asterisk">&ast;</span>
-                                <textarea id="jobDescription" type="text" class="post_a_job_txt_area" maxlength="250"></textarea>
-                            </div>
-                            <div class="col-sm-12 form-group postajob_form_group">
-                                <label for="primaryResponsibilities" class="sgnp_lbl">Primary Responsibilities (up to 250 characters)</label><span class="asterisk">&ast;</span>
-                                <textarea id="primaryResponsibilities" type="text" class="post_a_job_txt_area" maxlength="250"></textarea>
-                            </div>
-                            <div class="col-sm-12 form-group postajob_form_group">
-                                <label for="skillsAndExpertise" class="sgnp_lbl">Skills & Expertise (up to 250 characters)</label><span class="asterisk">&ast;</span>
-                                <textarea id="skillsAndExpertise" type="text" class="post_a_job_txt_area" maxlength="250"></textarea>
-                            </div>
-                            <div class="col-sm-12 form-group postajob_form_group">
-                                <label for="tagsInput" class="sgnp_lbl">Keywords (up to 5)<span class="asterisk"></span></label>
-                                <input id="tagsInput" type="text" value="" data-role="tagsinput" class="taginput">
-                            </div>
-                            <div class="col-sm-6 form-group postajob_form_group">
-                                <label for="location_2" class="sgnp_lbl">Location<span class="asterisk"></span></label>
-                                <select id="location_2" type="text" class="signin_input">
+                                <label for="location_3" class="sgnp_lbl">Location<span class="asterisk"></span></label>
+                                <select id="location_3" type="text" class="signin_input">
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
                                     <option value="AZ">Arizona</option>
@@ -199,25 +161,18 @@
                                     <option value="WY">Wyoming</option>
                                 </select>
                             </div>
-                            <div class="col-sm-6 form-group postajob_form_group">
-                                <label for="category_2" class="sgnp_lbl">Category<span class="asterisk"></span></label>
-                                <select id="category_2" type="text" class="signin_input">
-                                    <option></option>
-                                    <option>Agriculture</option>
-                                    <option>Automotive</option>
-                                    <option>Climate</option>
-                                    <option>Consumer</option>
-                                    <option>Education</option>
-                                    <option>Energie</option>
-                                    <option>Finance</option>
-                                    <option>Healthcare</option>
-                                    <option>IT & Technology</option>
-                                    <option>Science</option>
+                            <div class="col-sm-6 form-group signup_form_group">
+                                <label for="radius" class="sgnp_lbl">Radius<span class="asterisk"></span></label>
+                                <select id="radius" type="text" class="signin_input">
+                                    <option>10-20km</option>
+                                    <option>20-40km</option>
+                                    <option>40-90km</option>
+                                    <option>90-150km</option>
                                 </select>
                             </div>
                             <div class="col-sm-6 form-group postajob_form_group">
-                                <label for="degree" class="sgnp_lbl">Degree<span class="asterisk"></span></label>
-                                <select id="degree" type="text" class="signin_input">
+                                <label for="degree_2" class="sgnp_lbl">Degree<span class="asterisk"></span></label>
+                                <select id="degree_2" type="text" class="signin_input">
                                     <option></option>
                                     <option>Sucker</option>
                                     <option>Bachelor</option>
@@ -227,22 +182,72 @@
                                     <option>Braniac</option>
                                 </select>
                             </div>
-                            <div class="col-sm-3 form-group postajob_form_group">
-                                <label for="postingFrom" class="lbl_datepikker">Posting Period (From)<span class="asterisk"></span></label>
-                                <span class="calendarr"></span>
-                                <input id="postingFrom" class="date_picker_input">
+                            <div class="col-sm-6 form-group postajob_form_group">
+                                <label for="postedInLastDays" class="sgnp_lbl">Posted resume in the last...<span class="asterisk"></span></label>
+                                <select id="postedInLastDays" type="text" class="signin_input">
+                                    <option>7 days</option>
+                                    <option>15 days</option>
+                                    <option>30 days</option>
+                                    <option>2 months</option>
+                                    <option>6 months</option>
+                                    <option>1 year</option>
+                                </select>
                             </div>
-                            <div class="col-sm-3 form-group postajob_form_group">
-                                <label for="postingTo" class="lbl_datepikker">Posting Period (To)<span class="asterisk"></span></label>
-                                <span class="calendarr"></span>
-                                <input id="postingTo" class="date_picker_input">
+                            <div class="col-sm-6 form-group signup_form_group">
+                                <label for="jobTtl" class="sgnp_lbl">Job Title<span class="asterisk"></span></label>
+                                <input id="jobTtl" type="text" class="signin_input">
                             </div>
-
-                            <div class="center-block submit_btn_holder_3">
-                                <button id="jobPreview" class="btn job_preview_btn">Preview</button>
+                            <div class="col-sm-6 form-group signup_form_group">
+                                <label for="previousCompany" class="sgnp_lbl">Previous company or job<span class="asterisk"></span></label>
+                                <input id="previousCompany" type="text" class="signin_input">
                             </div>
+                            <div class="col-sm-6 form-group postajob_form_group">
+                                <label for="jobType" class="sgnp_lbl">Job Type<span class="asterisk"></span></label>
+                                <select id="jobType" type="text" class="signin_input">
+                                    <option></option>
+                                    <option>Full Time</option>
+                                    <option>Part Time</option>
+                                    <option>Remote</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 form-group postajob_form_group">
+                                <label for="xperienceYearz" class="sgnp_lbl">Years of Experience<span class="asterisk"></span></label>
+                                <select id="xperienceYearz" type="text" class="signin_input">
+                                    <option>5+</option>
+                                    <option>8+</option>
+                                    <option>10+</option>
+                                    <option>12+</option>
+                                    <option>15+</option>
+                                    <option>20+</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 form-group postajob_form_group">
+                                <label for="travel" class="sgnp_lbl">Travel<span class="asterisk"></span></label>
+                                <select id="travel" type="text" class="signin_input">
+                                    <option></option>
+                                    <option>10%</option>
+                                    <option>20%</option>
+                                    <option>30%</option>
+                                    <option>40%</option>
+                                    <option>50%</option>
+                                    <option>75%</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 form-group postajob_form_group">
+                                <label for="relocation" class="sgnp_lbl">Relocation<span class="asterisk"></span></label>
+                                <select id="relocation" type="text" class="signin_input">
+                                    <option></option>
+                                    <option>Available</option>
+                                    <option>Unavailable</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-12 form-group postajob_form_group">
+                                <label for="tagsInput_2" class="sgnp_lbl">Keywords (up to 5)<span class="asterisk"></span></label>
+                                <input id="tagsInput_2" type="text" value="" data-role="tagsinput" class="taginput">
+                            </div>
+                            <!--<hr class="margin_hr invisible">-->
                             <div class="center-block submit_btn_holder_2">
-                                <button type="submit" id="postDaJob" class="btn signin_submit_btn">Submit</button>
+                                <button type="submit" id="postDaJob" class="btn signin_submit_btn">Show Results</button>
                             </div>
                         </form>
                     </div>
@@ -321,13 +326,9 @@
 
 <script type="text/javascript" src="js/bootstrap-tagsinput.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-<script type="text/javascript">
+<script>
 
-    $(function() {
-        $( "#postingFrom, #postingTo").datepicker();
-    });
-
-    $('#tagsInput').tagsinput({
+    $('#tagsInput_2').tagsinput({
         maxTags: 5
     });
 
@@ -339,15 +340,21 @@
 <script type="text/javascript" src="js/recruiterboss.js"></script>
 <script src="js/select2.full.js"></script>
 <script>
-    $('#location_2').select2({
+    $('#location_3, #radius, #postedInLastDays, #xperienceYearz').select2({
         width: '100%',
         minimumResultsForSearch: -1
     });
-    $('#degree, #category_2, #contractType').select2({
+
+    $('#relocation, #jobType, #travel, #xperienceYearz, #degree_2').select2({
         width: '100%',
         minimumResultsForSearch: -1,
         placeholder: "Please select..."
     });
+
+    $('#tagsInput_2').tagsinput({
+        maxTags: 5
+    });
+
 </script>
 
 </body>

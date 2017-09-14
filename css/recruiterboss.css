@@ -97,6 +97,7 @@ small.uppermost_user_info {
     font-weight: 300;
     color: #ebebeb;
     margin-right: 32px;
+    line-height: 1.8;
 }
 
 small.uppermost_user_info span {
@@ -915,7 +916,7 @@ hr.section_hr {
 /* ===== */
 
 .charity_area_skewed {
-    min-height: 365px;
+    min-height: 444px;
     height: auto;
     background-color: #ffffff;
 
@@ -935,7 +936,7 @@ hr.section_hr {
 }
 
 .charity_area_str8 {
-    padding-top: 85px;
+    padding-top: 12px;
 
     -webkit-transform: skewY(-2deg);
     -moz-transform: skewY(-2deg);
@@ -950,6 +951,71 @@ hr.section_hr {
     -moz-backface-visibility:    hidden;
     backface-visibility:         hidden;
     outline: 1px solid transparent;
+}
+
+
+.charity_hex_holder {
+    padding-top: 42px;
+}
+
+.charity_hex {
+    display: block;
+    width: 236px;
+    height: 236px;
+    background: url('../img/charity_hexx.png') center center no-repeat;
+    background-size: contain;
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+}
+
+.charity_textual_detailz h2 {
+    font-family: "BrandonGrotesque-Bold", sans-serif;
+    font-size: 3rem;
+    text-align: left;
+    color: #e16846;
+    margin-bottom: 16px;
+}
+
+.charity_textual_detailz h5 {
+    font-family: "BrandonGrotesque-Regular", sans-serif;
+    font-size: 1.3rem;
+    text-align: left;
+    color: #0d6ca8;
+    text-transform: uppercase;
+}
+
+.charity_textual_detailz h5 span {font-family: "BrandonGrotesque-Bold",sans-serif;}
+
+.charity_textual_detailz p {
+    font-size: 1rem;
+    color: #363636;
+    font-weight: 400;
+    text-align: left;
+    line-height: 2.2;
+}
+
+a.charity_learnmore_btn {
+    display: block;
+    margin-top: 14px;
+    width: 99%;
+    font-weight: 600;
+    font-size: 0.788rem;
+    color: #0d6ca8;
+    border-bottom: 1px solid #e16846;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+a.charity_learnmore_btn:hover {
+    color: #e16846;
+    border-bottom: 1px solid #0d6ca8;
 }
 
 
@@ -1228,6 +1294,7 @@ ul.rb_navstripe_inner li a:hover, ul.rb_navstripe_inner li a:focus {
 
 nav.rb_navigation_inner {
     width: 100%;
+    margin-bottom: 0;
     height: 100px;
     padding-left: 12px;
     padding-right: 12px;
@@ -1313,7 +1380,10 @@ img.rb_main_logo_inner {
     outline: 1px solid transparent;
 }
 
-
+.skewed_layer_support.litegrey {
+    background-color: #ebebeb;
+    margin-top: -60px;
+}
 
 
 
@@ -2204,9 +2274,6 @@ small.pseudo_ttl_xs {
     margin-bottom: 10px;
 }
 
-.rb_admin_stripe.strp_grey {background-color: #f7f7f7;}
-.rb_admin_stripe.strp_white {background-color: #ffffff; border: 1px solid #f2f2f2;}
-
 .admin_checkboxx_holder {
     padding-left: 1px;
 }
@@ -2322,6 +2389,809 @@ ul.pagination.rb_pagination > li:last-child > a:focus {
     pointer-events: none !important;
     opacity: 0.4;
 }
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = POST A JOB (EMPLOYER) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.job_posted_area {
+    min-height: 740px;
+    height: auto;
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+
+.success_boxx {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    background: #ffffff;
+    border-radius: 5px;
+    padding-top: 45px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+.success_ttl_holder {
+    display: inline-block;
+    text-align: center;
+}
+
+span.successss {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: url(../img/checked.png) center center no-repeat;
+    background-size: contain;
+    margin-right: 8px;
+    text-align: center;
+    float: left;
+}
+
+.success_ttl_holder h2 {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 2rem;
+    color: #8fc93a;
+    text-align: center;
+    text-transform: uppercase;
+    float: left;
+    position: relative;
+    top: 5px;
+    margin-bottom: 24px;
+}
+
+.success_boxx p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.success_boxx p span {font-weight: 700;}
+
+.whatsnext_holder {
+    min-height: 310px;
+    height: auto;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.whatsnext_holder p {
+    font-size: 1.1rem;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+}
+
+.two_button_holder {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+}
+
+button.manage_job_postings_btn {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: #0d6ca8;
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+button.manage_job_postings_btn:hover, button.manage_job_postings_btn:focus {
+    background: #094d78;
+    color: #ffffff;
+}
+
+button.search_candidates_btn {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: #8fc93a;
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+button.search_candidates_btn:hover, button.search_candidates_btn:focus {
+    background: #719f2e;
+    color: #ffffff;
+}
+
+.add_new_job_button_holder {
+    text-align: center;
+    padding-top: 32px;
+}
+
+span.circle_plus {
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    margin-right: 6px;
+    height: 30px;
+    width: 30px;
+    background: url('../img/plus.png') center center no-repeat;
+    background-size: contain;
+}
+
+a.add_new_job_button {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+a.add_new_job_button:hover, a.add_new_job_button:focus {
+    color: #999999;
+}
+
+a.add_new_job_button:hover span.circle_plus {
+    -webkit-animation: spin 0.7s infinite linear;
+}
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = SEARCH RESUME (EMPLOYER) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.search_resume_area {
+    min-height: 1000px;
+    height: auto;
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+
+.search_resume_boxx {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    min-height: 700px;
+    height: auto;
+    background: #f8f8f8;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+
+.search_resume_area_title_holder {
+    margin-bottom: 25px;
+}
+
+h2.search_resume_area_ttl {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #0d6ca8;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+hr.margin_hr {
+    clear: both;
+    margin-top: 14px;
+}
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = SEARCH RESULTS (EMPLOYER) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.search_results_area {
+    min-height: 1100px;
+    height: auto;
+    background: #ffffff;
+    padding-top: 77px;
+    padding-bottom: 75px;
+}
+
+aside.search_results_parameters {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    height: auto;
+    background: #f7f7f7;
+}
+
+aside.search_results_parameters h4 {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 1.664rem;
+    text-align: center;
+    color: #0d6ca8;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+}
+
+.search_parameter_data_piece {
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.search_parameter_data_piece h6 {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 0.88rem;
+    text-align: left;
+    color: #0d6ca8;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.search_parameter_data_piece p {
+    font-size: 1rem;
+    text-align: left;
+    color: #000000;
+}
+
+.save_this_search_button_holder {
+    padding-top: 16px;
+    width: 75%;
+    text-align: center;
+}
+
+button.save_this_search_btn {
+    font-size: 0.88rem;
+    font-weight: 600;
+    background: #0d6ca8;
+    color: #ffffff;
+    width: 100%;
+    height: 44px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+button.save_this_search_btn:hover, button.save_this_search_btn:focus {
+    background: #094d78;
+    color: #ffffff;
+}
+
+.rb_user_badge {
+    min-height: 280px;
+    height: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    background: #ffffff;
+    margin-bottom: 21px;
+
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+}
+
+.rb_user_image_holder {
+    position: relative;
+    text-align: center;
+}
+
+.rb_user_image {
+    display: block;
+    width: 123px;
+    height: 123px;
+    border-radius: 100%;
+}
+
+span.yearz_of_xperience_spot {
+    position: absolute;
+    display: block;
+    width: 65%;
+    bottom: -4px;
+    left: -24px;
+    right: 0;
+    margin: auto;
+    font-size: 0.88rem;
+    font-weight: 300;
+    background-color: #e16846;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.rb_user_info {
+    padding-left: 2px;
+    padding-top: 12px;
+}
+
+h5.rb_user_name {
+    font-family: "BrandonGrotesque-Regular",sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+p.rb_user_location {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+p.rb_user_degree {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+p.rb_user_previous_position {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+}
+
+p.rb_user_previous_position span {
+    font-weight: 600;
+}
+
+.rb_user_secondary_info {
+    padding-left: 2px;
+    padding-top: 12px;
+}
+
+p.secondary_info_title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+span.secondary_info_param {
+    font-weight: 400;
+}
+
+hr.badge_hr {
+    clear: both;
+    display: block;
+    position: relative;
+    margin-top: 156px;
+}
+
+.badge_btnz_holder {
+    padding-left: 4px;
+}
+
+a.badge_btn.watch_vid_resume_btn {background-color: #83D6DE;}
+a.badge_btn.watch_vid_resume_btn:hover {background-color: #5ba8af;}
+a.badge_btn.save_resume_btn {background-color: #8fc93a;}
+a.badge_btn.save_resume_btn:hover {background-color: #7faf30;}
+a.badge_btn.reject_resume_btn {background-color: #C82647;}
+a.badge_btn.reject_resume_btn:hover {background-color: #af2646;}
+
+a.badge_btn {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border-radius: 100%;
+    margin-right: 20px;
+    padding-top: 7px;
+
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+a.badge_btn i {
+    font-size: 1.171rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.badge_keywordz_holder {
+    padding-left: 4px;
+    padding-top: 0;
+}
+
+.badge_keywordz_holder h5 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #000000;
+    text-align: left;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+span.badge_keyword {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #0d6ca8;
+    border: 1px solid #0d6ca8;
+    border-radius: 5px;
+    padding: 4px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    position: relative;
+    top: -10px;
+}
+
+.keywordz_boxx {
+    float: left;
+    padding-top: 3px;
+}
+
+.rb_pagination_holder_2 {
+    text-align: center;
+    padding-top: 46px;
+}
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = ACCOUNT SETTINGS (EMPLOYER) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.account_settings_area {
+    min-height: 1500px;
+    height: auto;
+    background: #ebebeb;
+    padding-top: 77px;
+    padding-bottom: 75px;
+}
+
+.account_settings_boxx {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 92%;
+    min-height: 960px;
+    height: auto;
+    background: #f8f8f8;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding-top: 32px;
+    padding-bottom: 35px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+h2.account_settings_ttl {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 1.6rem;
+    color: #0d6ca8;
+    text-align: left;
+    text-transform: uppercase;
+    float: left;
+    position: relative;
+    top: 5px;
+    margin-bottom: 24px;
+}
+
+.uppermost_part {
+    margin-bottom: 74px;
+}
+
+.savechanges_btn_holder {
+    display: inline-block;
+    width: 16%;
+}
+
+button.btn-savechanges_btn {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #8fc93a;
+    height: 33px;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+button.btn-savechanges_btn:hover {
+    color: #ffffff;
+    background: #83D6DE;
+}
+
+.avatar_and_main_info_holder {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+
+.avatar_holder {
+    /*float: left;*/
+    padding-left: 2px;
+}
+
+.rb_avatar {
+    display: inline-block;
+    height: 121px;
+    width: 121px;
+    border-radius: 100%;
+    margin-right: 26px;
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+}
+
+.avatar_uploader_holder {
+    /*float: right;*/
+}
+
+div.ap_fileinputs_xs {
+    position: relative;
+}
+
+div.ap_fakefile_xs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+div.ap_fakefile_xs input[type=button] {
+    /* enough width to completely overlap the real hidden file control */
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    height: 33px;
+    border-radius: 5px;
+    border: none !important;
+    background: rgba(5,101,160,1);
+
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+div.ap_fileinputs_xs input.ap_file_xs {
+    position: relative;
+    text-align: right;
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+    height: 33px;
+    cursor: pointer;
+}
+
+.avatar_uploader_holder_inner {
+    position: relative;
+    top: -16px;
+}
+
+p.uploader_txt {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #b7b7b7;
+    text-align: left;
+}
+
+.account_settings_midmain_holder {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #dedede;
+}
+
+h3.subsection_ttl {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 1.222rem;
+    color: #0d6ca8;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+fieldset.lefside_fld {
+    padding-left: 0;
+}
+
+fieldset.riteside_fld {
+
+}
+
+textarea.signin_input_2 {
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-right: 12px;
+    height: 530px;
+    width: 100%;
+    background: #ffffff;
+    resize: none;
+    color: #999999;
+    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 20px;
+}
+
+textarea.signin_input_2:focus {
+    border: 1px solid #cfcfcf;
+}
+
+.update_password_holder {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #dedede;
+}
+
+.bottommost_part {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = SAVED CANDIDATES (EMPLOYER) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.rb_admin_stripe_xl.strp_grey {background-color: #f7f7f7;}
+.rb_admin_stripe_xl.strp_white {background-color: #ffffff; border: 1px solid #f2f2f2;}
+
+.rb_admin_stripe_xl {
+    padding-left: 10px;
+    padding-top: 17px;
+    width: 100%;
+    height: 85px;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+}
+
+p.candidate_name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+p.candidate_post {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+}
+
+.admin_checkboxx_holder_xl {
+    padding-left: 1px;
+    padding-top: 16px;
+}
+
+.admin_jobdate_holder_xl {
+    padding-left: 12px;
+    padding-top: 16px;
+}
+
+.admin_controls_holder_xl {
+    position: relative;
+    top: 8px;
+}
+
+.postings_toolbox_holder_xl {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+
+
+
+
+
+
 
 
 
