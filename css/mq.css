@@ -1391,3 +1391,110 @@
 
 
 
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* SOLO BLOG THREAD */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Solo Blog Thread Box ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .solo_blog_thread_boxx {width: 100%;}
+}
+
+@media screen and (max-width: 991px){
+    .author_info_box {width: 99%; margin-bottom: 12px;}
+    button.submit_fdbk_btn {width: 95%;}
+}
+
+@media screen and (max-width: 767px){
+    .solo_blog_thread_boxx {width: 96%;}
+    a.add_new_blog_button_2 {float: left;}
+    button.submit_fdbk_btn {width: 40%; margin-bottom: 24px;}
+}
+
+@media screen and (max-width: 603px){
+    .solo_blog_image {height: 265px;}
+}
+
+@media screen and (max-width: 555px){
+    button.submit_fdbk_btn {width: 60%;}
+}
+
+@media screen and (max-width: 414px){
+    .solo_blog_image {height: 225px;}
+}
+
+@media screen and (max-width: 396px){
+    button.submit_fdbk_btn {width: 80%;}
+}
+
+@media screen and (max-width: 340px){
+    .solo_blog_image {height: 165px;}
+}
+
+@media screen and (max-width: 328px){
+    ul.social_sharing {padding-left: 33px;}
+}
+
+@media screen and (max-width: 322px){
+    .social_sharing_holder h6 {font-size: 0.8rem;}
+}
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* SAVED SEARCHES */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Saved Search Table ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    a.view_saved_search_dtlz_btn {width: 120%;}
+}
+
+@media screen and (max-width: 767px){
+    a.view_saved_search_dtlz_btn {width: 13rem; margin-top: 2px; margin-bottom: 22px;}
+}
+
+
+
+
+
+
+
+
+
+
+
