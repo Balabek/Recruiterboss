@@ -1285,4 +1285,109 @@
 
 
 
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* POST A BLOG */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Post a Blog Box ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .post_a_blog_boxx {width: 80%;}
+}
+
+@media screen and (max-width: 991px){
+    .post_a_blog_boxx {width: 99%;}
+}
+
+@media screen and (max-width: 767px){
+    .post_a_blog_boxx {width: 96%;}
+}
+
+@media screen and (max-width: 340px){
+    .main_text_toolbox_group {margin-right: 1px;}
+}
+
+
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* ALL BLOGS */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Post a Blog Box ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .blogthumbnail {width: 31%;}
+    .all_blog_boxez_holder {display: block; width: 104%;margin: 0 auto;}
+}
+
+@media screen and (max-width: 991px){
+    .midmain_content p {overflow: hidden;}
+    a.blogthumbnail_readmore_btn {width: 40%;}
+    .midmain_content h4 {font-size: 1.22rem; margin-bottom: 12px;}
+}
+
+@media screen and (max-width: 767px){
+    .all_blogs_uppermost {padding-left: 26px; padding-right: 26px;}
+
+    .all_blog_boxez_holder {display: block; width: 88%;margin: 0 auto;}
+    .blogthumbnail {width: 100%;}
+
+    a.blogthumbnail_readmore_btn {width: 20%;}
+    .midmain_content h4 {font-size: 1.64rem; margin-bottom: 1px;}
+}
+
+@media screen and (max-width: 499px){
+    a.blogthumbnail_readmore_btn {width: 30%;}
+}
+
+@media screen and (max-width: 450px){
+    a.add_new_blog_button {float: left;}
+}
+
+@media screen and (max-width: 396px){
+    .all_blog_boxez_holder {display: block; width: 88%;margin: 0 auto;}
+    .blogthumbnail {width: 100%;}
+
+    a.blogthumbnail_readmore_btn {width: 40%;}
+    .midmain_content h4 {font-size: 1.44rem; margin-bottom: 1px;}
+}
+
+
+
+
+
+
 

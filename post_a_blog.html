@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
-    <title>Recruiterboss :: JOB POSTED!</title>
+    <title>Recruiterboss :: POST A BLOG</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Google fonts -->
@@ -21,6 +21,9 @@
     <link href="css/animate.css" rel="stylesheet" media="all">
     <link href="css/webfonts.css" rel="stylesheet" media="all">
     <link href="css/select2.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/jquery-ui.theme.css" rel="stylesheet">
+    <link href="css/bootstrap-tagsinput.css" rel="stylesheet">
     <link href="css/recruiterboss.css" rel="stylesheet">
     <link href="css/mq.css" rel="stylesheet">
 </head>
@@ -30,8 +33,8 @@
 
     <!-- Appears on top of the page only when user is authorized (logged into the system) -->
     <div class="uppermost_navbar animated fadeInUp">
-    <a href="#" class="btn-link signout_btn">Sign Out</a>
-    <small class="uppermost_user_info">Signed in as <span>James</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>
+        <a href="#" class="btn-link signout_btn">Sign Out</a>
+        <small class="uppermost_user_info">Signed in as <span>James</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>
     </div>
 
     <nav class="navbar navbar-default rb_navigation_inner">
@@ -88,29 +91,65 @@
         </div><!-- /.navbar-collapse -->
     </nav>
 
-    <div class="job_posted_area">
+    <div class="post_a_job_area">
         <div class="container">
             <div class="row">
-                <div class="success_boxx">
-                    <div class="success_ttl_holder">
-                        <span class="successss"></span>
-                        <h2>Success!</h2>
-                    </div>
-                    <p>Your job <span id="jobTitle">Senior Java Developer</span> has just been created and is now active!</p>
-                    <div class="whatsnext_holder">
-                        <p>What's next?</p>
-                        <div class="two_button_holder center-block">
-                            <button id="manageJobPostings" class="btn manage_job_postings_btn">Manage job postings</button>
-                            <button id="searchCandidates" class="btn search_candidates_btn">Search candidates</button>
-                        </div>
-                        <div class="add_new_job_button_holder">
-                            <a href="#" class="add_new_job_button"><span class="circle_plus"></span>Add new job</a>
-                        </div>
+                <div class="post_a_job_title_holder center-block">
+                    <h2 class="contact_area_ttl">Post a Blog</h2>
+                    <p class="mandatory_warning">All fields marked with <span>&ast;</span> are required</p>
+                </div>
+                <div class="post_a_job_boxx_holder">
+                    <div class="post_a_blog_boxx">
+                        <form id="postBlogForm" class="post_a_blog_form" role="form">
+                            <div class="col-sm-8 form-group signup_form_group">
+                                <label for="jobTitle" class="sgnp_lbl">Blog Title<span class="asterisk">&ast;</span></label>
+                                <input id="jobTitle" type="text" class="signin_input">
+                            </div>
+                            <div class="col-sm-4 form-group postajob_form_group">
+                                <label for="uploadButton" class="sgnp_lbl">Upload Photo<span class="asterisk"></span></label>
+                                <div class="ap_fileinputs_blogupload">
+                                    <input id="uploadButton" type="file" class="ap_file_blogupload" />
+                                    <div class="ap_fakefile_blogupload">
+                                        <input type="button" value="Browse..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 form-group postajob_form_group">
+                                <label for="jobDescription" class="sgnp_lbl">Main Content</label><span class="asterisk">&ast;</span>
+                                <div class="main_text_toolbox_holder">
+                                    <div class="main_text_toolbox">
+                                        <div class="btn-group main_text_toolbox_group" role="group">
+                                            <button type="button" class="btn btn-default toolbox_btn"><i class="fa fa-bold"></i> </button>
+                                            <button type="button" class="btn btn-default toolbox_btn"><i class="fa fa-italic"></i> </button>
+                                        </div>
+                                        <div class="btn-group main_text_toolbox_group" role="group">
+                                            <button type="button" class="btn btn-default toolbox_btn"><i class="fa fa-link"></i> </button>
+                                        </div>
+                                        <div class="btn-group main_text_toolbox_group" role="group">
+                                            <button type="button" class="btn btn-default toolbox_btn"><i class="fa fa-list-ul"></i> </button>
+                                        </div>
+                                        <div class="btn-group main_text_toolbox_group" role="group">
+                                            <button type="button" class="btn btn-default toolbox_btn"><i class="fa fa-align-left"></i> </button>
+                                            <button type="button" class="btn btn-default toolbox_btn"><i class="fa fa-align-center"></i> </button>
+                                            <button type="button" class="btn btn-default toolbox_btn"><i class="fa fa-align-right"></i> </button>
+                                        </div>
+                                    </div>
+                                </div> <!-- Main toobox holder END -->
+                                <textarea id="jobDescription" type="text" class="post_a_blog_txt_area" maxlength="250"></textarea>
+                            </div>
+                            <div class="col-sm-12 form-group postajob_form_group">
+                                <label for="tagsInput" class="sgnp_lbl">Tags (up to 5)<span class="asterisk"></span></label>
+                                <input id="tagsInput" type="text" value="" data-role="tagsinput" class="taginput">
+                            </div>
+                            <div class="center-block submit_btn_holder_2">
+                                <button type="submit" id="postDaJob" class="btn signin_submit_btn">Submit</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!-- Sign In Area END -->
+    </div> <!-- Contact Area END -->
 
     <div class="skewed_layer_support"></div> <!-- Invisible utility for supporting following skewed layout -->
 
@@ -180,6 +219,15 @@
 <!-- jQuery'z -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+<script type="text/javascript" src="js/bootstrap-tagsinput.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript">
+
+    $('#tagsInput').tagsinput({
+        maxTags: 5
+    });
+
+</script>
 
 <!-- JSz -->
 <script type="text/javascript" src="js/bootstrap.min.js"></script>

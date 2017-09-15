@@ -1911,6 +1911,7 @@ a.ma_octa_ttl:hover, a.ma_octa_ttl:focus {
 
 .post_a_job_area {
     padding-top: 85px;
+    margin-bottom: 55px;
 }
 
 .post_a_job_title_holder {
@@ -3185,6 +3186,316 @@ p.candidate_post {
     height: 45px;
     border-bottom: 1px solid #d6d6d6;
 }
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = POST A BLOG (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.post_a_blog_boxx {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    min-height: 555px;
+    height: auto;
+    background: #f8f8f8;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding-top: 45px;
+    padding-bottom: 35px;
+    margin-bottom: 55px;
+}
+
+div.ap_fileinputs_blogupload {
+    position: relative;
+}
+
+div.ap_fakefile_blogupload {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+div.ap_fakefile_blogupload input[type=button] {
+    /* enough width to completely overlap the real hidden file control */
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    height: 44px;
+    border-radius: 5px;
+    border: none !important;
+    background: rgba(5,101,160,1);
+    background: -moz-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(5,101,160,1)), color-stop(100%, rgba(144,201,58,1)));
+    background: -webkit-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: -o-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: -ms-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: linear-gradient(to right, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0565a0', endColorstr='#90c93a', GradientType=1 );
+
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+div.ap_fileinputs_blogupload input.ap_file_blogupload {
+    position: relative;
+    text-align: right;
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+    height: 33px;
+    cursor: pointer;
+}
+
+
+textarea.post_a_blog_txt_area {
+    display: block;
+    margin: 0 auto;
+    font-size: 0.88rem;
+    font-weight: 300;
+    padding-left: 12px;
+    padding-top: 12px;
+    height: 440px;
+    width: 100%;
+    background: #ffffff;
+    resize: none;
+    color: #999999;
+    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+}
+
+.main_text_toolbox_holder {
+    padding-bottom: 45px;
+}
+
+.main_text_toolbox_group {
+    float: left;
+    margin-right: 6px;
+}
+
+.fontsize_selector_holder {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    width: 11%;
+    margin-right: 10px;
+}
+
+button.toolbox_btn {
+    height: 38px;
+}
+
+.btn-group.main_text_toolbox_group > button:focus {
+    border: 1px solid #ccc !important;
+}
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = POST A BLOG (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.all_blogs_area {
+    min-height: 1500px;
+    height: auto;
+    background: #ebebeb;
+    padding-top: 77px;
+    padding-bottom: 75px;
+}
+
+.add_new_blog_button_holder {
+    position: relative;
+    top: -6px;
+    text-align: center;
+    padding-top: 0;
+}
+
+span.circle_plus {
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    margin-right: 6px;
+    height: 30px;
+    width: 30px;
+    background: url('../img/plus.png') center center no-repeat;
+    background-size: contain;
+}
+
+a.add_new_blog_button {
+    float: right;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+a.add_new_blog_button:hover, a.add_new_blog_button:focus {
+    color: #999999;
+}
+
+a.add_new_blog_button:hover span.circle_plus {
+    -webkit-animation: spin 0.7s infinite linear;
+}
+
+.blogthumbnail {
+    position: relative;
+    padding: 0;
+    width: 32%;
+    margin-right: 15px;
+    min-height: 575px;
+    height: auto;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    margin-bottom: 38px;
+
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+}
+
+.blogpic {
+    width: 100%;
+    height: 214px;
+    margin: 0 0 4px 0;
+}
+
+.all_blogs_uppermost {
+    margin-bottom: 100px;
+}
+
+.blogthumbnail_midmain_box {
+    padding: 0 12px 0 12px;
+}
+
+.blogthumbnail_author_and_date_stripe {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-top: 8px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 5px;
+}
+
+.blogthumbnail_author_holder {
+    float: left;
+}
+
+.blogthumbnail_author_holder p {
+    font-size: 0.88rem;
+}
+
+.blogthumbnail_author_holder p span {
+    color: #0d6ca8;
+}
+
+.blogthumbnail_date_holder {
+    float: right;
+}
+
+.blogthumbnail_date_holder small {
+    position: relative;
+    top: -3px;
+}
+
+.midmain_content {
+    clear: both;
+}
+
+.midmain_content h4 {
+    font-weight: 600;
+    color: #999999;
+    text-align: left;
+    font-size: 1.44rem;
+    margin-bottom: 0;
+    min-height: 50px;
+    height: auto;
+}
+
+.midmain_content p {
+    font-size: 0.9rem;
+    color: #000000;
+    text-align: left;
+    line-height: 1.8;
+    max-height: 175px;
+
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+    /*text-overflow: ellipsis;*/
+}
+
+.blogthumbnail_readmore_btn_holder {
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+a.blogthumbnail_readmore_btn {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #999999;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    text-align: center;
+    border-bottom: 1px solid #8fc93a;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+a.blogthumbnail_readmore_btn:hover, a.blogthumbnail_readmore_btn:focus {
+    color: #777777;
+    border-bottom: 1px solid #0d6ca8;
+}
+
+
 
 
 
