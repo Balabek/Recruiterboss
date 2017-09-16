@@ -1493,8 +1493,137 @@
 
 
 
+/* • • • • • • • */
 
 
 
 
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* MAIN SCREEN (JOB SEEKER) */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Main Screen (Job Seeker) ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .jobthumb {width: 47.6%;}
+}
+
+@media screen and (max-width: 767px){
+    .jobseeker_main_screen_job_offers {padding-left: 14px; padding-right: 14px; width: 100%;}
+    .jobseeker_main_screen_hotjob_offers {padding-left: 14px; padding-right: 14px; width: 100%;}
+    .jobthumb {width: 100%;}
+}
+
+@media screen and (max-width: 396px){
+    h5.jobthumb_dtlz_ttl {font-size: 1rem;}
+}
+
+
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* JOB DETAILS (JOB SEEKER) */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Job Details ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .job_dtlz_company_logo {right: 38px;}
+}
+
+@media screen and (max-width: 991px){
+    .job_dtlz_company_logo {width: 140px; height: 140px;}
+    .job_info_box h3 {font-size: 1.3rem;}
+
+    .job_info_box p {font-size: 1rem;}
+    p.loc_ttl {font-size: 0.8rem; line-height: 1.6;}
+
+    h4.job_dtlz_subttl {font-size: 1.131rem;}
+}
+
+@media screen and (max-width: 767px){
+    .job_details_area {padding-left: 12px; padding-right: 12px;}
+
+    .job_dtlz_company_logo {width: 175px; height: 177px; right: 0;}
+    .job_info_box h3 {font-size: 1.8rem;}
+
+    .job_info_box p {font-size: 1.3rem; margin-bottom: 24px;}
+    p.loc_ttl {font-size: 1.1rem; line-height: 1.6;}
+
+    h4.job_dtlz_subttl {font-size: 1.3rem;}
+}
+
+@media screen and (max-width: 475px){
+    .job_dtlz_double_btns_holder {width: 64%;}
+}
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* MANAGE RESUMES (JOB SEEKER) */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Manage Resumes Table ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    a.rb_admin_tool_control_2 {margin-top: 15px;}
+}
+
+@media screen and (max-width: 767px){
+    .manage_resumes_area {padding-left: 12px; padding-right: 12px;}
+    a.rb_admin_tool_control_2 {float: left !important; margin-top: -13px;}
+    p.resume_type {right: 0;}
+    span.document_visibility {left: 0;}
+
+    a.add_new_resume_button {position: relative; top: -8px;}
+}
+
+@media screen and (max-width: 530px){
+    .postings_toolbox_2 {float: none !important;}
+    a.add_new_resume_button {top: -22px;}
+}
 

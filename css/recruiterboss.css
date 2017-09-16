@@ -3823,3 +3823,552 @@ a.view_saved_search_dtlz_btn:hover {
     color: #ffffff;
     background: #0a4d78;
 }
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = MAIN SCREEN (JOB SEEKER) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.jbskr_octa {
+    display: block;
+    width: 195px;
+    height: 195px;
+    margin: 0 auto;
+}
+
+.jbskr_octa.post_resume {background: url('../img/jobseeker_octa_1.png') center center no-repeat; background-size: contain;}
+.jbskr_octa.search_job {background: url('../img/jobseeker_octa_2.png') center center no-repeat; background-size: contain;}
+.jbskr_octa.saved_jobz {background: url('../img/jobseeker_octa_3.png') center center no-repeat; background-size: contain;}
+
+.jobseeker_main_screen_job_offers {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 55px;
+}
+
+.jobseeker_main_screen_job_offers h4 {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 1.343rem;
+    text-align: left;
+    color: #0d6ca8;
+    text-transform: uppercase;
+    margin-bottom: 46px;
+}
+
+.jobthumb {
+    position: relative;
+    min-height: 250px;
+    width: 31.6%;
+    margin-right: 15px;
+    margin-bottom: 26px;
+    height: auto;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+}
+
+.jobthumb_uppermost {
+    padding-top: 14px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.jobthumb_img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 18px;
+}
+
+.jobthumb_img.standardjob {background: url('../img/standard_job_crcl.png') center center no-repeat; background-size: contain;}
+.jobthumb_img.hotjob {background: url('../img/hot_job_crcl.png') center center no-repeat; background-size: contain;}
+
+.jobthumb_detailbox {
+    display: block;
+}
+
+h5.jobthumb_dtlz_ttl {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000000;
+    text-align: left;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+p.jobthumb_dtlz_company {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #888888;
+    text-align: left;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.jobthumb_midmain {
+    padding-top: 22px;
+}
+
+.jobthumb_location_holder {
+    padding-top: 2px;
+}
+
+.jobthumb_location_holder i {
+    font-size: 1.1rem;
+    color: #0d6ca8;
+    float: left;
+    margin-right: 8px;
+}
+
+.jobthumb_location_holder p {
+    font-size: 0.9rem;
+    color: #999999;
+}
+
+.jobthumb_bottommost {
+    position: absolute;
+    bottom: 8px;
+    width: 92%;
+}
+
+.seethedetailz_btn_holder {
+    float: left;
+}
+
+a.seethedetailz_btn {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 0.77rem;
+    text-align: left;
+    color: #0d6ca8;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a.seethedetailz_btn:hover {
+    color: #999999;
+}
+
+.savedajob_btn_holder {
+    float: right;
+}
+
+a.savedajob_btn {
+    font-size: 0.77rem;
+    font-weight: 600;
+    text-align: left;
+    color: #666666;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a.savedajob_btn:hover {
+    color: #999999;
+}
+
+a.savedajob_btn i {
+    font-size: 1.1rem;
+    color: #8fc93a;
+    margin-right: 4px;
+}
+
+.jobseeker_main_screen_hotjob_offers {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    border-top: 1px solid #dedede;
+    margin-bottom: 2px;
+}
+
+.jobseeker_main_screen_hotjob_offers h4 {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 1.343rem;
+    text-align: left;
+    color: #0d6ca8;
+    text-transform: uppercase;
+    margin-bottom: 46px;
+}
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = SAVED JOBS (JOB SEEKER) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.saved_jobs_title_holder {
+    margin-bottom: 12px;
+}
+
+.saved_jobs_jobthumbs_holder {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-top: 46px;
+    padding-bottom: 26px;
+    border-top: 1px solid #dedede;
+    margin-bottom: 2px;
+}
+
+
+.removedajob_btn_holder {
+    float: right;
+}
+
+a.removedajob_btn {
+    font-size: 0.77rem;
+    font-weight: 600;
+    text-align: left;
+    color: #666666;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a.removedajob_btn:hover {
+    color: #999999;
+}
+
+a.removedajob_btn i {
+    font-size: 1.1rem;
+    color: #e16846;
+    margin-right: 4px;
+}
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = JOB DETAILS (JOB SEEKER) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.job_details_area {
+    min-height: 1100px;
+    height: auto;
+    background: #ebebeb;
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+
+.job_dtlz_leftside_mainbox {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    min-height: 690px;
+    height: auto;
+    background: #f8f8f8;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding: 36px 14px 36px 14px;
+    margin-bottom: 55px;
+}
+
+.job_info_box h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000000;
+    text-align: left;
+}
+
+.job_info_box p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #888888;
+    text-align: left;
+    margin-bottom: 46px;
+}
+
+
+.job_dtlz_location_and_companysize_box i {
+    font-size: 1.3rem;
+    color: #0d6ca8;
+    margin-right: 9px;
+    float: left;
+}
+
+p.loc_ttl {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: left;
+    color: #888888;
+    margin-bottom: 20px;
+}
+
+.job_dtlz_comapny_logo_accomodator {
+    padding-right: 18px;
+}
+
+.job_dtlz_company_logo {
+    position: relative;
+    right: 14px;
+    display: block;
+    width: 175px;
+    height: 175px;
+    border-radius: 4px;
+}
+
+hr.job_dtlz_hr {
+    clear: both;
+    display: block;
+    margin-top: 40px;
+}
+
+h4.job_dtlz_subttl {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 1.343rem;
+    text-align: left;
+    color: #0d6ca8;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.job_description_subsection p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    line-height: 1.6;
+}
+
+ul.job_dtlz_primary_responsibility_points {
+    padding-left: 18px;
+}
+
+ul.job_dtlz_primary_responsibility_points li {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.job_dtlz_double_btns_holder {
+    display: block;
+    text-align: center;
+    padding-top: 22px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+button.apply_for_da_job {
+    width: 100%;
+    height: 44px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background: #8fc93a;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+button.apply_for_da_job:hover {
+    background: #83D6DE;
+    color: #ffffff;
+}
+
+
+button.save_this_job {
+    width: 100%;
+    height: 44px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background: #ffffff;
+    color: #0d6ca8;
+    border: 1px solid #0d6ca8;
+    text-transform: uppercase;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+button.save_this_job:hover {
+    background: #0d6ca8;
+    color: #ffffff;
+}
+
+.similar_jobs_sidebar h4 {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #0d6ca8;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.jobthumb_mini {
+    position: relative;
+    min-height: 250px;
+    width: 100%;
+    margin-right: 15px;
+    margin-bottom: 26px;
+    height: auto;
+    background: #f8f8f8;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+}
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = MANAGE RESUMES (JOB SEEKER) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.manage_resumes_area {
+    min-height: 720px;
+    height: auto;
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 18px;
+}
+
+a.add_new_resume_button {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+a.add_new_resume_button:hover, a.add_new_resume_button:focus {
+    color: #999999;
+}
+
+a.add_new_resume_button:hover span.circle_plus {
+    -webkit-animation: spin 0.7s infinite linear;
+}
+
+p.resume_type {
+    font-family: "BrandonGrotesque-Black",sans-serif;
+    font-size: 1.2rem;
+    color: #000000;
+    position: relative;
+    right: 3px;
+}
+
+span.document_visibility {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    position: relative;
+    left: 6px;
+}
+
+span.document_visibility.doc_visible {background: url('../img/eye_open.png') center center no-repeat; background-size: contain;}
+span.document_visibility.doc_hidden {background: url('../img/eye_closed.png') center center no-repeat; background-size: contain;}
+
+i.videoresume {
+    display: inline-block;
+    position: relative;
+    color: #999999;
+    font-size: 1.2rem;
+    top: 1px;
+    left: 4px;
+}
+
+a.path_to_resume {
+    text-decoration: none !important;
+}
+
+a.rb_admin_tool_control_2 {
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+    color: #5c5c5c;
+    font-size: 1.5rem;
+
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -ms-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+}
+
+a.rb_admin_tool_control_2:hover {
+    color: #e16846;
+}
+
+
+

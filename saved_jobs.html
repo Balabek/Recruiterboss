@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+    <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
+    <title>Recruiterboss :: SAVED JOBS</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap + Custom Stylez -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="css/animate.css" rel="stylesheet" media="all">
+    <link href="css/webfonts.css" rel="stylesheet" media="all">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/recruiterboss.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="main" class="main">
+
+    <!-- Appears on top of the page only when user is authorized (logged into the system) -->
+    <div class="uppermost_navbar animated fadeInUp">
+        <a href="#" class="btn-link signout_btn">Sign Out</a>
+        <small class="uppermost_user_info">Signed in as <span>Samantha</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>
+    </div>
+
+    <nav class="navbar navbar-default rb_navigation_inner">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#rb_bcollapse_2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated bounceInLeft" href="#">
+                <img src="img/rb_logo.png" class="rb_main_logo_inner">
+                <img src="img/rb_logo_crop.png" class="rb_main_logo_cropped_inner">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="rb_bcollapse_2">
+            <ul class="nav navbar-nav rb_navstripe_inner navbar-right animated bounceInLeft">
+                <li class="dropdown">
+                    <a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
+                    <ul class="dropdown-menu animated fadeIn">
+                        <li>
+                            <a class="dropdown-item" href="#">Sign In</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jobseekers <span class="caret"></span></a>
+                    <ul class="dropdown-menu animated fadeIn">
+                        <li>
+                            <a class="dropdown-item" href="#">Sign In</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Resume</a>
+                </li>
+                <li>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Video Resume</a>
+                </li>
+                <li>
+                    <a class="rb_hexagon_button white hvr-shrink navbarhex" href="#">Post Your Job</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div class="manage_job_postings_area">
+        <div class="container">
+            <div class="row">
+                <div class="saved_jobs_title_holder">
+                    <h2 class="manage_job_postings_area_ttl">Saved Jobs</h2>
+                </div>
+                <div class="saved_jobs_jobthumbs_holder">
+                    <div class="col-sm-4 jobthumb">
+                        <div class="jobthumb_uppermost">
+                            <div class="jobthumb_img standardjob"></div>
+                            <div class="jobthumb_detailbox">
+                                <h5 class="jobthumb_dtlz_ttl">Psychologist</h5>
+                                <p class="jobthumb_dtlz_company">St. Benedikt Hospital</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_midmain">
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-map-pin"></i>
+                                <p>San Carlos (CA)</p>
+                            </div>
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-clock-o"></i>
+                                <p>11 days ago</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_bottommost">
+                            <div class="seethedetailz_btn_holder">
+                                <a href="#" class="seethedetailz_btn">See the details</a>
+                            </div>
+                            <div class="savedajob_btn_holder">
+                                <a href="#" class="removedajob_btn"><i class="fa fa-trash-o"></i>Remove Job</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 jobthumb">
+                        <div class="jobthumb_uppermost">
+                            <div class="jobthumb_img standardjob"></div>
+                            <div class="jobthumb_detailbox">
+                                <h5 class="jobthumb_dtlz_ttl">Petrol Truck Driver</h5>
+                                <p class="jobthumb_dtlz_company">Exxon Mobil</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_midmain">
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-map-pin"></i>
+                                <p>Houston (TX)</p>
+                            </div>
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-clock-o"></i>
+                                <p>27 days ago</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_bottommost">
+                            <div class="seethedetailz_btn_holder">
+                                <a href="#" class="seethedetailz_btn">See the details</a>
+                            </div>
+                            <div class="savedajob_btn_holder">
+                                <a href="#" class="removedajob_btn"><i class="fa fa-trash-o"></i>Remove Job</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 jobthumb">
+                        <div class="jobthumb_uppermost">
+                            <div class="jobthumb_img standardjob"></div>
+                            <div class="jobthumb_detailbox">
+                                <h5 class="jobthumb_dtlz_ttl">Freelance PHP Developer</h5>
+                                <p class="jobthumb_dtlz_company">Pink Juice Systems</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_midmain">
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-map-pin"></i>
+                                <p>Kent (OH)</p>
+                            </div>
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-clock-o"></i>
+                                <p>1 year ago</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_bottommost">
+                            <div class="seethedetailz_btn_holder">
+                                <a href="#" class="seethedetailz_btn">See the details</a>
+                            </div>
+                            <div class="savedajob_btn_holder">
+                                <a href="#" class="removedajob_btn"><i class="fa fa-trash-o"></i>Remove Job</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 jobthumb">
+                        <div class="jobthumb_uppermost">
+                            <div class="jobthumb_img standardjob"></div>
+                            <div class="jobthumb_detailbox">
+                                <h5 class="jobthumb_dtlz_ttl">UI/UX Department Lead</h5>
+                                <p class="jobthumb_dtlz_company">Boiler Co.</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_midmain">
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-map-pin"></i>
+                                <p>Newark (NJ)</p>
+                            </div>
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-clock-o"></i>
+                                <p>8 months ago</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_bottommost">
+                            <div class="seethedetailz_btn_holder">
+                                <a href="#" class="seethedetailz_btn">See the details</a>
+                            </div>
+                            <div class="savedajob_btn_holder">
+                                <a href="#" class="removedajob_btn"><i class="fa fa-trash-o"></i>Remove Job</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 jobthumb">
+                        <div class="jobthumb_uppermost">
+                            <div class="jobthumb_img standardjob"></div>
+                            <div class="jobthumb_detailbox">
+                                <h5 class="jobthumb_dtlz_ttl">AI Specialist</h5>
+                                <p class="jobthumb_dtlz_company">Stigma Games</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_midmain">
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-map-pin"></i>
+                                <p>Glendale (CA)</p>
+                            </div>
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-clock-o"></i>
+                                <p>18 days ago</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_bottommost">
+                            <div class="seethedetailz_btn_holder">
+                                <a href="#" class="seethedetailz_btn">See the details</a>
+                            </div>
+                            <div class="savedajob_btn_holder">
+                                <a href="#" class="removedajob_btn"><i class="fa fa-trash-o"></i>Remove Job</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 jobthumb">
+                        <div class="jobthumb_uppermost">
+                            <div class="jobthumb_img standardjob"></div>
+                            <div class="jobthumb_detailbox">
+                                <h5 class="jobthumb_dtlz_ttl">Account Manager</h5>
+                                <p class="jobthumb_dtlz_company">Miller & Sons</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_midmain">
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-map-pin"></i>
+                                <p>Chicago (IL)</p>
+                            </div>
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-clock-o"></i>
+                                <p>8 months ago</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_bottommost">
+                            <div class="seethedetailz_btn_holder">
+                                <a href="#" class="seethedetailz_btn">See the details</a>
+                            </div>
+                            <div class="savedajob_btn_holder">
+                                <a href="#" class="removedajob_btn"><i class="fa fa-trash-o"></i>Remove Job</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 jobthumb">
+                        <div class="jobthumb_uppermost">
+                            <div class="jobthumb_img standardjob"></div>
+                            <div class="jobthumb_detailbox">
+                                <h5 class="jobthumb_dtlz_ttl">Senior System Engineer</h5>
+                                <p class="jobthumb_dtlz_company">T-Mobile USA</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_midmain">
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-map-pin"></i>
+                                <p>New York (NY)</p>
+                            </div>
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-clock-o"></i>
+                                <p>2 years ago</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_bottommost">
+                            <div class="seethedetailz_btn_holder">
+                                <a href="#" class="seethedetailz_btn">See the details</a>
+                            </div>
+                            <div class="savedajob_btn_holder">
+                                <a href="#" class="removedajob_btn"><i class="fa fa-trash-o"></i>Remove Job</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 jobthumb">
+                        <div class="jobthumb_uppermost">
+                            <div class="jobthumb_img standardjob"></div>
+                            <div class="jobthumb_detailbox">
+                                <h5 class="jobthumb_dtlz_ttl">Industrial Designer</h5>
+                                <p class="jobthumb_dtlz_company">General Motors</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_midmain">
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-map-pin"></i>
+                                <p>Detroit (MI)</p>
+                            </div>
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-clock-o"></i>
+                                <p>8 months ago</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_bottommost">
+                            <div class="seethedetailz_btn_holder">
+                                <a href="#" class="seethedetailz_btn">See the details</a>
+                            </div>
+                            <div class="savedajob_btn_holder">
+                                <a href="#" class="removedajob_btn"><i class="fa fa-trash-o"></i>Remove Job</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div> <!-- Contact Area END -->
+
+    <div class="skewed_layer_support"></div> <!-- Invisible utility for supporting following skewed layout -->
+
+    <footer class="rb_footer">
+        <div class="container">
+            <div class="row">
+                <div class="rb_footer_inner_boxx">
+                    <div class="col-sm-3 col-xs-3 footer_logo_holder">
+                        <a href="#">
+                            <img src="img/rb_logo.png" class="footer_logo">
+                        </a>
+                        <div class="phone_holder">
+                            <i class="fa fa-phone footer_phone_icon"></i>
+                            <a href="tel:+1-541-754-3010">+1-541-754-3010</a>
+                        </div>
+                        <div class="email_holder">
+                            <i class="fa fa-envelope footer_email_icon"></i>
+                            <a href="mailto:info@recruiterboss.com">info@recruiterboss.com</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_linxx_holder">
+                        <ul class="footer_linxx">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Video Resume</a></li>
+                            <li><a href="#">Employers</a></li>
+                            <li><a href="#">Job Seekers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_linxx_holder">
+                        <ul class="footer_linxx">
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Manage email</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_buttons_holder">
+                        <a href="#" class="footer_hex_btn_green rb_hexagon_button green hvr-shrink">Post Video Resume</a>
+                        <a href="#" class="footer_hex_btn_white rb_hexagon_button white hvr-shrink">Post Your Job</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottommost_stripe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6 microtext_holder">
+                        <small class="microtext">&copy; 2017 <span>Recruiterboss</span> All Rights Reserved</small>
+                    </div>
+                    <div class="col-sm-6 col-xs-6 socialz_holder">
+                        <ul class="sozialz pull-right">
+                            <li><a href="#"><i class="fa fa-facebook-square"></i> </a> </li>
+                            <li><a href="#"><i class="fa fa-linkedin-square"></i> </a> </li>
+                            <li><a href="#"><i class="fa fa-google-plus-square"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Footer END -->
+
+</div> <!-- Main END -->
+
+<!-- jQuery'z -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+<!-- JSz -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/recruiterboss.js"></script>
+<script src="js/select2.full.js"></script>
+
+</body>
+</html>
