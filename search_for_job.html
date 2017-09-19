@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
-    <title>Recruiterboss :: CONTACT</title>
+    <title>Recruiterboss :: SEARCH FOR JOB</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Google fonts -->
@@ -31,7 +31,7 @@
     <!-- Appears on top of the page only when user is authorized (logged into the system) -->
     <div class="uppermost_navbar animated fadeInUp">
         <a href="#" class="btn-link signout_btn">Sign Out</a>
-        <small class="uppermost_user_info">Signed in as <span>James</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>
+        <small class="uppermost_user_info">Signed in as <span>Samantha</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>
     </div>
 
     <nav class="navbar navbar-default rb_navigation_inner">
@@ -88,47 +88,144 @@
         </div><!-- /.navbar-collapse -->
     </nav>
 
-    <div class="post_a_job_area">
-        <div class="container">
-            <div class="row">
-                <div class="contact_area_title_holder center-block">
-                    <h2 class="contact_area_ttl">Contact Us</h2>
-                    <p class="support_info_txt">Our Customer Support is available at <a href="tel:1800-504-3220">1800-504-3220</a> <br class="invisible_break_2"> (Mon - Fri: 8:30AM - 5:30PM EST) </p>
-                </div>
-                <div class="contact_boxx_holder">
-                    <div class="contact_boxx">
-                        <h3>Drop us a line</h3>
-                        <p class="mandatory_warning">All fields marked with <span>&ast;</span> are required</p>
-                        <form id="contactForm" class="contact_form" role="form">
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="firstName" class="sgnp_lbl">First Name<span class="asterisk">&ast;</span></label>
-                                <input id="firstName" type="text" class="signin_input">
+    <div class="search_for_job_area">
+        <div class="search_for_job_upper_part">
+            <div class="container">
+                <div class="row">
+                    <div class="looking_for_inner_box_2">
+                        <h2 class="subsection_ttl">Search for job</h2>
+                        <hr class="micro_hr green_hr">
+                        <form class="form looking_for_form" role="form">
+                            <div class="form-group col-sm-4">
+                                <label for="industry" class="lookin_for_lbl darkie">Select industry</label>
+                                <select id="industry">
+                                    <option>Architecture & Design</option>
+                                    <option>Healthcare</option>
+                                    <option>Medicine</option>
+                                    <option>IT & Internet</option>
+                                </select>
                             </div>
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="lastName" class="sgnp_lbl">Last Name<span class="asterisk">&ast;</span></label>
-                                <input id="lastName" type="text" class="signin_input">
+                            <div class="form-group col-sm-4">
+                                <label for="location" class="lookin_for_lbl darkie">Location</label>
+                                <select id="location">
+                                    <option>California</option>
+                                    <option>Arizona</option>
+                                    <option>Alabama</option>
+                                    <option>Nevada</option>
+                                    <option>North Carolina</option>
+                                    <option>New York</option>
+                                    <option>Florida</option>
+                                    <option>Washington D.C.</option>
+                                    <option>Ohio</option>
+                                </select>
                             </div>
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="eMail" class="sgnp_lbl">Email<span class="asterisk">&ast;</span></label>
-                                <input id="eMail" type="email" class="signin_input">
+                            <div class="form-group col-sm-4">
+                                <label for="contractScope" class="lookin_for_lbl darkie">Contract type</label>
+                                <select id="contractScope">
+                                    <option>Full Time</option>
+                                    <option>Part Time</option>
+                                    <option>Remote</option>
+                                </select>
                             </div>
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="phone" class="sgnp_lbl">Phone</label><span class="asterisk"></span>
-                                <input id="phone" type="text" class="signin_input">
-                            </div>
-                            <div class="col-sm-12 form-group signup_form_group">
-                                <label for="yourMessage" class="sgnp_lbl">Your Message<span class="asterisk">&ast;</span></label>
-                                <textarea id="yourMessage" type="text" class="signin_input"></textarea>
-                            </div>
-                            <div class="center-block submit_btn_holder_2">
-                                <button type="submit" id="signInBtn" class="btn signin_submit_btn">Send</button>
-                            </div>
+                            <button type="submit" id="lookingforSubmitButton" class="lookingfor_submit_btn rb_hexagon_button white_2 hvr-shrink">Search</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!-- Contact Area END -->
+    </div> <!-- Search for Job END -->
+
+    <!-- Search Results sub-area is hidden bu default! It must become visible as soon as a User clicks 'Search' to instantly see the results below (preferably One-Page application approach without page reload) -->
+    <div class="search_reults_area_2">
+        <div class="container">
+            <div class="row">
+                <h2 class="search_results_subttl">Search Results</h2>
+                <div class="search_results_main_holder">
+                    <div class="col-sm-4 jobthumb">
+                        <div class="jobthumb_uppermost">
+                            <div class="jobthumb_img standardjob"></div>
+                            <div class="jobthumb_detailbox">
+                                <h5 class="jobthumb_dtlz_ttl">AI Specialist</h5>
+                                <p class="jobthumb_dtlz_company">Stigma Games</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_midmain">
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-map-pin"></i>
+                                <p>Glendale (CA)</p>
+                            </div>
+                            <div class="jobthumb_location_holder">
+                                <i class="fa fa-clock-o"></i>
+                                <p>18 days ago</p>
+                            </div>
+                        </div>
+                        <div class="jobthumb_bottommost">
+                            <div class="seethedetailz_btn_holder">
+                                <a href="#" class="seethedetailz_btn">See the details</a>
+                            </div>
+                            <div class="savedajob_btn_holder">
+                                <a href="#" class="savedajob_btn"><i class="fa fa-floppy-o"></i>Save Job</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 jobthumb">
+                    <div class="jobthumb_uppermost">
+                        <div class="jobthumb_img standardjob"></div>
+                        <div class="jobthumb_detailbox">
+                            <h5 class="jobthumb_dtlz_ttl">Angular JS Specialist</h5>
+                            <p class="jobthumb_dtlz_company">Suspension Inc.</p>
+                        </div>
+                    </div>
+                    <div class="jobthumb_midmain">
+                        <div class="jobthumb_location_holder">
+                            <i class="fa fa-map-pin"></i>
+                            <p>Kent (OH)</p>
+                        </div>
+                        <div class="jobthumb_location_holder">
+                            <i class="fa fa-clock-o"></i>
+                            <p>2 months ago</p>
+                        </div>
+                    </div>
+                    <div class="jobthumb_bottommost">
+                        <div class="seethedetailz_btn_holder">
+                            <a href="#" class="seethedetailz_btn">See the details</a>
+                        </div>
+                        <div class="savedajob_btn_holder">
+                            <a href="#" class="savedajob_btn"><i class="fa fa-floppy-o"></i>Save Job</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 jobthumb">
+                    <div class="jobthumb_uppermost">
+                        <div class="jobthumb_img standardjob"></div>
+                        <div class="jobthumb_detailbox">
+                            <h5 class="jobthumb_dtlz_ttl">iOS Architect</h5>
+                            <p class="jobthumb_dtlz_company">Epic Games</p>
+                        </div>
+                    </div>
+                    <div class="jobthumb_midmain">
+                        <div class="jobthumb_location_holder">
+                            <i class="fa fa-map-pin"></i>
+                            <p>New York (NY)</p>
+                        </div>
+                        <div class="jobthumb_location_holder">
+                            <i class="fa fa-clock-o"></i>
+                            <p>27 days ago</p>
+                        </div>
+                    </div>
+                    <div class="jobthumb_bottommost">
+                        <div class="seethedetailz_btn_holder">
+                            <a href="#" class="seethedetailz_btn">See the details</a>
+                        </div>
+                        <div class="savedajob_btn_holder">
+                            <a href="#" class="savedajob_btn"><i class="fa fa-floppy-o"></i>Save Job</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Search Results Sub-Area END -->
 
     <div class="skewed_layer_support"></div> <!-- Invisible utility for supporting following skewed layout -->
 
@@ -203,6 +300,12 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/recruiterboss.js"></script>
 <script src="js/select2.full.js"></script>
+<script>
+    $('#industry, #location, #contractScope').select2({
+        width: '100%',
+        minimumResultsForSearch: -1
+    });
+</script>
 
 </body>
 </html>

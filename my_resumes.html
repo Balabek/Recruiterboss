@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
-    <title>Recruiterboss :: CONTACT</title>
+    <title>Recruiterboss :: MY RESUMES</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Google fonts -->
@@ -88,49 +88,73 @@
         </div><!-- /.navbar-collapse -->
     </nav>
 
-    <div class="post_a_job_area">
+    <div class="my_resumes_area">
         <div class="container">
             <div class="row">
-                <div class="contact_area_title_holder center-block">
-                    <h2 class="contact_area_ttl">Contact Us</h2>
-                    <p class="support_info_txt">Our Customer Support is available at <a href="tel:1800-504-3220">1800-504-3220</a> <br class="invisible_break_2"> (Mon - Fri: 8:30AM - 5:30PM EST) </p>
-                </div>
-                <div class="contact_boxx_holder">
-                    <div class="contact_boxx">
-                        <h3>Drop us a line</h3>
-                        <p class="mandatory_warning">All fields marked with <span>&ast;</span> are required</p>
-                        <form id="contactForm" class="contact_form" role="form">
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="firstName" class="sgnp_lbl">First Name<span class="asterisk">&ast;</span></label>
-                                <input id="firstName" type="text" class="signin_input">
-                            </div>
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="lastName" class="sgnp_lbl">Last Name<span class="asterisk">&ast;</span></label>
-                                <input id="lastName" type="text" class="signin_input">
-                            </div>
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="eMail" class="sgnp_lbl">Email<span class="asterisk">&ast;</span></label>
-                                <input id="eMail" type="email" class="signin_input">
-                            </div>
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="phone" class="sgnp_lbl">Phone</label><span class="asterisk"></span>
-                                <input id="phone" type="text" class="signin_input">
-                            </div>
-                            <div class="col-sm-12 form-group signup_form_group">
-                                <label for="yourMessage" class="sgnp_lbl">Your Message<span class="asterisk">&ast;</span></label>
-                                <textarea id="yourMessage" type="text" class="signin_input"></textarea>
-                            </div>
-                            <div class="center-block submit_btn_holder_2">
-                                <button type="submit" id="signInBtn" class="btn signin_submit_btn">Send</button>
-                            </div>
-                        </form>
+                <h2 class="subsection_ttl_2">My Resumes</h2>
+                <div class="my_resumes_boxx">
+                    <div class="myresumes_subtitle_holder">
+                        <h5>Video Resumes</h5>
+                    </div>
+                    <div class="myresumes_main_holder">
+                        <div class="videothumb_holder">
+                            <video class="videothumb" id="rbVid1" controls preload="metadata">
+                                <source src="vids/Test_001.mp4"
+                                type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'
+                                data-original="102614-video-sample.mp4">
+                                <source src="vids/Test_001.webm"
+                                type='video/webm;codecs="vp8, vorbis"'
+                                data-original="102614-video-sample-webmhd.webm">
+                            </video>
+                            <h6 class="center-block video_resume_ttl">My Test Video Resume #2</h6>
+                        </div>
+                        <div class="videothumb_holder">
+                            <video class="videothumb" id="rbVid2" controls preload="metadata" >
+                                <source src="vids/Test_002.mp4"
+                                    type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'
+                                    data-original="102614-video-sample.mp4">
+                                <source src="vids/Test_002.webm"
+                                    type='video/webm;codecs="vp8, vorbis"'
+                                    data-original="102614-video-sample-webmhd.webm">
+                            </video>
+                            <h6 class="center-block video_resume_ttl">Video Resume 2016</h6>
+                        </div>
+                    </div>
+                    <hr class="invisible">
+                    <div class="myresumes_subtitle_holder">
+                        <h5>Standard Resumes</h5>
+                    </div>
+                    <div class="myresumes_main_holder_2">
+                        <div class="standard_resume_holder col-sm-3">
+                            <a href="#" class="standard_resume doc_format hvr-shrink">
+                                <h6 class="stndrd_resume_ttl">Text CV 2016</h6>
+                            </a>
+                        </div>
+                        <div class="standard_resume_holder col-sm-3">
+                            <a href="#" class="standard_resume doc_format hvr-shrink">
+                                <h6 class="stndrd_resume_ttl">CV 2017</h6>
+                            </a>
+                        </div>
+                        <div class="standard_resume_holder col-sm-3">
+                            <a href="#" class="standard_resume pdf_format hvr-shrink">
+                                <h6 class="stndrd_resume_ttl">Test Cover Letter</h6>
+                            </a>
+                        </div>
+                        <div class="standard_resume_holder col-sm-3">
+                            <a href="#" class="standard_resume doc_format hvr-shrink">
+                                <h6 class="stndrd_resume_ttl">Resume 2017</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="center-block manage_resumes_btn_holder">
+                        <button id="manageResumes" class="btn manage_my_resumes">Manage Resumes</button>
                     </div>
                 </div>
             </div>
         </div>
     </div> <!-- Contact Area END -->
 
-    <div class="skewed_layer_support"></div> <!-- Invisible utility for supporting following skewed layout -->
+    <div class="skewed_layer_support litegrey"></div> <!-- Invisible utility for supporting following skewed layout -->
 
     <footer class="rb_footer">
         <div class="container">
@@ -198,11 +222,16 @@
 <!-- jQuery'z -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-
 <!-- JSz -->
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/recruiterboss.js"></script>
 <script src="js/select2.full.js"></script>
+<script>
+    $('#myCompanySize').select2({
+        width: '100%',
+        minimumResultsForSearch: -1
+    });
+</script>
 
 </body>
 </html>

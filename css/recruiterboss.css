@@ -4372,3 +4372,784 @@ a.rb_admin_tool_control_2:hover {
 
 
 
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = MANAGE RESUMES (JOB SEEKER) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.search_for_job_area {
+    min-height: 500px;
+    height: auto;
+    background: #ffffff;
+}
+
+.search_for_job_upper_part {
+    min-height: 470px;
+    height: auto;
+    padding: 75px 0 36px 0;
+    background: url('../img/searchforjob_bgd.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.looking_for_inner_box_2 {
+    position: relative;
+    margin-top: 34px;
+}
+
+h2.subsection_ttl {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 1.9rem;
+    color: #0d6ca8;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+label.lookin_for_lbl.darkie {
+    color: #363636;
+}
+
+
+/* Search Results sub-area is hidden bu default! It must become visible
+as soon as a User clicks 'Search' to instantly see the results below
+(preferably One-Page application approach without page reload) */
+.search_reults_area_2 {
+    display: none;
+    padding-top: 36px;
+    min-height: 500px;
+    height: auto;
+    background: #ffffff;
+}
+
+h2.search_results_subttl {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 1.9rem;
+    color: #8fc93a;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+}
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = POST A RESUME (JOB SEEKER) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.postresume_form_group {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    top: 18px;
+}
+
+.inner_uploader_box {
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+}
+
+div.ap_fileinputs_upld {
+    position: relative;
+}
+
+div.ap_fakefile_upld {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+div.ap_fakefile_upld input[type=button] {
+    /* enough width to completely overlap the real hidden file control */
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    height: 44px;
+    border-radius: 4px;
+    border: none !important;
+
+    background: rgba(5,101,160,1);
+    background: -moz-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(5,101,160,1)), color-stop(100%, rgba(144,201,58,1)));
+    background: -webkit-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: -o-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: -ms-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: linear-gradient(to right, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0565a0', endColorstr='#90c93a', GradientType=1 );
+
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+div.ap_fileinputs_upld input.ap_file_upld {
+    position: relative;
+    text-align: right;
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+    height: 38px;
+    cursor: pointer;
+}
+
+p.upload_warning {
+    margin-top: 22px;
+    font-size: 0.8rem;
+    color: #878787;
+    font-weight: 400;
+    text-align: center;
+}
+
+p.upload_warning span {
+    font-size: 1.1rem;
+    font-family: "BrandonGrotesque-Bold", sans-serif;
+    color: #666666;
+}
+
+hr.boxx_hr {
+    clear: both;
+    display: block;
+    position: relative;
+    margin-top: 56px;
+    border-color: #cccccc;
+    width: 85%;
+}
+
+a.upload_warning_linx {
+    font-weight: 600;
+    color: #0d6ca8;
+}
+
+.submit_btn_holder_3 {
+    width: 30%;
+    padding-top: 24px;
+}
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = MY RESUMES (JOB SEEKER) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.my_resumes_area {
+    min-height: 800px;
+    height: auto;
+    background: #ebebeb;
+    padding-top: 77px;
+    padding-bottom: 75px;
+}
+
+.my_resumes_boxx {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 96%;
+    min-height: 880px;
+    height: auto;
+    background: #f8f8f8;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding-top: 32px;
+    padding-bottom: 35px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-bottom: 25px;
+}
+
+
+h2.subsection_ttl_2 {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 1.9rem;
+    color: #0d6ca8;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.myresumes_subtitle_holder {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #dedede;
+}
+
+.myresumes_subtitle_holder h5 {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 1.333rem;
+    color: #0d6ca8;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.myresumes_main_holder {
+    padding-top: 42px;
+}
+
+.videothumb_holder {
+    display: inline-block;
+    width: 31%;
+    margin-right: 15px;
+    margin-bottom: 26px;
+}
+
+.videothumb {
+    position: relative;
+    max-height: 100%;
+    width: 100%;
+    background-color: #0d6ca8;
+    border: none;
+    margin-right: 15px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+}
+
+h6.video_resume_ttl {
+    font-weight: 600;
+    color: #363636;
+    text-align: center;
+}
+
+.standard_resume_holder {
+    margin-right: 15px;
+    margin-bottom: 26px;
+}
+
+.standard_resume_holder {
+    width: 23%;
+    padding-top: 26px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+a.standard_resume {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 128px;
+    height: 128px;
+}
+
+.standard_resume.doc_format {background: url('../img/docx-file-format.png') center center no-repeat; background-size: contain;}
+.standard_resume.pdf_format {background: url('../img/pdf-file-format.png') center center no-repeat; background-size: contain;}
+
+h6.stndrd_resume_ttl {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -18px;
+    font-weight: 600;
+    color: #363636;
+    text-align: center;
+}
+
+.manage_resumes_btn_holder {
+    display: block;
+    width: 22%;
+    margin: 0 auto;
+    margin-top: 102px;
+    clear: both;
+}
+
+button.manage_my_resumes {
+    width: 100%;
+    height: 44px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: #0d6ca8;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+button.manage_my_resumes:hover {
+    background: #0a4d78;
+    color: #ffffff;
+}
+
+.myresumes_main_holder_2 {
+    min-height: 200px;
+    height: auto;
+    padding-top: 42px;
+}
+
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = PRICING PLANS (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.pricing_plans_area {
+    height: auto;
+    padding-top: 85px;
+    margin-bottom: 55px;
+}
+
+.pricing_plans_main_holder {
+    display: block;
+    width: 98%;
+    margin: 0 auto;
+    padding-top: 22px;
+    padding-bottom: 24px;
+    height: auto;
+}
+
+.pricingplan_boxx {
+    height: 375px;
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    background: #ffffff;
+    margin-right: 3px;
+    width: 24.2%;
+
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+}
+
+.pricingplan_boxx_header {
+    padding-top: 36px;
+    height: 95px;
+    width: 100%;
+}
+
+.pricingplan_boxx_header h3 {
+    font-weight: 700;
+    font-size: 1.666rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.pricingplan_boxx_header.basic {background: url('../img/pp_basic_bgd.jpg') center center no-repeat; background-size: cover;}
+.pricingplan_boxx_header.standard {background: url('../img/pp_standard_bgd.jpg') center center no-repeat; background-size: cover;}
+.pricingplan_boxx_header.premium {background: url('../img/pp_premium_bgd.jpg') center center no-repeat; background-size: cover;}
+.pricingplan_boxx_header.pro {background: url('../img/pp_u_bgd.jpg') center center no-repeat; background-size: cover;}
+
+
+.pricingplan_boxx_price_holder {
+    padding-top: 24px;
+    height: 77px;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+}
+
+.basic_price_color {color: #464646;}
+.standard_price_color {color: #8fc93a;}
+.premium_price_color {color: #f26c4f;}
+.pro_price_color {color: #00aeef;}
+
+h3.pricing_ttl {
+    font-weight: 700;
+    font-size: 1.666rem;
+    text-align: center;
+}
+
+h3.pricing_ttl span {
+    font-weight: 300;
+}
+
+.pricingplan_boxx_conditions_holder {
+    padding-top: 34px;
+    padding-left: 22px;
+    height: 113px;
+    width: 100%;
+    background: #f9f9f9;
+}
+
+.condition {
+    clear: both;
+}
+
+.condition i {
+    display: block;
+    float: left;
+    font-size: 1.3rem;
+    margin-right: 6px;
+}
+
+.condition p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.pricingplan_boxx_bottommost_holder {
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+    height: 85px;
+    background: #ffffff;
+    padding-top: 24px;
+}
+
+button.select_rb_plan {
+    font-size: 0.8rem;
+    height: 36px;
+    width: 100%;
+    font-weight: 600;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background: #ffffff;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button.select_rb_plan.basic_btn {color: #464646; border: 1px solid #464646;}
+button.select_rb_plan.basic_btn:hover {color: #ffffff; background: #464646;}
+
+button.select_rb_plan.standard_btn {color: #8fc93a; border: 1px solid #8fc93a;}
+button.select_rb_plan.standard_btn:hover {color: #ffffff; background: #8fc93a;}
+
+button.select_rb_plan.premium_btn {color: #f26c4f; border: 1px solid #f26c4f;}
+button.select_rb_plan.premium_btn:hover {color: #ffffff; background: #f26c4f;}
+
+button.select_rb_plan.pro_btn {color: #00aeef; border: 1px solid #00aeef;}
+button.select_rb_plan.pro_btn:hover, button.select_rb_plan.pro_btn:focus {color: #ffffff; background: #00aeef;}
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = PRICING CONFIRMATION (STEP II) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.pricing_step_2_area {
+    height: auto;
+    padding-top: 85px;
+    margin-bottom: 55px;
+}
+
+.pricing_confirmation_ttl_holder {
+    min-height: 60px;
+    height: auto;
+    margin-bottom: 44px;
+}
+
+.pricing_confirmation_ttl_holder h3 {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 1.4rem;
+    color: #0d6ca8;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.confirmation_boxx {
+    position: relative;
+    padding-top: 12px;
+    height: 140px;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    background: #ffffff;
+    margin-bottom: 46px;
+
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+}
+
+h3.confirmation_ttl {
+    font-weight: 400;
+    font-size: 1.666rem;
+    text-align: left;
+}
+
+h3.confirmation_ttl span {font-weight: 700;}
+
+.pricingplan_boxx_conditions_holder_2 {
+    padding-top: 14px;
+    padding-left: 0;
+    height: auto;
+    width: 100%;
+}
+
+.back_to_pricing_plans_button_holder {
+    padding-top: 40px;
+}
+
+button.back_to_pricing_plans_btn {
+    float: right;
+    width: 50%;
+    height: 36px;
+    font-size: 0.8rem;
+    color: #0d6ca8;
+    border-radius: 5px;
+    border: 1px solid #0d6ca8;
+    background: #ffffff;
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+button.back_to_pricing_plans_btn:hover, button.back_to_pricing_plans_btn:focus {
+    background: #0d6ca8;
+    color: #ffffff;
+}
+
+.payment_cycle_selector_holder {
+    width: 30%;
+    margin-bottom: 60px;
+}
+
+.billing_notifier_box {
+    position: relative;
+    padding-top: 25px;
+    padding-right: 15px;
+    height: 75px;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    background: #ffffff;
+    margin-bottom: 6px;
+
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+}
+
+p.total_bill {
+    font-size: 1.2rem;
+    color: #464646;
+    text-align: left;
+}
+
+span#totalBill {color: #0d6ca8; font-weight: 700;}
+
+.proceed_to_payment_button_holder {
+    position: relative;
+}
+
+button.proceed_to_payment_btn {
+    position: relative;
+    top: -6px;
+    float: right;
+    width: 50%;
+    height: 36px;
+    font-size: 0.8rem;
+    color: #8fc93a;
+    border-radius: 5px;
+    border: 1px solid #8fc93a;
+    background: #ffffff;
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+button.proceed_to_payment_btn:hover, button.proceed_to_payment_btn:focus {
+    background: #8fc93a;
+    color: #ffffff;
+}
+
+.billing_checkbox_holder {
+    width: 100%;
+}
+
+a.termslinxx {color: #0d6ca8;}
+
+
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = PRICING CONFIRMATION (STEP III) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.pricing_step_3_area_title_holder {
+    margin-bottom: 36px;
+}
+
+.payment_boxx {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    min-height: 690px;
+    height: auto;
+    background: #f8f8f8;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding-top: 22px;
+    padding-bottom: 35px;
+}
+
+hr.invisible_hr {clear: both; visibility: hidden;}
+
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = PRICING CONFIRMATION (STEP III) (INNER) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.policy_area {
+    min-height: 603px;
+    height: auto;
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+
+.policy_area_title_holder {
+    margin-bottom: 45px;
+}
+
+h2.policy_area_ttl {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #0d6ca8;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+p.policy_paragraph_txt {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+p.policy_paragraph_txt a {
+    color: #0d6ca8;
+}
+
+ul.policy_txt_list {
+    padding-left: 32px;
+}
+
+ul.policy_txt_list li {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+ul.policy_txt_list li a {
+    color: #0d6ca8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

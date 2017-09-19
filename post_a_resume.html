@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
-    <title>Recruiterboss :: CONTACT</title>
+    <title>Recruiterboss :: POST A RESUME</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Google fonts -->
@@ -92,43 +92,78 @@
         <div class="container">
             <div class="row">
                 <div class="contact_area_title_holder center-block">
-                    <h2 class="contact_area_ttl">Contact Us</h2>
-                    <p class="support_info_txt">Our Customer Support is available at <a href="tel:1800-504-3220">1800-504-3220</a> <br class="invisible_break_2"> (Mon - Fri: 8:30AM - 5:30PM EST) </p>
+                    <h2 class="contact_area_ttl">Upload your video and/or standard resume</h2>
+                    <p class="mandatory_warning">All fields marked with <span>&ast;</span> are required</p>
                 </div>
                 <div class="contact_boxx_holder">
                     <div class="contact_boxx">
-                        <h3>Drop us a line</h3>
-                        <p class="mandatory_warning">All fields marked with <span>&ast;</span> are required</p>
-                        <form id="contactForm" class="contact_form" role="form">
+                        <form id="uploadResumeForm" class="upload_resume_form" role="form">
                             <div class="col-sm-6 form-group signup_form_group">
-                                <label for="firstName" class="sgnp_lbl">First Name<span class="asterisk">&ast;</span></label>
-                                <input id="firstName" type="text" class="signin_input">
+                                <label for="resumeName" class="sgnp_lbl">Name Your Resume<span class="asterisk">&ast;</span></label>
+                                <input id="resumeName" type="text" class="signin_input">
                             </div>
                             <div class="col-sm-6 form-group signup_form_group">
-                                <label for="lastName" class="sgnp_lbl">Last Name<span class="asterisk">&ast;</span></label>
-                                <input id="lastName" type="text" class="signin_input">
+                                <label for="jobTitle2" class="sgnp_lbl">Job Title<span class="asterisk">&ast;</span></label>
+                                <input id="jobTitle2" type="text" class="signin_input">
                             </div>
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="eMail" class="sgnp_lbl">Email<span class="asterisk">&ast;</span></label>
-                                <input id="eMail" type="email" class="signin_input">
+                            <div class="form-group postresume_form_group center-block">
+                                <div class="inner_uploader_box">
+                                    <label for="uploadVideoButton" class="sgnp_lbl">Select Video<span class="asterisk">&ast;</span></label>
+                                    <div class="ap_fileinputs_upld">
+                                        <input id="uploadVideoButton" type="file" class="ap_file_upld" />
+                                        <div class="ap_fakefile_upld">
+                                            <input type="button" value="BROWSE..." />
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="upload_warning">
+                                    Please make sure that the video you’re going to upload is made in accordance with our
+                                    video upload terms. Note that the video should be not longer than 2 minutes and not
+                                    shorter than 35 seconds. Any possible violation of terms may result by your account
+                                    ban or even elimination.
+                                </p>
                             </div>
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="phone" class="sgnp_lbl">Phone</label><span class="asterisk"></span>
-                                <input id="phone" type="text" class="signin_input">
+                            <hr class="boxx_hr">
+                            <div class="form-group postresume_form_group center-block">
+                                <div class="inner_uploader_box">
+                                    <label for="uploadDocButton" class="sgnp_lbl">Select Document<span class="asterisk">&ast;</span></label>
+                                    <div class="ap_fileinputs_upld">
+                                        <input id="uploadDocButton" type="file" class="ap_file_upld" />
+                                        <div class="ap_fakefile_upld">
+                                            <input type="button" value="BROWSE..." />
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="upload_warning">
+                                    Please upload the files in the appropriate format, which is <span>.doc</span> or <span>.pdf</span>
+                                </p>
                             </div>
-                            <div class="col-sm-12 form-group signup_form_group">
-                                <label for="yourMessage" class="sgnp_lbl">Your Message<span class="asterisk">&ast;</span></label>
-                                <textarea id="yourMessage" type="text" class="signin_input"></textarea>
+                            <hr class="boxx_hr">
+                            <div class="signin_checkbox_holder">
+                                <form action="#" class="rb_checkboxx_form">
+                                    <p>
+                                        <input class="t3t" type="checkbox" id="makeVisibleToEmployers" />
+                                        <label class="l3l l3l_secondary" for="makeVisibleToEmployers">Make visible to employers</label>
+                                    </p>
+                                </form>
                             </div>
-                            <div class="center-block submit_btn_holder_2">
-                                <button type="submit" id="signInBtn" class="btn signin_submit_btn">Send</button>
+                            <div class="signin_checkbox_holder">
+                                <form action="#" class="rb_checkboxx_form">
+                                    <p>
+                                        <input class="t3t" type="checkbox" id="agreedToTerms" />
+                                        <label class="l3l l3l_secondary" for="agreedToTerms">By checking this you agree to our <a href="#" class="upload_warning_linx">Terms</a></label>
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="center-block submit_btn_holder_3">
+                                <button type="submit" id="uploadResume" class="btn signin_submit_btn">Upload</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!-- Contact Area END -->
+    </div> <!-- Post a Resume Area END -->
 
     <div class="skewed_layer_support"></div> <!-- Invisible utility for supporting following skewed layout -->
 

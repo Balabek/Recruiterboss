@@ -176,6 +176,8 @@
 
 @media screen and (max-width: 430px){
     .rb_macbook {width: 390px;}
+
+    small.uppermost_user_info {font-size: 0.9rem; line-height: 2;}
 }
 
 @media screen and (max-width: 414px){
@@ -1626,4 +1628,356 @@
     .postings_toolbox_2 {float: none !important;}
     a.add_new_resume_button {top: -22px;}
 }
+
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* SEARCH FOR JOB (JOB SEEKER) */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Search For Job Page ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    .search_for_job_upper_part {min-height: 580px; margin-bottom: 26px;}
+
+    .search_reults_area_2 {padding-left: 12px; padding-right: 12px;}
+}
+
+
+
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* UPLOAD RESUME (JOB SEEKER) */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- Upload a Resume Box ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    .submit_btn_holder_3 {padding-top: 36px;}
+}
+
+@media screen and (max-width: 636px){
+    .inner_uploader_box {width: 45%;}
+    .submit_btn_holder_3 {width: 45%;}
+}
+
+@media screen and (max-width: 425px){
+    .inner_uploader_box {width: 55%;}
+    .submit_btn_holder_3 {width: 55%;}
+}
+
+@media screen and (max-width: 380px){
+    .inner_uploader_box {width: 65%;}
+    .submit_btn_holder_3 {width: 65%;}
+}
+
+@media screen and (max-width: 340px){
+    .inner_uploader_box {width: 75%;}
+    .submit_btn_holder_3 {width: 75%;}
+}
+
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* MY RESUMES (JOB SEEKER) */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- My Resumes Box ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .standard_resume_holder {width: 22%;}
+    .manage_resumes_btn_holder {width: 35%;}
+}
+
+@media screen and (max-width: 767px){
+    .videothumb_holder {width: 100%; margin-bottom: 50px;}
+    .standard_resume_holder {display: inline-block;}
+}
+
+@media screen and (max-width: 663px){
+    .standard_resume_holder {width: 21%; padding-left: 0;}
+}
+
+@media screen and (max-width: 603px){
+    .standard_resume_holder {width: 45%; padding-left: 36px;}
+    a.standard_resume {width: 180px; height: 180px;}
+    .manage_resumes_btn_holder {margin-top: 50px;}
+}
+
+@media screen and (max-width: 499px){
+    a.standard_resume {width: 135px; height: 135px;}
+    .manage_resumes_btn_holder {width: 60%;}
+}
+
+@media screen and (max-width: 415px){
+    .standard_resume_holder {padding-left: 16px;}
+}
+
+@media screen and (max-width: 400px){
+    .standard_resume_holder {width: 100%; padding-left: 48px; padding-right: 16px;}
+    a.standard_resume {width: 230px; height: 230px;}
+}
+
+@media screen and (max-width: 388px){
+    .standard_resume_holder {padding-left: 44px;}
+    .manage_resumes_btn_holder {width: 80%;}
+}
+
+@media screen and (max-width: 360px){
+    .standard_resume_holder {padding-left: 28px;}
+}
+
+@media screen and (max-width: 330px){
+    .standard_resume_holder {padding-left: 16px;}
+}
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* PRICING PLANS */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* --------  Pricing Plans Box ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .pricingplan_boxx_conditions_holder {padding-left: 12px;}
+}
+
+@media screen and (max-width: 767px){
+    .pricingplan_boxx {width: 49.3%; margin-bottom: 36px;}
+}
+
+@media screen and (max-width: 702px){
+    .pricingplan_boxx {width: 48.8%;}
+}
+
+@media screen and (max-width: 499px){
+    .pricing_plans_main_holder {padding-left: 12px; padding-right: 8px;}
+    .pricingplan_boxx {width: 98.8%;}
+
+}
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* PRICING STEP 2 */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* --------  Pricing Step 2 ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .payment_cycle_selector_holder {width: 42%;}
+
+    button.back_to_pricing_plans_btn {width: 75%;}
+    button.proceed_to_payment_btn {width: 75%;}
+}
+
+@media screen and (max-width: 767px){
+    .pricing_step_2_area {padding-left: 14px; padding-right: 14px;}
+    .confirmation_boxx {min-height: 225px; height: auto;}
+    .billing_notifier_box {min-height: 145px; height: auto;}
+
+    button.back_to_pricing_plans_btn {float: none;}
+    button.proceed_to_payment_btn {float: none;}
+
+    p.total_bill {margin-bottom: 40px;}
+
+    .payment_cycle_selector_holder {width: 52%;}
+
+    button.back_to_pricing_plans_btn {width: 40%;}
+    button.proceed_to_payment_btn {width: 40%;}
+}
+
+@media screen and (max-width: 505px){
+    .payment_cycle_selector_holder {width: 60%;}
+
+    button.back_to_pricing_plans_btn {width: 55%;}
+    button.proceed_to_payment_btn {width: 55%;}
+}
+
+@media screen and (max-width: 420px){
+    .confirmation_boxx {padding-bottom: 22px;}
+    .billing_notifier_box {padding-bottom: 22px;}
+}
+
+@media screen and (max-width: 386px){
+    .payment_cycle_selector_holder {width: 100%;}
+
+    button.back_to_pricing_plans_btn {width: 75%;}
+    button.proceed_to_payment_btn {width: 75%;}
+}
+
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* PRICING STEP 3 */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* --------  Payment Details Box ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .payment_boxx {width: 96%;}
+}
+
+
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* TEXTUAL PAGES */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    .policy_txt_main_holder {padding-left: 22px; padding-right: 22px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
