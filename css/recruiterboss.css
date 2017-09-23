@@ -14,7 +14,23 @@
 
 /* ------ GENERAL ------ */
 
-html {font-size: 14px;}
+html {
+    font-size: 14px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    height: 100%;
+    max-width: 100%;
+}
+
+.main {
+    width: 100%;
+    /*overflow-x: hidden;*/
+}
 
 a:focus, button:focus {
     outline: none !important;
@@ -27,18 +43,6 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
     outline: 0 none;
 }
 
-body {
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    height: 100%;
-    max-width: 100%;
-}
-
-.main {
-    width: 100%;
-    overflow-x: hidden;
-}
-
 .uppermost_navbar {
     position: relative;
     top: 0;
@@ -49,6 +53,8 @@ body {
     border-radius: 0;
     padding: 14px 24px;
 }
+
+/*.navbar-default .navbar-brand {position: relative; z-index: 3;}*/
 
 .navbar-default .navbar-toggle {
     -webkit-transition: all 0.3s ease-in;
@@ -174,7 +180,9 @@ ul.dropdown-menu {
 
 
 img.rb_main_logo {
-    width: 50%;
+    position: relative;
+    top: -10px;
+    width: 60%;
 }
 
 img.rb_main_logo_cropped {
@@ -991,7 +999,7 @@ hr.section_hr {
     color: #363636;
     font-weight: 400;
     text-align: left;
-    line-height: 2.2;
+    line-height: 1.7;
 }
 
 a.charity_learnmore_btn {
@@ -1292,6 +1300,11 @@ ul.rb_navstripe_inner li a:hover, ul.rb_navstripe_inner li a:focus {
     top: -17px;
 }
 
+#rb_bcollapse_logged_in {
+    position: relative;
+    top: 27px;
+}
+
 nav.rb_navigation_inner {
     width: 100%;
     margin-bottom: 0;
@@ -1337,7 +1350,7 @@ img.rb_main_logo_inner {
 .about_info_box p {
     font-size: 1rem;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     color: #363636;
     line-height: 1.8;
 }
@@ -2003,15 +2016,16 @@ span.calendarr {
     background-size: contain;
 }
 
-button.job_preview_btn {
+a.job_preview_btn {
     margin-top: 22px;
     font-size: 0.686rem;
     font-weight: 600;
     letter-spacing: 2px;
+    line-height: 1.8;
     width: 100%;
     height: 30px;
     background: transparent;
-    color: #0d6ca8;
+    color: #0d6ca8 !important;
     border: 1px solid #0d6ca8;
     text-transform: uppercase;
     /*-webkit-filter: drop-shadow(2px 2px 3px #dddddd);*/
@@ -2024,9 +2038,9 @@ button.job_preview_btn {
     transition: all 0.3s linear;
 }
 
-button.job_preview_btn:hover, button.job_preview_btn:focus {
+a.job_preview_btn:hover, a.job_preview_btn:focus {
     background: #0d6ca8;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .postajob_form_group {
@@ -2932,6 +2946,28 @@ span.badge_keyword {
     padding-bottom: 35px;
     padding-left: 22px;
     padding-right: 22px;
+    margin-bottom: 24px;
+}
+
+.opt_out_boxx {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 92%;
+    min-height: 220px;
+    height: auto;
+    background: #f8f8f8;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding-top: 32px;
+    padding-bottom: 35px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-bottom: 45px;
+}
+
+.optout_form_group {
+    padding-left: 0;
 }
 
 h2.account_settings_ttl {
@@ -2974,9 +3010,43 @@ button.btn-savechanges_btn {
     transition: all 0.3s ease;
 }
 
-button.btn-savechanges_btn:hover {
+button.btn-savechanges_btn:hover, button.btn-savechanges_btn:focus {
     color: #ffffff;
     background: #83D6DE;
+}
+
+.optout_checkbox_holder {
+    width: 100%;
+    margin-top: 4px;
+}
+
+.optout_button_holder {
+    padding-top: 22px;
+    padding-right: 0;
+}
+
+button.optout_btn {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #e16846;
+    height: 44px;
+    width: 50%;
+    /*text-transform: uppercase;*/
+    border-radius: 5px;
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+button.optout_btn:hover, button.optout_btn:focus {
+    color: #ffffff;
+    background: #af5237;
 }
 
 .avatar_and_main_info_holder {
@@ -5125,6 +5195,73 @@ ul.policy_txt_list li a {
 }
 
 
+label.l4l {
+    font-weight: 400;
+    line-height: 2.6;
+    font-size: 0.8rem;
+    color: #888;
+    text-indent: 8px;
+}
+
+/* Base for label styling */
+input.t4t[type="checkbox"]:not(:checked),
+input.t4t[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+input.t4t[type="checkbox"]:not(:checked) + label,
+input.t4t[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+/* checkbox aspect */
+input.t4t:not(:checked) + label:before,
+input.t4t:checked + label:before {
+    content: '';
+    position: absolute;
+    left:0; top: 2px;
+    width: 22px; height: 22px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+    border-radius: 3px;
+}
+/* checked mark aspect */
+input.t4t:not(:checked) + label:after,
+input.t4t:checked + label:after {
+    font-family: "FontAwesome";
+    content: '\f00c';
+    position: absolute;
+    top: 6px;
+    left: -6px;
+    font-size: 18px;
+    line-height: 0.8;
+    color: #e16846;
+    transition: all .2s;
+}
+/* checked mark aspect changes */
+input.t4t:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+input.t4t:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+/* disabled checkbox */
+input.t3t:disabled:not(:checked) + label:before,
+input.t3t:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+}
+input.t3t:disabled:checked + label:after {
+    color: #999;
+}
+input.t3t:disabled + label {
+    color: #aaa;
+}
 
 
 
@@ -5133,13 +5270,184 @@ ul.policy_txt_list li a {
 
 
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = POST A JOB PREVIEW MODAL = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.modal-dialog.rb_previewmodal {
+    position: relative;
+    top: 5%;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    width: 70%;
+    border-radius: 6px;
+}
 
 
+.preview_document {
+    min-height: 500px;
+    height: auto;
+    background: #ffffff;
+}
+
+.job_preview_main {
+    padding: 28px 18px 32px 18px;
+}
 
 
+.job_dtlz_leftside_mainbox_preview {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    min-height: 690px;
+    height: auto;
+    background: #f8f8f8;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding: 36px 14px 36px 14px;
+    margin-bottom: 55px;
+}
+
+.job_info_box_preview h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000000;
+    text-align: left;
+}
+
+.job_info_box_preview p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #888888;
+    text-align: left;
+    margin-bottom: 46px;
+}
 
 
+.job_dtlz_location_and_companysize_box_preview i {
+    font-size: 1.3rem;
+    color: #0d6ca8;
+    margin-right: 9px;
+    float: left;
+}
 
+p.loc_ttl_preview {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: left;
+    color: #888888;
+    margin-bottom: 20px;
+}
+
+.job_dtlz_comapny_logo_accomodator_preview {
+    padding-right: 18px;
+}
+
+.job_dtlz_company_logo_preview {
+    position: relative;
+    right: 14px;
+    display: block;
+    width: 175px;
+    height: 175px;
+    border-radius: 4px;
+}
+
+hr.job_dtlz_hr_preview {
+    clear: both;
+    display: block;
+    margin-top: 40px;
+}
+
+h4.job_dtlz_subttl_preview {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 1.343rem;
+    text-align: left;
+    color: #0d6ca8;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.job_description_subsection_preview p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    line-height: 1.6;
+}
+
+ul.job_dtlz_primary_responsibility_points_preview {
+    padding-left: 18px;
+}
+
+ul.job_dtlz_primary_responsibility_points_preview li {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.job_dtlz_double_btns_holder_preview {
+    display: block;
+    text-align: center;
+    padding-top: 22px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+button.apply_for_da_job_preview {
+    width: 100%;
+    height: 44px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background: #8fc93a;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+button.apply_for_da_job_preview:hover {
+    background: #83D6DE;
+    color: #ffffff;
+}
+
+
+button.close_this_window_preview {
+    width: 100%;
+    height: 32px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    background: #ffffff;
+    color: #999999;
+    border: 1px solid #999999;
+    text-transform: uppercase;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+button.close_this_window_preview:hover {
+    background: #999999;
+    color: #ffffff;
+}
 
 
 

@@ -12,6 +12,10 @@
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 
 /* >>>>> LG/XL <<<<< */
+@media screen and (min-width: 1600px){
+    #rb_bcollapse_1 {position: relative; top: 45px;}
+    #rb_bcollapse_2 {top: 30px;}
+}
 
 
 /* >>>>> SM/XS <<<<< */
@@ -51,6 +55,21 @@
 
 
 
+@media screen and (max-width: 767px){
+    #rb_bcollapse_logged_in {
+        position: absolute;
+        top: 52px;
+        left: 0;
+        width: 100%;
+        margin-top: 46px;
+        background: rgba(54, 54, 54, 0.9);
+        border-top: 2px solid #8fc93a;
+        padding-bottom: 6px;
+        padding-top: 6px;
+    }
+}
+
+
 
 
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
@@ -60,6 +79,14 @@
 
 
 /* >>>>> SM/XS <<<<< */
+@media screen and (max-width: 1269px){
+    img.rb_main_logo {width: 54%; top: -2px;}
+}
+
+@media screen and (max-width: 1220px){
+    img.rb_main_logo {width: 52%; top: 0;}
+}
+
 @media screen and (max-width: 1199px){
     img.rb_main_logo {width: 35%;}
     .rb_navstripe {position: relative; top: -20px;}
@@ -1214,12 +1241,22 @@
 @media screen and (max-width: 991px){
     .avatar_uploader_holder_outer {width: 40%; margin-left: 45px;}
     .savechanges_btn_holder {width: 25%;}
+    button.optout_btn {width: 84%;}
 }
 
 @media screen and (max-width: 767px){
     .avatar_uploader_holder_outer {width: 40%; margin-left: 0; margin-top: 20px;}
     fieldset.riteside_fld {padding-left: 0; padding-right: 0;}
     fieldset.lefside_fld {padding-left: 0; padding-right: 0;}
+
+    .optout_button_holder {padding-left: 0;}
+    button.optout_btn {width: 40%; float: none !important;}
+}
+
+@media screen and (max-width: 580px){
+    label.l4l {padding-left: 36px !important; text-indent: 0; line-height: 1.4;}
+    label.l4l::after {position: absolute !important; left: 2px !important;}
+    input.t4t:not(:checked) + label:after, input.t4t:checked + label:after {font-size: 23px;}
 }
 
 @media screen and (max-width: 540px){
@@ -1235,6 +1272,8 @@
     h2.account_settings_ttl {float: none; clear: both;}
     .savechanges_btn_holder {float: none !important; width: 50%;}
     .btn-savechanges_btn {clear: both !important; float: left !important;}
+
+    button.optout_btn {width: 55%; float: none !important;}
 }
 
 @media screen and (max-width: 370px){
@@ -1243,6 +1282,8 @@
     h2.account_settings_ttl {float: none; clear: both;}
     .savechanges_btn_holder {float: none !important; width: 60%;}
     .btn-savechanges_btn {clear: both !important; float: left !important;}
+
+    button.optout_btn {width: 69%;}
 }
 
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
-    <title>Recruiterboss :: ACCOUNT SETTINGS</title>
+    <title>Recruiterboss :: ACCOUNT SETTINGS (JOBSEEKER)</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Google fonts -->
@@ -31,13 +31,13 @@
     <!-- Appears on top of the page only when user is authorized (logged into the system) -->
     <div class="uppermost_navbar animated fadeInUp">
         <a href="#" class="btn-link signout_btn">Sign Out</a>
-        <small class="uppermost_user_info">Signed in as <span>James</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>
+        <small class="uppermost_user_info">Signed in as <span>Samantha</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>
     </div>
 
     <nav class="navbar navbar-default rb_navigation_inner">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#rb_bcollapse_2" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#rb_bcollapse_logged_in" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -50,36 +50,10 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="rb_bcollapse_2">
+        <div class="collapse navbar-collapse" id="rb_bcollapse_logged_in">
             <ul class="nav navbar-nav rb_navstripe_inner navbar-right animated bounceInLeft">
-                <li class="dropdown">
-                    <a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
-                    <ul class="dropdown-menu animated fadeIn">
-                        <li>
-                            <a class="dropdown-item" href="#">Sign In</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Sign Up</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jobseekers <span class="caret"></span></a>
-                    <ul class="dropdown-menu animated fadeIn">
-                        <li>
-                            <a class="dropdown-item" href="#">Sign In</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Sign Up</a>
-                        </li>
-                    </ul>
-                </li>
-
                 <li>
-                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Resume</a>
-                </li>
-                <li>
-                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Video Resume</a>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Search Resume</a>
                 </li>
                 <li>
                     <a class="rb_hexagon_button white hvr-shrink navbarhex" href="#">Post Your Job</a>
@@ -103,7 +77,7 @@
                         <div class="avatar_and_main_info_holder">
                             <div class="avatar_holder">
                                 <div class="col-sm-2 rb_avatar_holder">
-                                    <div class="rb_avatar" style="background: url('img/fakelogo.png') center center no-repeat; background-size: cover;"></div>
+                                    <div class="rb_avatar" style="background: url('img/user_bulk_ant.jpg') center center no-repeat; background-size: cover;"></div>
                                 </div>
                                 <div class="col-sm-3 avatar_uploader_holder_outer">
                                     <div class="avatar_uploader_holder_inner">
@@ -128,53 +102,63 @@
                             <form id="accountSettingsForm" class="account_settings_form" role="form">
                                 <fieldset class="col-sm-6 lefside_fld">
                                     <div class="form-group signup_form_group">
-                                        <label for="myName" class="sgnp_lbl">Name</label>
-                                        <input id="myName" type="text" class="signin_input" value="James Goldsmith">
+                                        <label for="jobseekerName" class="sgnp_lbl">Name</label>
+                                        <input id="jobseekerName" type="text" class="signin_input" value="Samantha Myers">
                                     </div>
                                     <div class="form-group signup_form_group">
-                                        <label for="myCompanyName" class="sgnp_lbl">Company Name</label>
-                                        <input id="myCompanyName" type="text" class="signin_input" value="Pleasurekraft Technologies Inc.">
+                                        <label for="myGrade" class="sgnp_lbl">Grade</label>
+                                        <select id="myGrade" type="text">
+                                            <option>Sucker</option>
+                                            <option selected>Bachelor</option>
+                                            <option>Master</option>
+                                            <option>PhD</option>
+                                            <option>Guru</option>
+                                            <option>Braniac</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group signup_form_group">
+                                        <label for="relocationAvailability" class="sgnp_lbl">Relocation</label>
+                                        <select id="relocationAvailability" type="text">
+                                            <option>Available</option>
+                                            <option selected>Unavailable</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group signup_form_group">
+                                        <label for="xperienceYearz2" class="sgnp_lbl">Experience</label>
+                                        <select id="xperienceYearz2" type="text">
+                                            <option>5+ Years</option>
+                                            <option selected>10+ Years</option>
+                                            <option>15+ Years</option>
+                                            <option>20+ Years</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group signup_form_group">
+                                        <label for="travelAvailability" class="sgnp_lbl">Travel</label>
+                                        <select id="travelAvailability" type="text">
+                                            <option>10%</option>
+                                            <option>20%</option>
+                                            <option>30%</option>
+                                            <option>40%</option>
+                                            <option>50%</option>
+                                            <option>60%</option>
+                                            <option>70%</option>
+                                        </select>
                                     </div>
                                     <div class="form-group signup_form_group">
                                         <label for="myEmail" class="sgnp_lbl">Email</label>
-                                        <input id="myEmail" type="text" class="signin_input" value="james.goldsmith@yahoo.com">
-                                    </div>
-                                    <div class="form-group signup_form_group">
-                                        <label for="myAddress" class="sgnp_lbl">Address</label>
-                                        <input id="myAddress" type="text" class="signin_input" value="31 Main Gate Dr. 400, Office 400B">
+                                        <input id="myEmail" type="text" class="signin_input" value="sammy_myers87@gmail.com">
                                     </div>
                                     <div class="form-group signup_form_group">
                                         <label for="myPhone" class="sgnp_lbl">Phone</label>
                                         <input id="myPhone" type="text" class="signin_input" value="+1(718)990-500-120">
                                     </div>
-                                    <div class="form-group signup_form_group">
-                                        <label for="myWebsite" class="sgnp_lbl">Website</label>
-                                        <input id="myWebsite" type="text" class="signin_input" value="www.pleasurekraft.com">
-                                    </div>
-                                    <div class="form-group signup_form_group">
-                                        <label for="myCompanySize" class="sgnp_lbl">Company Size</label>
-                                        <select id="myCompanySize" type="text">
-                                            <option>2 - 5 Employees</option>
-                                            <option>5 - 10 Employees</option>
-                                            <option>15 - 30 Employees</option>
-                                            <option>30 - 70 Employees</option>
-                                            <option>70 - 150 Employees</option>
-                                            <option>200+ Employees</option>
-                                            <option>500+ Employees</option>
-                                            <option>1k+ Employees</option>
-                                            <option>2k+ Employees</option>
-                                            <option selected>5k+ Employees</option>
-                                            <option>10k+ Employees</option>
-                                            <option>20k+ Employees</option>
-                                            <option>30k+ Employees</option>
-                                        </select>
-                                    </div>
+
                                 </fieldset>
                                 <fieldset class="col-sm-6 riteside_fld">
                                     <div class="form-group signup_form_group">
-                                        <label for="myDetailz" class="sgnp_lbl">Company Details</label>
-                                        <textarea id="myDetailz" class="signin_input_2">
-I run a small startup company called Pleasurekraft, which is oriented at developing entertainment applications for both iOS and Android. We are rapidly growing company and we currently need to hire a lot of personnel for various postions - from bulldozer driver to artificial intelligence developer.
+                                        <label for="myBio" class="sgnp_lbl">Bio</label>
+                                        <textarea id="myBio" class="signin_input_2">
+My name is Samantha, I'm a Senior iOS Developer and X-Code enthusiast based in Tampa, Florida. Looking for a remote job possibilities.
                                         </textarea>
                                     </div>
                                 </fieldset>
@@ -204,9 +188,29 @@ I run a small startup company called Pleasurekraft, which is oriented at develop
                         </div>
                     </div>
                 </div>
+                <div class="opt_out_boxx">
+                    <h3 class="subsection_ttl">Email Notifications</h3>
+                    <form id="optOutForm" class="rb_optout_form" role="form">
+                        <div class="col-sm-8 form-group optout_form_group">
+                            <label for="myEmailForOptOut" class="sgnp_lbl">Email</label>
+                            <input id="myEmailForOptOut" type="text" class="signin_input" value="sammy_myers87@gmail.com">
+                            <div class="optout_checkbox_holder">
+                                <form action="#" class="rb_checkboxx_form">
+                                    <p>
+                                        <input class="t4t" type="checkbox" id="optOutCheck" />
+                                        <label class="l4l" for="optOutCheck"> I opt-out of receiving promotional e-mails or newsletters from Recruiterboss, LLC. </label>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 form-group optout_button_holder">
+                            <button id="optMeOut" type="submit" class="btn optout_btn pull-right">Opt Me Out Now!</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div> <!-- Contact Area END -->
+    </div> <!-- Account Settings Area END -->
 
     <div class="skewed_layer_support litegrey"></div> <!-- Invisible utility for supporting following skewed layout -->
 
@@ -282,7 +286,7 @@ I run a small startup company called Pleasurekraft, which is oriented at develop
 <script type="text/javascript" src="js/recruiterboss.js"></script>
 <script src="js/select2.full.js"></script>
 <script>
-    $('#myCompanySize').select2({
+    $('#myGrade, #relocationAvailability, #xperienceYearz2, #travelAvailability').select2({
         width: '100%',
         minimumResultsForSearch: -1
     });

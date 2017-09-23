@@ -29,6 +29,65 @@
 </head>
 <body>
 
+<!-- Job Preview Modal -->
+<!-- The modal is empty: should be filled in with the info brought from the 'Post a Job' input fields -->
+<div class="modal fade" id="jobPreviewModalDialog" tabindex="-1" role="dialog" aria-labelledby="jobPreviewModalDialog">
+    <div class="modal-dialog rb_previewmodal" role="document">
+        <div class="modal-body job_preview_modal_midmain">
+            <div class="preview_document">
+                <div class="job_preview_main">
+                    <div class="leftside_mainbox_uppermost">
+                        <div class="col-sm-9 job_info_box_preview">
+                            <h3 id="jobTitlePreview"></h3>
+                            <p>Supersonic Systems Inc.</p>
+                            <section class="job_dtlz_location_and_companysize_box_preview">
+                                <i class="fa fa-map-pin"></i>
+                                <p class="loc_ttl_preview">Glendale, CA</p>
+                            </section>
+                            <section class="job_dtlz_location_and_companysize_box_preview">
+                                <i class="fa fa-building-o"></i>
+                                <p class="loc_ttl_preview">200+ Employees</p>
+                            </section>
+                        </div>
+                        <div class="col-sm-3 job_dtlz_comapny_logo_accomodator_preview">
+                            <div class="job_dtlz_company_logo_preview" style="background: url('img/default_logo_preview.jpg') center center no-repeat; background-size: cover;"></div>
+                        </div>
+                    </div>
+                    <hr class="job_dtlz_hr_preview">
+                    <div class="job_description_subsection_preview">
+                        <h4 class="job_dtlz_subttl_preview">Summary</h4>
+                        <p id="jobSummaryPreview"></p>
+                    </div>
+                    <hr class="job_dtlz_hr_preview">
+                    <div class="job_description_subsection_preview">
+                        <h4 class="job_dtlz_subttl_preview">Job Description</h4>
+                        <p id="jobDescriptionPreview"></p>
+                    </div>
+                    <hr class="job_dtlz_hr_preview">
+                    <div class="job_description_subsection_preview">
+                        <h4 class="job_dtlz_subttl_preview">Primary Responsibilities</h4>
+                        <ul id="primaryResponsibilitiesPreview" class="job_dtlz_primary_responsibility_points_preview">
+
+                        </ul>
+                    </div>
+                    <hr class="job_dtlz_hr_preview">
+                    <div class="job_description_subsection_preview">
+                        <h4 class="job_dtlz_subttl">Skills & Expertise</h4>
+                        <ul class="job_dtlz_primary_responsibility_points_preview">
+
+                        </ul>
+                    </div>
+                    <hr class="job_dtlz_hr_preview">
+                    <div class="job_dtlz_double_btns_holder_preview">
+                        <button id="applyForJob" class="btn apply_for_da_job_preview">Post this job</button>
+                        <button id="saveThisJob" class="btn close_this_window_preview" data-dismiss="modal">Close window</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- Job Preview Modal END -->
+
 <div id="main" class="main">
 
     <!-- Appears on top of the page only when user is authorized (logged into the system) -->
@@ -40,7 +99,7 @@
     <nav class="navbar navbar-default rb_navigation_inner">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#rb_bcollapse_2" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#rb_bcollapse_logged_in" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -53,36 +112,36 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="rb_bcollapse_2">
+        <div class="collapse navbar-collapse" id="rb_bcollapse_logged_in">
             <ul class="nav navbar-nav rb_navstripe_inner navbar-right animated bounceInLeft">
-                <li class="dropdown">
-                    <a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
-                    <ul class="dropdown-menu animated fadeIn">
-                        <li>
-                            <a class="dropdown-item" href="#">Sign In</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Sign Up</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jobseekers <span class="caret"></span></a>
-                    <ul class="dropdown-menu animated fadeIn">
-                        <li>
-                            <a class="dropdown-item" href="#">Sign In</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Sign Up</a>
-                        </li>
-                    </ul>
-                </li>
+                <!--<li class="dropdown">-->
+                    <!--<a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu animated fadeIn">-->
+                        <!--<li>-->
+                            <!--<a class="dropdown-item" href="#">Sign In</a>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<a class="dropdown-item" href="#">Sign Up</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="#" class="standard_linx dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jobseekers <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu animated fadeIn">-->
+                        <!--<li>-->
+                            <!--<a class="dropdown-item" href="#">Sign In</a>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<a class="dropdown-item" href="#">Sign Up</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</li>-->
 
+                <!--<li>-->
+                    <!--<a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Resume</a>-->
+                <!--</li>-->
                 <li>
-                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Resume</a>
-                </li>
-                <li>
-                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Video Resume</a>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Search Resume</a>
                 </li>
                 <li>
                     <a class="rb_hexagon_button white hvr-shrink navbarhex" href="#">Post Your Job</a>
@@ -239,7 +298,7 @@
                             </div>
 
                             <div class="center-block submit_btn_holder_3">
-                                <button id="jobPreview" class="btn job_preview_btn">Preview</button>
+                                <a id="jobPreview" class="btn job_preview_btn" data-toggle="modal" data-target="#jobPreviewModalDialog">Preview</a>
                             </div>
                             <div class="center-block submit_btn_holder_2">
                                 <button type="submit" id="postDaJob" class="btn signin_submit_btn">Submit</button>
@@ -249,7 +308,7 @@
                 </div>
             </div>
         </div>
-    </div> <!-- Contact Area END -->
+    </div> <!-- Post a Job Area END -->
 
     <div class="skewed_layer_support"></div> <!-- Invisible utility for supporting following skewed layout -->
 
