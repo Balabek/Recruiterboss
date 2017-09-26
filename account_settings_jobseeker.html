@@ -53,10 +53,10 @@
         <div class="collapse navbar-collapse" id="rb_bcollapse_logged_in">
             <ul class="nav navbar-nav rb_navstripe_inner navbar-right animated bounceInLeft">
                 <li>
-                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Search Resume</a>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Search Job</a>
                 </li>
                 <li>
-                    <a class="rb_hexagon_button white hvr-shrink navbarhex" href="#">Post Your Job</a>
+                    <a class="rb_hexagon_button white hvr-shrink navbarhex" href="#">Post Resume</a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -108,12 +108,15 @@
                                     <div class="form-group signup_form_group">
                                         <label for="myGrade" class="sgnp_lbl">Grade</label>
                                         <select id="myGrade" type="text">
-                                            <option>Sucker</option>
-                                            <option selected>Bachelor</option>
-                                            <option>Master</option>
-                                            <option>PhD</option>
-                                            <option>Guru</option>
-                                            <option>Braniac</option>
+                                            <option>Some High School</option>
+                                            <option>High School or Equivalent </option>
+                                            <option>Vocational</option>
+                                            <option>Certification</option>
+                                            <option>Some College</option>
+                                            <option>Associates Degree</option>
+                                            <option selected>Bachelor's Degree</option>
+                                            <option>Doctorate</option>
+                                            <option>Professional</option>
                                         </select>
                                     </div>
                                     <div class="form-group signup_form_group">
@@ -143,6 +146,23 @@
                                             <option>60%</option>
                                             <option>70%</option>
                                         </select>
+                                    </div>
+                                    <div class="form-group signup_form_group">
+                                        <label for="authorization" class="sgnp_lbl">Authorization</label>
+                                        <select id="authorization" type="text">
+                                            <option selected>US Citizen</option>
+                                            <option>H-1B Visa</option>
+                                            <option>O-1 Visa</option>
+                                            <option>Stateless</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group signup_form_group">
+                                        <label for="currentJob" class="sgnp_lbl">Current Job (if any)</label>
+                                        <input id="currentJob" type="text" class="signin_input" value="Freelancer">
+                                    </div>
+                                    <div class="form-group signup_form_group">
+                                        <label for="jobseekerLocation" class="sgnp_lbl">Current Location</label>
+                                        <input id="jobseekerLocation" type="text" class="signin_input" value="Tampa (FL)">
                                     </div>
                                     <div class="form-group signup_form_group">
                                         <label for="myEmail" class="sgnp_lbl">Email</label>
@@ -286,7 +306,7 @@ My name is Samantha, I'm a Senior iOS Developer and X-Code enthusiast based in T
 <script type="text/javascript" src="js/recruiterboss.js"></script>
 <script src="js/select2.full.js"></script>
 <script>
-    $('#myGrade, #relocationAvailability, #xperienceYearz2, #travelAvailability').select2({
+    $('#myGrade, #relocationAvailability, #xperienceYearz2, #travelAvailability, #authorization').select2({
         width: '100%',
         minimumResultsForSearch: -1
     });

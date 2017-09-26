@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
-    <title>Recruiterboss :: POST A RESUME</title>
+    <title>Recruiterboss :: PROFILE (JOBSEEKER)</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Google fonts -->
@@ -62,84 +62,92 @@
         </div><!-- /.navbar-collapse -->
     </nav>
 
-    <div class="post_a_job_area">
+    <div class="profile_area">
         <div class="container">
             <div class="row">
-                <div class="contact_area_title_holder center-block">
-                    <h2 class="contact_area_ttl">Upload your video and/or standard resume</h2>
-                    <p class="mandatory_warning">All fields marked with <span>&ast;</span> are required</p>
-                </div>
-                <div class="contact_boxx_holder">
-                    <div class="contact_boxx">
-                        <form id="uploadResumeForm" class="upload_resume_form" role="form">
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="resumeName" class="sgnp_lbl">Name Your Resume<span class="asterisk">&ast;</span></label>
-                                <input id="resumeName" type="text" class="signin_input">
+                <div class="account_settings_boxx_holder">
+                    <div class="account_settings_boxx">
+                        <div class="uppermost_part">
+                            <h2 class="account_settings_ttl">Profile</h2>
+                            <!-- >>>>>>> The button can be visible if the Profile page is visited by its owner; <<<<<<< -->
+                            <div class="savechanges_btn_holder pull-right">
+                                <button id="editDetailz" type="submit" class="btn btn-savechanges_btn pull-right">Edit Details</button>
                             </div>
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="jobTitle2" class="sgnp_lbl">Job Title<span class="asterisk">&ast;</span></label>
-                                <input id="jobTitle2" type="text" class="signin_input">
-                            </div>
-                            <div class="form-group postresume_form_group center-block">
-                                <div class="inner_uploader_box">
-                                    <label for="uploadVideoButton" class="sgnp_lbl">Select Video<span class="asterisk">&ast;</span></label>
-                                    <div class="ap_fileinputs_upld">
-                                        <input id="uploadVideoButton" type="file" class="ap_file_upld" />
-                                        <div class="ap_fakefile_upld">
-                                            <input type="button" value="BROWSE..." />
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="avatar_and_main_info_holder">
+                            <div class="avatar_holder">
+                                <div class="col-sm-2 rb_avatar_holder">
+                                    <div class="rb_avatar" style="background: url('img/user_bulk_ant.jpg') center center no-repeat; background-size: cover;"></div>
                                 </div>
-                                <p class="upload_warning">
-                                    Please make sure that the video you’re going to upload is made in accordance with our
-                                    video upload terms. Note that the video should be not longer than 2 minutes and not
-                                    shorter than 35 seconds. Any possible violation of terms may result by your account
-                                    ban or even elimination.
+                                <div class="col-md-4 col-sm-5 profile_secondary_detailboxx">
+                                    <h6 id="profileName" class="profile_name">Samantha Myers</h6>
+                                    <p class="profile_secondary_dtlz"><span>Degree:</span> Bachelor</p>
+                                    <p class="profile_secondary_dtlz"><span>Experience:</span> 10+ Years</p>
+                                    <p class="profile_secondary_dtlz"><span>Relocation:</span> Unavailable</p>
+                                </div>
+                                <div class="col-md-4 col-sm-5 profile_secondary_detailboxx">
+                                    <p class="profile_secondary_dtlz"><span>Email:</span> sammy_myers77@gmail.com</p>
+                                    <p class="profile_secondary_dtlz"><span>Location:</span> Tampa (FL)</p>
+                                    <p class="profile_secondary_dtlz"><span>Current Job:</span> Freelancer</p>
+                                    <p class="profile_secondary_dtlz"><span>Authorization:</span> US Citizen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account_settings_midmain_holder">
+                            <div class="profile_bio_description_holder col-sm-12">
+                                <h3 class="subsection_ttl">Main details</h3>
+                                <p class="profile_bio_description">
+                                    Excitavit hic ardor milites per municipia plurima, quae isdem conterminant, dispositos et
+                                    castella, sed quisque serpentes latius pro viribus repellere moliens, nunc globis confertos,
+                                    aliquotiens et dispersos multitudine superabatur ingenti, quae nata et educata inter editos
+                                    recurvosque ambitus montium eos ut loca plana persultat et mollia, missilibus obvios eminus
+                                    lacessens et ululatu truci perterrens.
                                 </p>
                             </div>
-                            <hr class="boxx_hr">
-                            <div class="form-group postresume_form_group center-block">
-                                <div class="inner_uploader_box">
-                                    <label for="uploadDocButton" class="sgnp_lbl">Select Document<span class="asterisk">&ast;</span></label>
-                                    <div class="ap_fileinputs_upld">
-                                        <input id="uploadDocButton" type="file" class="ap_file_upld" />
-                                        <div class="ap_fakefile_upld">
-                                            <input type="button" value="BROWSE..." />
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="account_settings_midmain_holder">
+                            <div class="profile_bio_description_holder col-sm-12">
+                                <h3 class="subsection_ttl">Video Resume</h3>
+                                <hr class="invisible_hr">
+                                <div class="videothumb_holder">
+                                    <video class="videothumb" id="rbVid1" controls preload="metadata">
+                                        <source src="vids/Test_001.mp4"
+                                                type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'
+                                                data-original="102614-video-sample.mp4">
+                                        <source src="vids/Test_001.webm"
+                                                type='video/webm;codecs="vp8, vorbis"'
+                                                data-original="102614-video-sample-webmhd.webm">
+                                    </video>
+                                    <h6 class="center-block video_resume_ttl">My Test Video Resume #2</h6>
                                 </div>
-                                <p class="upload_warning">
-                                    Please upload the files in the appropriate format, which is <span>.doc</span> or <span>.pdf</span>
-                                </p>
                             </div>
-                            <hr class="boxx_hr">
-                            <div class="signin_checkbox_holder">
-                                <form action="#" class="rb_checkboxx_form">
-                                    <p>
-                                        <input class="t3t" type="checkbox" id="makeVisibleToEmployers" />
-                                        <label class="l3l l3l_secondary" for="makeVisibleToEmployers">Make visible to employers</label>
-                                    </p>
-                                </form>
+                        </div>
+                        <div class="account_settings_midmain_holder">
+                            <div class="profile_bio_description_holder col-sm-12">
+                                <h3 class="subsection_ttl">Standard Resumes</h3>
+                                <hr class="invisible_hr">
+                                <div class="standard_resume_holder col-sm-3">
+                                    <a href="#" class="standard_resume doc_format hvr-shrink">
+                                        <h6 class="stndrd_resume_ttl">CV 2017</h6>
+                                    </a>
+                                </div>
+                                <div class="standard_resume_holder col-sm-3">
+                                    <a href="#" class="standard_resume pdf_format hvr-shrink">
+                                        <h6 class="stndrd_resume_ttl">Test Cover Letter</h6>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="signin_checkbox_holder">
-                                <form action="#" class="rb_checkboxx_form">
-                                    <p>
-                                        <input class="t3t" type="checkbox" id="agreedToTerms" />
-                                        <label class="l3l l3l_secondary" for="agreedToTerms">By checking this you agree to our <a href="#" class="upload_warning_linx">Terms</a></label>
-                                    </p>
-                                </form>
-                            </div>
-                            <div class="center-block submit_btn_holder_3">
-                                <button type="submit" id="uploadResume" class="btn signin_submit_btn">Upload</button>
-                            </div>
-                        </form>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!-- Post a Resume Area END -->
+    </div> <!-- Account Settings Area END -->
 
-    <div class="skewed_layer_support"></div> <!-- Invisible utility for supporting following skewed layout -->
+    <div class="skewed_layer_support litegrey"></div> <!-- Invisible utility for supporting following skewed layout -->
 
     <footer class="rb_footer">
         <div class="container">
@@ -212,6 +220,7 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/recruiterboss.js"></script>
 <script src="js/select2.full.js"></script>
+
 
 </body>
 </html>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
-    <title>Recruiterboss :: POST A RESUME</title>
+    <title>Recruiterboss :: PROFILE (EMPLOYER)</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Google fonts -->
@@ -31,7 +31,7 @@
     <!-- Appears on top of the page only when user is authorized (logged into the system) -->
     <div class="uppermost_navbar animated fadeInUp">
         <a href="#" class="btn-link signout_btn">Sign Out</a>
-        <small class="uppermost_user_info">Signed in as <span>Samantha</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>
+        <small class="uppermost_user_info">Signed in as <span>James</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>
     </div>
 
     <nav class="navbar navbar-default rb_navigation_inner">
@@ -53,93 +53,91 @@
         <div class="collapse navbar-collapse" id="rb_bcollapse_logged_in">
             <ul class="nav navbar-nav rb_navstripe_inner navbar-right animated bounceInLeft">
                 <li>
-                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Search Job</a>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Search Resume</a>
                 </li>
                 <li>
-                    <a class="rb_hexagon_button white hvr-shrink navbarhex" href="#">Post Resume</a>
+                    <a class="rb_hexagon_button white hvr-shrink navbarhex" href="#">Post Your Job</a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
 
-    <div class="post_a_job_area">
+    <div class="profile_area">
         <div class="container">
             <div class="row">
-                <div class="contact_area_title_holder center-block">
-                    <h2 class="contact_area_ttl">Upload your video and/or standard resume</h2>
-                    <p class="mandatory_warning">All fields marked with <span>&ast;</span> are required</p>
-                </div>
-                <div class="contact_boxx_holder">
-                    <div class="contact_boxx">
-                        <form id="uploadResumeForm" class="upload_resume_form" role="form">
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="resumeName" class="sgnp_lbl">Name Your Resume<span class="asterisk">&ast;</span></label>
-                                <input id="resumeName" type="text" class="signin_input">
+                <div class="account_settings_boxx_holder">
+                    <div class="account_settings_boxx">
+                        <div class="uppermost_part">
+                            <h2 class="account_settings_ttl">Profile</h2>
+                            <!-- >>>>>>> The button can be visible if the Profile page is visited by its owner; <<<<<<< -->
+                            <div class="savechanges_btn_holder pull-right">
+                                <button id="editDetailz" type="submit" class="btn btn-savechanges_btn pull-right">Edit Details</button>
                             </div>
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="jobTitle2" class="sgnp_lbl">Job Title<span class="asterisk">&ast;</span></label>
-                                <input id="jobTitle2" type="text" class="signin_input">
-                            </div>
-                            <div class="form-group postresume_form_group center-block">
-                                <div class="inner_uploader_box">
-                                    <label for="uploadVideoButton" class="sgnp_lbl">Select Video<span class="asterisk">&ast;</span></label>
-                                    <div class="ap_fileinputs_upld">
-                                        <input id="uploadVideoButton" type="file" class="ap_file_upld" />
-                                        <div class="ap_fakefile_upld">
-                                            <input type="button" value="BROWSE..." />
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="avatar_and_main_info_holder">
+                            <div class="avatar_holder">
+                                <div class="col-sm-2 rb_avatar_holder">
+                                    <div class="rb_avatar" style="background: url('img/user_bulk_ant.jpg') center center no-repeat; background-size: cover;"></div>
                                 </div>
-                                <p class="upload_warning">
-                                    Please make sure that the video you’re going to upload is made in accordance with our
-                                    video upload terms. Note that the video should be not longer than 2 minutes and not
-                                    shorter than 35 seconds. Any possible violation of terms may result by your account
-                                    ban or even elimination.
+                                <div class="col-md-4 col-sm-5 profile_secondary_detailboxx">
+                                    <h6 id="profileName" class="profile_name">James Goldsmith</h6>
+                                    <p class="profile_secondary_dtlz"><span>Company Name:</span> Pleasurekraft</p>
+                                    <p class="profile_secondary_dtlz"><span>Website:</span> www.pleasurekraft.com</p>
+                                    <p class="profile_secondary_dtlz"><span>Company Size:</span> 200+ Employees</p>
+                                </div>
+                                <div class="col-md-4 col-sm-5 profile_secondary_detailboxx">
+                                    <p class="profile_secondary_dtlz"><span>Email:</span> james.goldsmith@yahoo.com</p>
+                                    <p class="profile_secondary_dtlz"><span>Location:</span> New York (NY)</p>
+                                    <p class="profile_secondary_dtlz"><span>Phone:</span> +1(718)990-500-120</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account_settings_midmain_holder">
+                            <div class="profile_bio_description_holder col-sm-12">
+                                <h3 class="subsection_ttl">Main details</h3>
+                                <p class="profile_bio_description">
+                                    Ipsam vero urbem Byzantiorum fuisse refertissimam atque ornatissimam signis quis ignorat?
+                                    Quae illi, exhausti sumptibus bellisque maximis, cum omnis Mithridaticos impetus totumque
+                                    Pontum armatum affervescentem in Asiam atque erumpentem, ore repulsum et cervicibus interclusum
+                                    suis sustinerent, tum, inquam, Byzantii et postea signa illa et reliqua urbis ornanemta
+                                    sanctissime custodita tenuerunt.
+                                    Erat autem diritatis eius hoc quoque indicium nec obscurum nec latens, quod ludicris cruentis
+                                    delectabatur et in circo sex vel septem aliquotiens vetitis certaminibus pugilum vicissim se
+                                    concidentium perfusorumque sanguine specie ut lucratus ingentia laetabatur.
+                                </p>
+                                <p class="profile_bio_description">
+                                    Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis,
+                                    iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec,
+                                    cum descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis
+                                    acerbo odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario,
+                                    ignosco, qui habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare,
+                                    pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo
+                                    nihil ignoscendum, sed etiam acriter est resistendum.
                                 </p>
                             </div>
-                            <hr class="boxx_hr">
-                            <div class="form-group postresume_form_group center-block">
-                                <div class="inner_uploader_box">
-                                    <label for="uploadDocButton" class="sgnp_lbl">Select Document<span class="asterisk">&ast;</span></label>
-                                    <div class="ap_fileinputs_upld">
-                                        <input id="uploadDocButton" type="file" class="ap_file_upld" />
-                                        <div class="ap_fakefile_upld">
-                                            <input type="button" value="BROWSE..." />
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="account_settings_midmain_holder">
+                            <div class="profile_bio_description_holder col-sm-12">
+                                <h3 class="subsection_ttl">POSTED JOBS</h3>
+                                <div class="posted_jobs_holder">
+                                    <a href="#" class="profile_posted_job">Senior Software Architect</a>
+                                    <a href="#" class="profile_posted_job">Telecommunication Engineer</a>
+                                    <a href="#" class="profile_posted_job">Corporate Psychologist</a>
+                                    <a href="#" class="profile_posted_job">Junior iOS Developer</a>
+                                    <a href="#" class="profile_posted_job">Bulldozer Driver with 35+ Years Experience</a>
+                                    <a href="#" class="profile_posted_job">Chief Technical Officer</a>
                                 </div>
-                                <p class="upload_warning">
-                                    Please upload the files in the appropriate format, which is <span>.doc</span> or <span>.pdf</span>
-                                </p>
                             </div>
-                            <hr class="boxx_hr">
-                            <div class="signin_checkbox_holder">
-                                <form action="#" class="rb_checkboxx_form">
-                                    <p>
-                                        <input class="t3t" type="checkbox" id="makeVisibleToEmployers" />
-                                        <label class="l3l l3l_secondary" for="makeVisibleToEmployers">Make visible to employers</label>
-                                    </p>
-                                </form>
-                            </div>
-                            <div class="signin_checkbox_holder">
-                                <form action="#" class="rb_checkboxx_form">
-                                    <p>
-                                        <input class="t3t" type="checkbox" id="agreedToTerms" />
-                                        <label class="l3l l3l_secondary" for="agreedToTerms">By checking this you agree to our <a href="#" class="upload_warning_linx">Terms</a></label>
-                                    </p>
-                                </form>
-                            </div>
-                            <div class="center-block submit_btn_holder_3">
-                                <button type="submit" id="uploadResume" class="btn signin_submit_btn">Upload</button>
-                            </div>
-                        </form>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!-- Post a Resume Area END -->
+    </div> <!-- Account Settings Area END -->
 
-    <div class="skewed_layer_support"></div> <!-- Invisible utility for supporting following skewed layout -->
+    <div class="skewed_layer_support litegrey"></div> <!-- Invisible utility for supporting following skewed layout -->
 
     <footer class="rb_footer">
         <div class="container">
@@ -212,6 +210,7 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/recruiterboss.js"></script>
 <script src="js/select2.full.js"></script>
+
 
 </body>
 </html>

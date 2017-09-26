@@ -1994,8 +1994,35 @@
 
 
 
+/* • • • • • • • */
 
 
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* PROFILE */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    h6.profile_name {text-align: right;}
+    p.profile_secondary_dtlz {text-align: right; font-size: 0.88rem;}
+    p.profile_secondary_dtlz span {font-size: 0.57rem;}
+}
+
+@media screen and (max-width: 767px){
+    h6.profile_name {text-align: left; margin-top: 16px;}
+    p.profile_secondary_dtlz {text-align: left; font-size: 1rem;}
+    p.profile_secondary_dtlz span {font-size: 0.8rem;}
+}
+
+@media screen and (max-width: 396px){
+    .profile_bio_description_holder {padding-left: 0;}
+}
 
 
 
