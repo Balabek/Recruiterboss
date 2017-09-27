@@ -161,8 +161,16 @@
                                         <input id="currentJob" type="text" class="signin_input" value="Freelancer">
                                     </div>
                                     <div class="form-group signup_form_group">
-                                        <label for="jobseekerLocation" class="sgnp_lbl">Current Location</label>
-                                        <input id="jobseekerLocation" type="text" class="signin_input" value="Tampa (FL)">
+                                        <label for="location_state" class="sgnp_lbl">Location (State)<span class="asterisk"></span></label>
+                                        <select id="location_state" type="text" class="signin_input">
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group signup_form_group">
+                                        <label for="location_city" class="sgnp_lbl">Location (City)<span class="asterisk"></span></label>
+                                        <select id="location_city" type="text" class="signin_input">
+                                            <option></option>
+                                        </select>
                                     </div>
                                     <div class="form-group signup_form_group">
                                         <label for="myEmail" class="sgnp_lbl">Email</label>
@@ -177,7 +185,7 @@
                                 <fieldset class="col-sm-6 riteside_fld">
                                     <div class="form-group signup_form_group">
                                         <label for="myBio" class="sgnp_lbl">Bio</label>
-                                        <textarea id="myBio" class="signin_input_2">
+                                        <textarea id="myBio" class="signin_input_jobseeker_txt">
 My name is Samantha, I'm a Senior iOS Developer and X-Code enthusiast based in Tampa, Florida. Looking for a remote job possibilities.
                                         </textarea>
                                     </div>
@@ -306,6 +314,16 @@ My name is Samantha, I'm a Senior iOS Developer and X-Code enthusiast based in T
 <script type="text/javascript" src="js/recruiterboss.js"></script>
 <script src="js/select2.full.js"></script>
 <script>
+    $('#location_state').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "Select State..."
+    });
+    $('#location_city').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "Select City..."
+    });
     $('#myGrade, #relocationAvailability, #xperienceYearz2, #travelAvailability, #authorization').select2({
         width: '100%',
         minimumResultsForSearch: -1

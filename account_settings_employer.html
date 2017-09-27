@@ -114,6 +114,18 @@
                                         <input id="myEmail" type="text" class="signin_input" value="james.goldsmith@yahoo.com">
                                     </div>
                                     <div class="form-group signup_form_group">
+                                        <label for="location_state" class="sgnp_lbl">Location (State)<span class="asterisk"></span></label>
+                                        <select id="location_state" type="text" class="signin_input">
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group signup_form_group">
+                                        <label for="location_city" class="sgnp_lbl">Location (City)<span class="asterisk"></span></label>
+                                        <select id="location_city" type="text" class="signin_input">
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group signup_form_group">
                                         <label for="myAddress" class="sgnp_lbl">Address</label>
                                         <input id="myAddress" type="text" class="signin_input" value="31 Main Gate Dr. 400, Office 400B">
                                     </div>
@@ -147,7 +159,7 @@
                                 <fieldset class="col-sm-6 riteside_fld">
                                     <div class="form-group signup_form_group">
                                         <label for="myDetailz" class="sgnp_lbl">Company Details</label>
-                                        <textarea id="myDetailz" class="signin_input_2">
+                                        <textarea id="myDetailz" class="signin_input_employer_txt">
 I run a small startup company called Pleasurekraft, which is oriented at developing entertainment applications for both iOS and Android. We are rapidly growing company and we currently need to hire a lot of personnel for various postions - from bulldozer driver to artificial intelligence developer.
                                         </textarea>
                                     </div>
@@ -276,6 +288,16 @@ I run a small startup company called Pleasurekraft, which is oriented at develop
 <script type="text/javascript" src="js/recruiterboss.js"></script>
 <script src="js/select2.full.js"></script>
 <script>
+    $('#location_state').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "Select State..."
+    });
+    $('#location_city').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "Select City..."
+    });
     $('#myCompanySize').select2({
         width: '100%',
         minimumResultsForSearch: -1

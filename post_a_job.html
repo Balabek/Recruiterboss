@@ -147,18 +147,9 @@
                                     <option>Remote</option>
                                 </select>
                             </div>
-                            <div class="col-sm-8 form-group postajob_form_group">
+                            <div class="col-sm-12 form-group postajob_form_group">
                                 <label for="summary" class="sgnp_lbl">Summary<span class="asterisk">&ast;</span></label>
                                 <input id="summary" type="text" class="signin_input">
-                            </div>
-                            <div class="col-sm-4 form-group postajob_form_group">
-                                <label for="uploadButton" class="sgnp_lbl">Upload Logo<span class="asterisk"></span></label>
-                                <div class="ap_fileinputs">
-                                    <input id="uploadButton" type="file" class="ap_file" />
-                                    <div class="ap_fakefile">
-                                        <input type="button" value="Browse..." />
-                                    </div>
-                                </div>
                             </div>
                             <div class="col-sm-12 form-group postajob_form_group">
                                 <label for="jobDescription" class="sgnp_lbl">Job Description (up to 250 characters)</label><span class="asterisk">&ast;</span>
@@ -177,59 +168,15 @@
                                 <input id="tagsInput" type="text" value="" data-role="tagsinput" class="taginput">
                             </div>
                             <div class="col-sm-6 form-group postajob_form_group">
-                                <label for="location_2" class="sgnp_lbl">Location<span class="asterisk"></span></label>
-                                <select id="location_2" type="text" class="signin_input">
-                                    <option value="AL">Alabama</option>
-                                    <option value="AK">Alaska</option>
-                                    <option value="AZ">Arizona</option>
-                                    <option value="AR">Arkansas</option>
-                                    <option value="CA">California</option>
-                                    <option value="CO">Colorado</option>
-                                    <option value="CT">Connecticut</option>
-                                    <option value="DE">Delaware</option>
-                                    <option value="DC">District Of Columbia</option>
-                                    <option value="FL">Florida</option>
-                                    <option value="GA">Georgia</option>
-                                    <option value="HI">Hawaii</option>
-                                    <option value="ID">Idaho</option>
-                                    <option value="IL">Illinois</option>
-                                    <option value="IN">Indiana</option>
-                                    <option value="IA">Iowa</option>
-                                    <option value="KS">Kansas</option>
-                                    <option value="KY">Kentucky</option>
-                                    <option value="LA">Louisiana</option>
-                                    <option value="ME">Maine</option>
-                                    <option value="MD">Maryland</option>
-                                    <option value="MA">Massachusetts</option>
-                                    <option value="MI">Michigan</option>
-                                    <option value="MN">Minnesota</option>
-                                    <option value="MS">Mississippi</option>
-                                    <option value="MO">Missouri</option>
-                                    <option value="MT">Montana</option>
-                                    <option value="NE">Nebraska</option>
-                                    <option value="NV">Nevada</option>
-                                    <option value="NH">New Hampshire</option>
-                                    <option value="NJ">New Jersey</option>
-                                    <option value="NM">New Mexico</option>
-                                    <option value="NY">New York</option>
-                                    <option value="NC">North Carolina</option>
-                                    <option value="ND">North Dakota</option>
-                                    <option value="OH">Ohio</option>
-                                    <option value="OK">Oklahoma</option>
-                                    <option value="OR">Oregon</option>
-                                    <option value="PA">Pennsylvania</option>
-                                    <option value="RI">Rhode Island</option>
-                                    <option value="SC">South Carolina</option>
-                                    <option value="SD">South Dakota</option>
-                                    <option value="TN">Tennessee</option>
-                                    <option value="TX">Texas</option>
-                                    <option value="UT">Utah</option>
-                                    <option value="VT">Vermont</option>
-                                    <option value="VA">Virginia</option>
-                                    <option value="WA">Washington</option>
-                                    <option value="WV">West Virginia</option>
-                                    <option value="WI">Wisconsin</option>
-                                    <option value="WY">Wyoming</option>
+                                <label for="location_state" class="sgnp_lbl">Location (State)<span class="asterisk"></span></label>
+                                <select id="location_state" type="text" class="signin_input">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 form-group postajob_form_group">
+                                <label for="location_city" class="sgnp_lbl">Location (City)<span class="asterisk"></span></label>
+                                <select id="location_city" type="text" class="signin_input">
+                                    <option></option>
                                 </select>
                             </div>
                             <div class="col-sm-6 form-group postajob_form_group">
@@ -272,12 +219,12 @@
                                     <option>Professional</option>
                                 </select>
                             </div>
-                            <div class="col-sm-3 form-group postajob_form_group">
+                            <div class="col-sm-6 form-group postajob_form_group">
                                 <label for="postingFrom" class="lbl_datepikker">Posting Period (From)<span class="asterisk"></span></label>
                                 <span class="calendarr"></span>
                                 <input id="postingFrom" class="date_picker_input">
                             </div>
-                            <div class="col-sm-3 form-group postajob_form_group">
+                            <div class="col-sm-6 form-group postajob_form_group">
                                 <label for="postingTo" class="lbl_datepikker">Posting Period (To)<span class="asterisk"></span></label>
                                 <span class="calendarr"></span>
                                 <input id="postingTo" class="date_picker_input">
@@ -384,9 +331,15 @@
 <script type="text/javascript" src="js/recruiterboss.js"></script>
 <script src="js/select2.full.js"></script>
 <script>
-    $('#location_2').select2({
+    $('#location_state').select2({
         width: '100%',
-        minimumResultsForSearch: -1
+        minimumResultsForSearch: -1,
+        placeholder: "Select State..."
+    });
+    $('#location_city').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "Select City..."
     });
     $('#degree, #category_2, #contractType').select2({
         width: '100%',

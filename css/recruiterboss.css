@@ -2104,6 +2104,18 @@ div.ap_fileinputs input.ap_file {
     cursor: pointer;
 }
 
+.employer_logo_holder {
+    display: inline-block;
+    text-align: right;
+
+}
+
+.employer_logo {
+    width: 105px;
+    height: 105px;
+    border-radius: 5px;
+    text-align: right;
+}
 
 
 
@@ -3158,7 +3170,7 @@ fieldset.riteside_fld {
 
 }
 
-textarea.signin_input_2 {
+textarea.signin_input_employer_txt {
     display: block;
     margin: 0 auto;
     font-size: 1rem;
@@ -3166,7 +3178,8 @@ textarea.signin_input_2 {
     padding-left: 12px;
     padding-top: 12px;
     padding-right: 12px;
-    height: 530px;
+    min-height: 701px;
+    height: auto;
     width: 100%;
     background: #ffffff;
     resize: none;
@@ -3176,7 +3189,30 @@ textarea.signin_input_2 {
     margin-bottom: 20px;
 }
 
-textarea.signin_input_2:focus {
+textarea.signin_input_employer_txt:focus {
+    border: 1px solid #cfcfcf;
+}
+
+textarea.signin_input_jobseeker_txt {
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-right: 12px;
+    min-height: 864px;
+    height: auto;
+    width: 100%;
+    background: #ffffff;
+    resize: none;
+    color: #999999;
+    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 20px;
+}
+
+textarea.signin_input_jobseeker_txt:focus {
     border: 1px solid #cfcfcf;
 }
 
