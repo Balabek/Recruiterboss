@@ -54,7 +54,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
     padding: 14px 24px;
 }
 
-/*.navbar-default .navbar-brand {position: relative; z-index: 3;}*/
+.navbar-default .navbar-brand {position: relative; z-index: 3;}
 
 .navbar-default .navbar-toggle {
     -webkit-transition: all 0.3s ease-in;
@@ -140,6 +140,10 @@ nav.rb_navigation {
     height: 100px;
 }
 
+ul.rb_navstripe {
+    margin-top: 50px;
+}
+
 ul.rb_navstripe li {
     margin-right: 20px;
 }
@@ -154,7 +158,7 @@ ul.rb_navstripe li:nth-child(5) {
 }
 
 ul.rb_navstripe li a {
-    color: #ffffff !important;
+    color: #363636 !important;
 
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
@@ -164,8 +168,12 @@ ul.rb_navstripe li a {
 }
 
 ul.rb_navstripe li a:hover, ul.rb_navstripe li a:focus {
-    color: #f8f8f8 !important;
+    color: #666666 !important;
     background-color: transparent !important;
+}
+
+.caret {
+    color: #0d6ca8;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
@@ -217,6 +225,11 @@ img.rb_main_logo_cropped {
 .rb_hexagon_button.green {
     background: url('../img/greenhex.svg') center center no-repeat;
     background-size: cover;
+    color: #ffffff !important;
+}
+
+.rb_hexagon_button.green:hover {
+    color: #ffffff !important;
 }
 
 .rb_hexagon_button.green_sm {
@@ -267,7 +280,7 @@ img.rb_main_logo_cropped {
     width: 100%;
     min-height: 765px;
     height: auto;
-    background: url('../img/mainheaderpic.jpg') center center no-repeat;
+    background: url('../img/mainheaderpic_v2.jpg') center center no-repeat;
     background-size: cover;
 }
 
@@ -281,7 +294,7 @@ img.rb_main_logo_cropped {
     font-family: "BrandonGrotesque-Bold", sans-serif;
     font-size: 72px;
     text-align: left;
-    color: #ffffff;
+    color: #0d6ca8;
     margin-bottom: 36px;
 }
 
@@ -289,7 +302,7 @@ img.rb_main_logo_cropped {
     font-family: "BrandonGrotesque-Light", sans-serif;
     font-size: 28px;
     text-align: left;
-    color: #ffffff;
+    color: #0d6ca8;
     text-transform: uppercase;
     width: 85%;
     margin-bottom: 32px;
@@ -303,7 +316,7 @@ a.help_with_upload {
     font-family: "BrandonGrotesque-Light", sans-serif;
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #ffffff;
+    color: #0d6ca8;
     text-align: left;
     text-transform: uppercase;
     text-decoration: none;
@@ -316,7 +329,7 @@ a.help_with_upload {
 }
 
 a.help_with_upload:hover {
-    color: #dddddd;
+    color: #0d6ca8;
 }
 
 @-moz-keyframes spin {
@@ -337,7 +350,7 @@ a.help_with_upload:hover i.fa-life-saver {
 }
 
 .lifesaver {
-    color: #ffffff;
+    color: #8fc93a;
     font-size: 2rem;
     float: left;
     margin-right: 12px;
@@ -401,7 +414,7 @@ input.rb_newletter_input {
     height: 44px;
     width: 60%;
     background: #ffffff;
-    color: #999999;
+    color: #666666;
     border-radius: 4px;
     border: 1px solid #cfcfcf;
 }
@@ -1038,7 +1051,7 @@ footer.rb_footer {
     margin-top: -36px;
     min-height: 390px;
     height: auto;
-    background: url('../img/footer_background.png') center center no-repeat;
+    background: url('../img/footer_background_v2.png') center center no-repeat;
     background-size: cover;
 
 }
@@ -1059,7 +1072,7 @@ img.footer_logo {
 .phone_holder a {
     position: relative;
     top: -2px;
-    color: #ffffff;
+    color: #363636;
     text-decoration: none;
 
     -webkit-transition: all 0.3s ease;
@@ -1070,7 +1083,7 @@ img.footer_logo {
 }
 
 .phone_holder a:hover {
-    color: #dddddd;
+    color: #666666;
 }
 
 .footer_phone_icon {
@@ -1081,7 +1094,7 @@ img.footer_logo {
 .email_holder a {
     position: relative;
     top: -2px;
-    color: #ffffff;
+    color: #363636;
     text-decoration: none;
 
     -webkit-transition: all 0.3s ease;
@@ -1092,7 +1105,7 @@ img.footer_logo {
 }
 
 .email_holder a:hover {
-    color: #dddddd;
+    color: #666666;
 }
 
 .footer_email_icon {
@@ -1101,7 +1114,7 @@ img.footer_logo {
 }
 
 ul.footer_linxx {
-    border-left: 1px solid #ffffff;
+    border-left: 1px solid #8fc93a;
 }
 
 ul.footer_linxx li {
@@ -1110,9 +1123,9 @@ ul.footer_linxx li {
 
 ul.footer_linxx li a {
     font-size: 0.88rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 3;
-    color: #ffffff;
+    color: #363636;
     text-align: left;
     text-transform: uppercase;
     text-decoration: none;
@@ -1125,7 +1138,7 @@ ul.footer_linxx li a {
 }
 
 ul.footer_linxx li a:hover {
-    color: #dddddd;
+    color: #0d6ca8;
 }
 
 .footer_hex_btn_green {
@@ -1175,7 +1188,7 @@ ul.footer_linxx li a:hover {
     width: 100%;
     height: 50px;
     z-index: 200;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(13,108,168,0.9);
 }
 
 .microtext_holder {
@@ -1185,11 +1198,11 @@ ul.footer_linxx li a:hover {
 small.microtext {
     font-size: 0.80rem;
     font-weight: 400;
-    color: #000000;
+    color: #ffffff;
     text-align: left;
 }
 
-small.microtext span {color: #0d6ca8;}
+/*small.microtext span {color: #0d6ca8;}*/
 
 .socialz_holder {
     padding-top: 8px;
@@ -1207,7 +1220,7 @@ ul.sozialz:last-child {
 
 ul.sozialz li a {
     font-size: 1.8rem;
-    color: #0d6ca8;
+    color: #ffffff;
 
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -1217,7 +1230,7 @@ ul.sozialz li a {
 }
 
 ul.sozialz li a:hover, ul.sozialz li a:focus {
-    color: #8fc93a;
+    color: #cccccc;
 }
 
 
@@ -1425,7 +1438,7 @@ img.rb_main_logo_inner {
     width: 55%;
     height: 465px;
     background: #f8f8f8;
-    border: 1px solid #999999;
+    border: 1px solid #666666;
     border-radius: 5px;
     padding-top: 45px;
 }
@@ -1452,7 +1465,7 @@ input.signin_input {
     height: 44px;
     width: 100%;
     background: #ffffff;
-    color: #999999;
+    color: #666666;
     border-radius: 4px;
     border: 1px solid #cfcfcf;
 }
@@ -1496,7 +1509,7 @@ button.signin_submit_btn:hover, button.signin_submit_btn:focus {
 }
 
 
-form.rb_checkboxx_form {
+div.rb_checkboxx_form {
     padding-top: 12px;
 }
 
@@ -1638,6 +1651,10 @@ a.forgot_pswd:hover {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.signup_boxx_holder {
+    margin-bottom: 30px;
+}
 
 .signup_area {
     min-height: 603px;
@@ -1815,7 +1832,7 @@ textarea.signin_input {
     width: 100%;
     background: #ffffff;
     resize: none;
-    color: #999999;
+    color: #666666;
     border-radius: 4px;
     border: 1px solid #cfcfcf;
     margin-bottom: 20px;
@@ -1962,7 +1979,7 @@ textarea.post_a_job_txt_area {
     width: 100%;
     background: #ffffff;
     resize: none;
-    color: #999999;
+    color: #666666;
     border-radius: 4px;
     border: 1px solid #cfcfcf;
 }
@@ -1976,7 +1993,7 @@ input.taginput {
     height: 44px;
     width: 100%;
     background: #ffffff;
-    color: #999999;
+    color: #666666;
     border-radius: 4px;
     border: 1px solid #cfcfcf;
 }
@@ -1999,7 +2016,7 @@ input.date_picker_input {
     height: 44px;
     width: 100%;
     background: #ffffff;
-    color: #999999;
+    color: #666666;
     border-radius: 4px;
     border: 1px solid #cfcfcf;
 }
@@ -2305,7 +2322,7 @@ small.pseudo_ttl_xs {
     padding-left: 1px;
 }
 
-form.rb_admin_checkboxx_form {
+div.rb_admin_checkboxx_form {
     position: relative;
     top: -11px;
 }
@@ -2599,7 +2616,29 @@ a.add_new_job_button:hover span.circle_plus {
 }
 
 
+a.add_new_job_button_2 {
+    position: relative;
+    top: -8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
 
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+a.add_new_job_button_2:hover, a.add_new_job_button_2:focus {
+    color: #999999;
+}
+
+a.add_new_job_button_2:hover span.circle_plus {
+    -webkit-animation: spin 0.7s infinite linear;
+}
 
 
 
@@ -2852,14 +2891,21 @@ hr.badge_hr {
     padding-left: 4px;
 }
 
-a.badge_btn.watch_vid_resume_btn {background-color: #83D6DE;}
-a.badge_btn.watch_vid_resume_btn:hover {background-color: #5ba8af;}
-a.badge_btn.save_resume_btn {background-color: #8fc93a;}
-a.badge_btn.save_resume_btn:hover {background-color: #7faf30;}
-a.badge_btn.reject_resume_btn {background-color: #C82647;}
-a.badge_btn.reject_resume_btn:hover {background-color: #af2646;}
+div.badge_btn.watch_vid_resume_btn {background-color: #83D6DE;}
+div.badge_btn.watch_vid_resume_btn:hover {background-color: #5ba8af;}
+div.badge_btn.save_resume_btn {background-color: #8fc93a;}
+div.badge_btn.save_resume_btn:hover {background-color: #7faf30;}
+div.badge_btn.reject_resume_btn {background-color: #C82647;}
+div.badge_btn.reject_resume_btn:hover {background-color: #af2646;}
 
-a.badge_btn {
+div.badge_btn.save_resume_btn.already_saved {
+    background-color: #8fc93a;
+    cursor: default !important;
+    pointer-events: none !important;
+}
+
+
+div.badge_btn {
     display: inline-block;
     width: 32px;
     height: 32px;
@@ -2867,6 +2913,7 @@ a.badge_btn {
     border-radius: 100%;
     margin-right: 20px;
     padding-top: 7px;
+    cursor: pointer;
 
     -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
     filter: drop-shadow(2px 2px 3px #dddddd);
@@ -2878,16 +2925,44 @@ a.badge_btn {
     transition: all 0.3s ease-out;
 }
 
-a.badge_btn i {
+div.badge_btn i {
     font-size: 1.171rem;
     color: #ffffff;
     text-align: center;
 }
 
-.badge_keywordz_holder {
+.jobseeker_profile_view_button_holder {
     padding-left: 4px;
     padding-top: 0;
 }
+
+button.jobseeker_profile_view_btn {
+    float: right;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #0d6ca8;
+    background: #ffffff;
+    border: 1px solid #0d6ca8;
+    height: 33px;
+    width: 50%;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+button.jobseeker_profile_view_btn:hover {
+    background: #0d6ca8;
+    color: #ffffff;
+}
+
+
 
 .badge_keywordz_holder h5 {
     font-size: 0.8rem;
@@ -3183,7 +3258,7 @@ textarea.signin_input_employer_txt {
     width: 100%;
     background: #ffffff;
     resize: none;
-    color: #999999;
+    color: #666666;
     border-radius: 4px;
     border: 1px solid #cfcfcf;
     margin-bottom: 20px;
@@ -3206,7 +3281,7 @@ textarea.signin_input_jobseeker_txt {
     width: 100%;
     background: #ffffff;
     resize: none;
-    color: #999999;
+    color: #666666;
     border-radius: 4px;
     border: 1px solid #cfcfcf;
     margin-bottom: 20px;
@@ -3385,7 +3460,7 @@ textarea.post_a_blog_txt_area {
     width: 100%;
     background: #ffffff;
     resize: none;
-    color: #999999;
+    color: #666666;
     border-radius: 4px;
     border: 1px solid #cfcfcf;
 }
@@ -3727,6 +3802,7 @@ p.solo_blog_paragraph {
 }
 
 .well.comments_well {
+    position: relative;
     height: auto;
     padding: 18px 16px 12px 16px;
     background: #e5f4fd;
@@ -3751,11 +3827,35 @@ small.comment_time {
     color: #797979;
 }
 
+.main_comment_holder {
+    position: relative;
+}
+
+a.comment_remover {
+    position: absolute;
+    z-index: 80;
+    top: 35%;
+    right: 12px;
+    color: #e16846;
+    font-size: 1.4rem;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+a.comment_remover:hover {
+    color: #e10b06;
+}
+
 .main_comment_holder p {
     font-weight: 400;
     font-size: 1rem;
     font-style: italic;
     text-align: left;
+    padding-right: 20px;
 }
 
 .social_sharing_holder {
@@ -5488,10 +5588,6 @@ button.close_this_window_preview:hover {
 
 
 
-
-
-
-
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -5552,4 +5648,155 @@ a.profile_posted_job {
 
 a.profile_posted_job:hover {
     color: #aa553e;
+}
+
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = COMING SOON PAGE = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.comingsoon_area {
+    min-height: 100vh;
+    height: auto;
+    background: rgba(5,101,160,1);
+    background: -moz-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(5,101,160,1)), color-stop(100%, rgba(144,201,58,1)));
+    background: -webkit-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: -o-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: -ms-linear-gradient(left, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    background: linear-gradient(to right, rgba(5,101,160,1) 0%, rgba(144,201,58,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0565a0', endColorstr='#90c93a', GradientType=1 );
+}
+
+.comingsoon_logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-right: 28px;
+    height: 200px;
+    width: 100%;
+    background: url(../img/rb_logo_crop.png) center center no-repeat;
+    background-size: contain;
+}
+
+.comingsoon_boxx {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30vh;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.comingsoon_boxx h1 {
+   font-family: "BrandonGrotesque-Bold", sans-serif;
+   font-size: 6rem;
+   color: #ffffff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = SEARCH RESUMES NEW (+ additional minor updates due to 14.10.2017 team agreement) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+h4.search_resumes_2_ttl {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 1.664rem;
+    text-align: center;
+    color: #0d6ca8;
+    text-transform: uppercase;
+    margin-bottom: 25px !important;
+}
+
+.post_a_resume_group {
+    position: relative;
+    z-index: 10;
+}
+
+a.savedajob_btn.alreadysaved {
+    cursor: default !important;
+    pointer-events: none !important;
+}
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = NEW HOW TO UPLOAD MODAL = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.modal-dialog.rb_new_how_to_help_modal {
+    position: relative;
+    top: 5%;
+    margin: 0 auto;
+    display: block;
+    min-height: 500px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    height: auto;
+    width: 65%;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.howtotext_holder {
+    padding: 8px 24px 12px 14px;
+}
+
+h3.howto_ttl {
+    font-family: "BrandonGrotesque-Bold",sans-serif;
+    font-size: 1.664rem;
+    text-align: center;
+    color: #0d6ca8;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+ul.howtohelp_points li {
+    font-size: 1.077rem;
+    color: #666666;
+    text-align: left;
+    list-style-type: circle;
+    margin-bottom: 10px;
+}
+
+h5.howto_subttl {
+    font-family: "BrandonGrotesque-Light",sans-serif;
+    font-size: 1.222rem;
+    text-align: center;
+    color: #0d6ca8;
+    text-transform: uppercase;
+    margin-bottom: 22px;
 }

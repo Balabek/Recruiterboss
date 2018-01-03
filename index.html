@@ -37,9 +37,39 @@
 
     <!-- Uploading Help Video Modal -->
     <div class="modal fade rb_videomodal" id="uploadHelpModal" tabindex="-1" role="dialog" aria-labelledby="uploadHelpModalDialog">
-        <div class="modal-dialog rb_videomodal" role="document">
+        <div class="modal-dialog rb_new_how_to_help_modal" role="document">
+            <h3 class="howto_ttl center-block">How To Create a Video Resume</h3>
+            <div class="howtotext_holder center-block">
+                <ul class="howtohelp_points">
+                    <li>
+                        Video - no longer than 2 minutes and no shorter than 35 seconds.
+                    </li>
+                    <li>
+                        Introduce yourself and the type of postion you are seeking <i>(ex: Hi, My name is John and I am seeking a Sales Management position in the IT industry)</i>
+                    </li>
+                    <li>
+                        Give a brief example of your current and previous employment <i>(ex: For the past five years, I've worked as a Sales Manager for Apple and previously worked in Sales for Trend Micro, Microsoft, and Adobe)</i>
+                    </li>
+                    <li>
+                        State which college(s) you have attended with degree (if applicable) or any certifications you have received and in which studies <i>(ex: I have attended the University of Florida where I received my bachelors degree in Business Management)</i>
+                    </li>
+                    <li>
+                        Describe what you like or liked best about your job <i>(ex: What I like best about my job is working with people to help solve their problems by providing them and not selling them a solution)</i>
+                    </li>
+                    <li>
+                        What is your best quality <i>(ex: My best quality is my honesty. I am good with building relationships with people so they get to like and trust me)</i>
+                    </li>
+                    <li>
+                        Most successful points in your career <i>(ex: One of my most successful points in my career is when I increased the sales revenue in the marketing department from 20% to 60% in 6 months)</i>
+                    </li>
+                    <li>
+                        Your choice- List any organizations you belong to or your hobbies <i>(ex: I belong to the Rotary Club of Florida where I volunteer to help build schools in other countries that are less fortunate and I coach little league baseball in the city of Providence)</i>
+                    </li>
+                </ul>
+            </div>
+            <h5 class="howto_subttl center-block">Watch a video resume sample</h5>
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe id="vid_02" class="embed-responsive-item" src="https://player.vimeo.com/video/18554749?autoplay=0&color=8fc93a&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe id="vid_02" class="embed-responsive-item" src="https://player.vimeo.com/video/18554749?autoplay=false&color=8fc93a&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -62,7 +92,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand animated bounceInLeft" href="#">
-                <img src="img/rb_logo.png" class="rb_main_logo">
+                <img src="img/logo_v2.svg" class="rb_main_logo">
                 <img src="img/rb_logo_crop.png" class="rb_main_logo_cropped">
             </a>
         </div>
@@ -115,7 +145,7 @@
                         <h4>With <span>recruiterboss</span> it's now easier than ever!</h4>
                         <a href="#" class="help_with_upload" data-toggle="modal" data-target="#uploadHelpModal">
                             <i class="fa fa-life-saver lifesaver"></i>
-                            Help with uploading video resume
+                            Upload Instructions
                         </a>
                     </div>
                     <div class="col-sm-6 macbook_holder">
@@ -141,9 +171,9 @@
         <div class="container">
             <div class="row">
                 <div class="looking_for_inner_box">
+                    <div id="onlyForJobseekerz"></div>
                     <h2 class="section_ttl">What job are you looking for?</h2>
                     <hr class="micro_hr">
-
                     <form class="form looking_for_form" role="form">
                         <div class="form-group col-sm-4">
                             <label for="industry" class="lookin_for_lbl">Select industry</label>
@@ -438,7 +468,7 @@
                 <div class="rb_footer_inner_boxx">
                     <div class="col-sm-3 col-xs-3 footer_logo_holder">
                         <a href="#">
-                            <img src="img/rb_logo.png" class="footer_logo">
+                            <img src="img/logo_v2.svg" class="footer_logo">
                         </a>
                         <div class="phone_holder">
                             <i class="fa fa-phone footer_phone_icon"></i>
@@ -485,7 +515,8 @@
                        <ul class="sozialz pull-right">
                            <li><a href="#"><i class="fa fa-facebook-square"></i> </a> </li>
                            <li><a href="#"><i class="fa fa-linkedin-square"></i> </a> </li>
-                           <li><a href="#"><i class="fa fa-google-plus-square"></i> </a> </li>
+                           <li><a href="#"><i class="fa fa-instagram"></i> </a> </li>
+                           <li><a href="#"><i class="fa fa-tumblr-square"></i> </a> </li>
                        </ul>
                     </div>
                 </div>
@@ -502,6 +533,21 @@
 <!-- JSz -->
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/recruiterboss.js"></script>
+    <script>
+        $(window).on('load resize', function(){
+
+            $(window).width();
+            $(document).width();
+
+            if ($(window).width() < 475) {
+                $('html,body').animate({
+                    scrollTop: $("#onlyForJobseekerz").offset().top -30}, 'slow');
+            } else {
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            }
+        });
+    </script>
 <script src="js/select2.full.js"></script>
 <script>
     $('#industry, #location, #contractScope').select2({

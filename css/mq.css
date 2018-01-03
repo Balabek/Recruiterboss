@@ -1041,11 +1041,12 @@
     span.active_indicator {display: block; float: none; clear: both; margin-top: 2px; margin-bottom: 20px;}
     .admin_controls_holder {padding-left: 2px; padding-top: 22px; float: none !important;}
     a.rb_admin_tool_control {float: none !important;}
-    .postings_toolbox {float: none !important;}
+    .postings_toolbox {float: none !important; padding-top: 16px; padding-left: 2px;}
+    .postings_toolbox_holder {height: 90px;}
 }
 
 @media screen and (max-width: 530px){
-    .postings_toolbox_holder {height: 120px;}
+    .postings_toolbox_holder {height: 190px;}
     button.rb_admin_renew_btn {display: block; clear: both; width: 33%; margin-bottom: 12px;}
     button.rb_admin_delete_btn {display: block; clear: both; width: 33%; margin-bottom: 12px;}
 }
@@ -1181,7 +1182,7 @@
 
 @media screen and (max-width: 991px){
     .rb_user_badge {min-height: 300px;}
-    a.badge_btn {margin-right: 6px;}
+    div.badge_btn {margin-right: 6px;}
     .rb_user_image {width: 96px; height: 96px;}
     span.yearz_of_xperience_spot {left: -13px;}
 }
@@ -1197,7 +1198,10 @@
     hr.badge_hr {margin-top: 24px;}
     .rb_user_badge {min-height: 595px; padding-bottom: 70px;}
     .badge_btnz_holder {margin-bottom: 28px;}
-    a.badge_btn {margin-right: 16px;}
+    div.badge_btn {margin-right: 16px;}
+
+    button.jobseeker_profile_view_btn {float: none; width: 33%;}
+    .rb_user_badge {padding-bottom: 30px;}
 }
 
 @media screen and (max-width: 700px){
@@ -1210,6 +1214,15 @@
 
 @media screen and (max-width: 570px){
     span.yearz_of_xperience_spot {width: 140px;}
+    button.jobseeker_profile_view_btn {width: 45%;}
+}
+
+@media screen and (max-width: 396px){
+    button.jobseeker_profile_view_btn {width: 55%;}
+}
+
+@media screen and (max-width: 350px){
+    button.jobseeker_profile_view_btn {width: 65%;}
 }
 
 
@@ -2028,6 +2041,27 @@
 
 
 
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* COMING SOON */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 499px){
+    .comingsoon_boxx h1 {font-size: 4rem;}
+}
+
+@media screen and (max-width: 404px){
+    .comingsoon_boxx h1 {font-size: 3rem;}
+}
 
 
 
@@ -2035,14 +2069,31 @@
 
 
 
+/* • • • • • • • */
 
 
 
 
 
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* UPDATED HELP MODAL */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
 
+/* >>>>> SM/XS <<<<< */
 
+@media screen and (max-width: 991px){
+    .modal-dialog.rb_new_how_to_help_modal {width: 92%;}
+}
 
+@media screen and (max-width: 499px){
+    .modal-dialog.rb_new_how_to_help_modal {width: 97%;}
+    h3.howto_ttl {font-size: 1.4rem;}
+    ul.howtohelp_points li {font-size: 0.98rem;}
+    ul.howtohelp_points {padding-left: 12px;}
+
+}
 
 
 

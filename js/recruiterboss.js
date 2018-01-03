@@ -61,4 +61,27 @@ $(document).ready(function () {
     // var conceptName = $('#aioConceptName').find(":selected").text();
 
 
+    $(window).width();
+    $(document).width();
+
+    if ($(window).width() < 525) {
+        $('html,body').animate({
+            scrollTop: $("#onlyForJobseekerz").offset().top}, 'slow');
+
+    }
+
+});
+
+
+$(window).on('load resize', function(){
+
+    $(window).width();
+
+    if ($(window).width() < 525) {
+        $('html,body').animate({
+            scrollTop: $("#onlyForJobseekerz").offset().top}, 'slow');
+
+    }
+
+
 });

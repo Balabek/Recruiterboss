@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
-    <title>Recruiterboss :: POST A JOB</title>
+    <title>Recruiterboss :: SEARCH RESUME</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Google fonts -->
@@ -21,72 +21,10 @@
     <link href="css/animate.css" rel="stylesheet" media="all">
     <link href="css/webfonts.css" rel="stylesheet" media="all">
     <link href="css/select2.css" rel="stylesheet">
-    <link href="css/jquery-ui.css" rel="stylesheet">
-    <link href="css/jquery-ui.theme.css" rel="stylesheet">
-    <link href="css/bootstrap-tagsinput.css" rel="stylesheet">
     <link href="css/recruiterboss.css" rel="stylesheet">
     <link href="css/mq.css" rel="stylesheet">
 </head>
 <body>
-
-<!-- Job Preview Modal -->
-<!-- The modal is empty: should be filled in with the info brought from the 'Post a Job' input fields -->
-<div class="modal fade" id="jobPreviewModalDialog" tabindex="-1" role="dialog" aria-labelledby="jobPreviewModalDialog">
-    <div class="modal-dialog rb_previewmodal" role="document">
-        <div class="modal-body job_preview_modal_midmain">
-            <div class="preview_document">
-                <div class="job_preview_main">
-                    <div class="leftside_mainbox_uppermost">
-                        <div class="col-sm-9 job_info_box_preview">
-                            <h3 id="jobTitlePreview"></h3>
-                            <p>Supersonic Systems Inc.</p>
-                            <section class="job_dtlz_location_and_companysize_box_preview">
-                                <i class="fa fa-map-pin"></i>
-                                <p class="loc_ttl_preview">Glendale, CA</p>
-                            </section>
-                            <section class="job_dtlz_location_and_companysize_box_preview">
-                                <i class="fa fa-building-o"></i>
-                                <p class="loc_ttl_preview">200+ Employees</p>
-                            </section>
-                        </div>
-                        <div class="col-sm-3 job_dtlz_comapny_logo_accomodator_preview">
-                            <div class="job_dtlz_company_logo_preview" style="background: url('img/default_logo_preview.jpg') center center no-repeat; background-size: cover;"></div>
-                        </div>
-                    </div>
-                    <hr class="job_dtlz_hr_preview">
-                    <div class="job_description_subsection_preview">
-                        <h4 class="job_dtlz_subttl_preview">Summary</h4>
-                        <p id="jobSummaryPreview"></p>
-                    </div>
-                    <hr class="job_dtlz_hr_preview">
-                    <div class="job_description_subsection_preview">
-                        <h4 class="job_dtlz_subttl_preview">Job Description</h4>
-                        <p id="jobDescriptionPreview"></p>
-                    </div>
-                    <hr class="job_dtlz_hr_preview">
-                    <div class="job_description_subsection_preview">
-                        <h4 class="job_dtlz_subttl_preview">Primary Responsibilities</h4>
-                        <ul id="primaryResponsibilitiesPreview" class="job_dtlz_primary_responsibility_points_preview">
-
-                        </ul>
-                    </div>
-                    <hr class="job_dtlz_hr_preview">
-                    <div class="job_description_subsection_preview">
-                        <h4 class="job_dtlz_subttl">Skills & Expertise</h4>
-                        <ul class="job_dtlz_primary_responsibility_points_preview">
-
-                        </ul>
-                    </div>
-                    <hr class="job_dtlz_hr_preview">
-                    <div class="job_dtlz_double_btns_holder_preview">
-                        <button id="applyForJob" class="btn apply_for_da_job_preview">Post this job</button>
-                        <button id="saveThisJob" class="btn close_this_window_preview" data-dismiss="modal">Close window</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> <!-- Job Preview Modal END -->
 
 <div id="main" class="main">
 
@@ -124,62 +62,30 @@
         </div><!-- /.navbar-collapse -->
     </nav>
 
-    <div class="post_a_job_area">
+    <div class="search_results_area">
         <div class="container">
             <div class="row">
-                <div class="post_a_job_title_holder center-block">
-                    <h2 class="contact_area_ttl">Post a Job</h2>
-                    <p class="mandatory_warning">All fields marked with <span>&ast;</span> are required</p>
-                </div>
-                <div class="post_a_job_boxx_holder">
-                    <div class="post_a_job_boxx">
-                        <form id="postJobForm" class="post_a_job_form" role="form">
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="jobTitle" class="sgnp_lbl">Job Title<span class="asterisk">&ast;</span></label>
-                                <input id="jobTitle" type="text" class="signin_input">
+                <div class="search_results_midmain_holder">
+                    <aside class="col-sm-4 search_results_parameters">
+                        <h4 class="search_resumes_2_ttl">Search Details</h4>
+                        <form class="form looking_for_resume_form" role="form">
+                            <div class="col-sm-12 form-group signup_form_group">
+                                <label for="lastName" class="sgnp_lbl">Job Title<span class="asterisk">&ast;</span></label>
+                                <input id="lastName" type="text" class="signin_input">
                             </div>
-                            <div class="col-sm-6 form-group signup_form_group">
-                                <label for="contractType" class="sgnp_lbl">Contract Type<span class="asterisk">&ast;</span></label>
-                                <select id="contractType" type="text">
-                                    <option></option>
-                                    <option>Full Time</option>
-                                    <option>Part Time</option>
-                                    <option>Remote</option>
-                                </select>
-                            </div>
-                            <div class="col-sm-12 form-group postajob_form_group">
-                                <label for="summary" class="sgnp_lbl">Summary<span class="asterisk">&ast;</span></label>
-                                <input id="summary" type="text" class="signin_input">
-                            </div>
-                            <div class="col-sm-12 form-group postajob_form_group">
-                                <label for="jobDescription" class="sgnp_lbl">Job Description (up to 250 characters)</label><span class="asterisk">&ast;</span>
-                                <textarea id="jobDescription" type="text" class="post_a_job_txt_area" maxlength="250"></textarea>
-                            </div>
-                            <div class="col-sm-12 form-group postajob_form_group">
-                                <label for="primaryResponsibilities" class="sgnp_lbl">Primary Responsibilities (up to 250 characters)</label><span class="asterisk">&ast;</span>
-                                <textarea id="primaryResponsibilities" type="text" class="post_a_job_txt_area" maxlength="250"></textarea>
-                            </div>
-                            <div class="col-sm-12 form-group postajob_form_group">
-                                <label for="skillsAndExpertise" class="sgnp_lbl">Skills & Expertise (up to 250 characters)</label><span class="asterisk">&ast;</span>
-                                <textarea id="skillsAndExpertise" type="text" class="post_a_job_txt_area" maxlength="250"></textarea>
-                            </div>
-                            <div class="col-sm-12 form-group postajob_form_group">
-                                <label for="tagsInput" class="sgnp_lbl">Keywords (up to 5)<span class="asterisk"></span></label>
-                                <input id="tagsInput" type="text" value="" data-role="tagsinput" class="taginput">
-                            </div>
-                            <div class="col-sm-6 form-group postajob_form_group">
+                            <div class="col-sm-12 form-group signup_form_group">
                                 <label for="location_state" class="sgnp_lbl">Location (State)<span class="asterisk"></span></label>
                                 <select id="location_state" type="text" class="signin_input">
                                     <option></option>
                                 </select>
                             </div>
-                            <div class="col-sm-6 form-group postajob_form_group">
+                            <div class="col-sm-12 form-group signup_form_group">
                                 <label for="location_city" class="sgnp_lbl">Location (City)<span class="asterisk"></span></label>
                                 <select id="location_city" type="text" class="signin_input">
                                     <option></option>
                                 </select>
                             </div>
-                            <div class="col-sm-6 form-group postajob_form_group">
+                            <div class="col-sm-12 form-group signup_form_group">
                                 <label for="category_2" class="sgnp_lbl">Category<span class="asterisk"></span></label>
                                 <select id="category_2" type="text" class="signin_input">
                                     <option></option>
@@ -204,7 +110,7 @@
                                     <option>Other</option>
                                 </select>
                             </div>
-                            <div class="col-sm-6 form-group postajob_form_group">
+                            <div class="col-sm-12 form-group signup_form_group">
                                 <label for="degree" class="sgnp_lbl">Degree<span class="asterisk"></span></label>
                                 <select id="degree" type="text" class="signin_input">
                                     <option></option>
@@ -219,29 +125,134 @@
                                     <option>Professional</option>
                                 </select>
                             </div>
-                            <div class="col-sm-6 form-group postajob_form_group">
-                                <label for="postingFrom" class="lbl_datepikker">Posting Period (From)<span class="asterisk"></span></label>
-                                <span class="calendarr"></span>
-                                <input id="postingFrom" class="date_picker_input">
-                            </div>
-                            <div class="col-sm-6 form-group postajob_form_group">
-                                <label for="postingTo" class="lbl_datepikker">Posting Period (To)<span class="asterisk"></span></label>
-                                <span class="calendarr"></span>
-                                <input id="postingTo" class="date_picker_input">
-                            </div>
-
-                            <div class="center-block submit_btn_holder_3">
-                                <a id="jobPreview" class="btn job_preview_btn" data-toggle="modal" data-target="#jobPreviewModalDialog">Preview</a>
-                            </div>
-                            <div class="center-block submit_btn_holder_2">
-                                <button type="submit" id="postDaJob" class="btn signin_submit_btn">Submit</button>
+                            <hr class="invisible_hr">
+                            <div class="save_this_search_button_holder center-block">
+                                <button id="saveThisSearch" class="btn save_this_search_btn">Search Resumes</button>
                             </div>
                         </form>
+                    </aside> <!-- Aside END -->
+                    <div class="col-sm-8 rb_user_badge_holder">
+                        <div class="col-lg-12 rb_user_badge">
+                            <div class="badge_upper_part">
+                                <div class="col-sm-3 rb_user_image_holder">
+                                    <div class="rb_user_image" style="background: url('img/user_001.jpg') center center no-repeat; background-size: cover;"></div>
+                                    <span class="yearz_of_xperience_spot">10 years +</span>
+                                </div>
+                                <div class="col-sm-5 rb_user_info">
+                                    <h5 class="rb_user_name">Helen Fairchild</h5>
+                                    <p class="rb_user_degree">Master Degree</p>
+                                    <p class="rb_user_location">Oakland (CA)</p>
+                                    <p class="rb_user_previous_position">CFO at <span>Deutsche Bank AG</span></p>
+                                </div>
+                                <div class="col-sm-4 rb_user_secondary_info">
+                                    <p class="secondary_info_title">Resume Updated: <span class="secondary_info_param">03/11/2016</span></p>
+                                    <p class="secondary_info_title">Relocation: <span class="secondary_info_param">Available</span></p>
+                                    <p class="secondary_info_title">Travel: <span class="secondary_info_param">50%</span></p>
+                                    <p class="secondary_info_title">Authorization: <span class="secondary_info_param">US Citizen</span></p>
+                                </div>
+                            </div>
+                            <hr class="badge_hr">
+                            <div class="badge_lower_part">
+                                <div class="col-sm-4 badge_btnz_holder">
+                                    <div href="#" class="badge_btn watch_vid_resume_btn"><i class="fa fa-film"></i></div>
+                                    <div href="#" class="badge_btn save_resume_btn already_saved"><i class="fa fa-check"></i></div>
+                                    <div href="#" class="badge_btn reject_resume_btn"><i class="fa fa-thumbs-o-down"></i></div>
+                                </div>
+                                <div class="col-sm-8 jobseeker_profile_view_button_holder">
+                                    <button class="btn jobseeker_profile_view_btn">View Profile</button>
+                                </div>
+                            </div>
+                        </div> <!-- User Badge END -->
+
+                        <div class="col-lg-12 rb_user_badge">
+                            <div class="badge_upper_part">
+                                <div class="col-sm-3 rb_user_image_holder">
+                                    <div class="rb_user_image" style="background: url('img/user_003.jpg') center center no-repeat; background-size: cover;"></div>
+                                    <span class="yearz_of_xperience_spot">10 years +</span>
+                                </div>
+                                <div class="col-sm-5 rb_user_info">
+                                    <h5 class="rb_user_name">David Moore</h5>
+                                    <p class="rb_user_degree">Master Degree</p>
+                                    <p class="rb_user_location">Oakland (CA)</p>
+                                    <p class="rb_user_previous_position">CFO at <span>Deutsche Bank AG</span></p>
+                                </div>
+                                <div class="col-sm-4 rb_user_secondary_info">
+                                    <p class="secondary_info_title">Resume Updated: <span class="secondary_info_param">12/09/2017</span></p>
+                                    <p class="secondary_info_title">Relocation: <span class="secondary_info_param">Available</span></p>
+                                    <p class="secondary_info_title">Travel: <span class="secondary_info_param">50%</span></p>
+                                    <p class="secondary_info_title">Authorization: <span class="secondary_info_param">US Citizen</span></p>
+                                </div>
+                            </div>
+                            <hr class="badge_hr">
+                            <div class="badge_lower_part">
+                                <div class="col-sm-4 badge_btnz_holder">
+                                    <div href="#" class="badge_btn watch_vid_resume_btn"><i class="fa fa-film"></i></div>
+                                    <div href="#" class="badge_btn save_resume_btn"><i class="fa fa-floppy-o"></i></div>
+                                    <div href="#" class="badge_btn reject_resume_btn"><i class="fa fa-thumbs-o-down"></i></div>
+                                </div>
+                                <div class="col-sm-8 jobseeker_profile_view_button_holder">
+                                    <button class="btn jobseeker_profile_view_btn">View Profile</button>
+                                </div>
+                            </div>
+                        </div> <!-- User Badge END -->
+
+                        <div class="col-lg-12 rb_user_badge">
+                            <div class="badge_upper_part">
+                                <div class="col-sm-3 rb_user_image_holder">
+                                    <div class="rb_user_image" style="background: url('img/user_bulk_ant.jpg') center center no-repeat; background-size: cover;"></div>
+                                    <span class="yearz_of_xperience_spot">10 years +</span>
+                                </div>
+                                <div class="col-sm-5 rb_user_info">
+                                    <h5 class="rb_user_name">Jonathan Lee</h5>
+                                    <p class="rb_user_degree">Master Degree</p>
+                                    <p class="rb_user_location">Oakland (CA)</p>
+                                    <p class="rb_user_previous_position">CFO at <span>Deutsche Bank AG</span></p>
+                                </div>
+                                <div class="col-sm-4 rb_user_secondary_info">
+                                    <p class="secondary_info_title">Resume Updated: <span class="secondary_info_param">07/11/2015</span></p>
+                                    <p class="secondary_info_title">Relocation: <span class="secondary_info_param">Available</span></p>
+                                    <p class="secondary_info_title">Travel: <span class="secondary_info_param">50%</span></p>
+                                    <p class="secondary_info_title">Authorization: <span class="secondary_info_param">US Citizen</span></p>
+                                </div>
+                            </div>
+                            <hr class="badge_hr">
+                            <div class="badge_lower_part">
+                                <div class="col-sm-4 badge_btnz_holder">
+                                    <div href="#" class="badge_btn watch_vid_resume_btn"><i class="fa fa-film"></i></div>
+                                    <div href="#" class="badge_btn save_resume_btn"><i class="fa fa-floppy-o"></i></div>
+                                    <div href="#" class="badge_btn reject_resume_btn"><i class="fa fa-thumbs-o-down"></i></div>
+                                </div>
+                                <div class="col-sm-8 jobseeker_profile_view_button_holder">
+                                    <button class="btn jobseeker_profile_view_btn">View Profile</button>
+                                </div>
+                            </div>
+                        </div> <!-- User Badge END -->
+
+                        <div class="rb_pagination_holder_2">
+                            <nav>
+                                <ul class="pagination rb_pagination">
+                                    <li>
+                                        <a href="javascript:void(0)" aria-label="Previous" class="frozen">
+                                            <span aria-hidden="true">Previous</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="javascript:void(0)" class="active">1</a></li>
+                                    <li><a href="javascript:void(0)">2</a></li>
+                                    <li><a href="javascript:void(0)">3</a></li>
+                                    <li>
+                                        <a href="javascript:void(0)" aria-label="Next">
+                                            <span aria-hidden="true">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!-- Post a Job Area END -->
+    </div> <!-- Search Results Area END -->
 
     <div class="skewed_layer_support"></div> <!-- Invisible utility for supporting following skewed layout -->
 
@@ -311,20 +322,6 @@
 <!-- jQuery'z -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-<script type="text/javascript" src="js/bootstrap-tagsinput.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-<script type="text/javascript">
-
-    $(function() {
-        $( "#postingFrom, #postingTo").datepicker();
-    });
-
-    $('#tagsInput').tagsinput({
-        maxTags: 5
-    });
-
-</script>
-
 
 <!-- JSz -->
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -338,8 +335,12 @@
     });
     $('#location_city').select2({
         width: '100%',
-        minimumResultsForSearch: 1,
+        minimumResultsForSearch: -1,
         placeholder: "Select City..."
+    });
+    $('#myCompanySize').select2({
+        width: '100%',
+        minimumResultsForSearch: -1
     });
     $('#degree, #category_2, #contractType').select2({
         width: '100%',
@@ -347,6 +348,7 @@
         placeholder: "Please select..."
     });
 </script>
+
 
 </body>
 </html>
