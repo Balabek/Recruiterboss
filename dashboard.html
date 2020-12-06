@@ -1,0 +1,2101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+    <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
+    <title>Recruiterboss :: ADMIN DASHBOARD</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap + Custom Stylez -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="css/animate.css" rel="stylesheet" media="all">
+    <link href="css/webfonts.css" rel="stylesheet" media="all">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/recruiterboss.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="main" class="main">
+
+    <!-- Appears on top of the page only when user is authorized (logged into the system) -->
+    <div class="uppermost_navbar animated fadeInUp">
+        <a href="#" class="btn-link signout_btn">Sign Out</a>
+        <small class="uppermost_user_info">Signed in as <span>James</span> <a href="#" class="uppermost_user_thumb_circle bulk_user"></a> </small>
+    </div>
+
+    <nav class="navbar navbar-default rb_navigation_inner">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#rb_bcollapse_logged_in" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated bounceInLeft" href="#">
+                <img src="img/logo_v2.svg" class="rb_main_logo_inner">
+                <img src="img/logo_v2_crop.svg" class="rb_main_logo_cropped_inner">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="rb_bcollapse_logged_in">
+            <ul class="nav navbar-nav rb_navstripe_inner navbar-right animated bounceInLeft">
+                <li>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Search Resume</a>
+                </li>
+                <li>
+                    <a class="rb_hexagon_button green hvr-shrink navbarhex" href="#">Post Your Job</a>
+                </li>
+                <li>
+                    <a class="rb_hexagon_button white hvr-shrink navbarhex" href="#">Dashboard</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div class="dashboard_main_area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="dashboard_inner_area">
+                    <aside class="col-sm-3 dashboard_sidebar">
+                        <!-- Nav tabs -->
+                        <ul id="rb_dashboard_tab_list" class="nav nav-tabs-justified" role="tablist">
+                            <li role="presentation" class="active"><a href="#summary" aria-controls="home" role="tab" data-toggle="tab">Summary</a></li>
+                            <li role="presentation"><a class="rb_dashboard_tab_btn" href="#jobseekers" aria-controls="profile" role="tab" data-toggle="tab">Jobseekers</a></li>
+                            <li role="presentation"><a class="rb_dashboard_tab_btn" href="#employers" aria-controls="messages" role="tab" data-toggle="tab">Employers</a></li>
+                            <li role="presentation"><a class="rb_dashboard_tab_btn" href="#jobs" aria-controls="settings" role="tab" data-toggle="tab">Jobs</a></li>
+                            <li role="presentation"><a class="rb_dashboard_tab_btn" href="#resumes" aria-controls="settings" role="tab" data-toggle="tab">Video Resumes</a></li>
+                            <li role="presentation"><a class="rb_dashboard_tab_btn" href="#comments" aria-controls="settings" role="tab" data-toggle="tab">Comments (Blog)</a></li>
+                            <li role="presentation"><a class="rb_dashboard_tab_btn" href="#payments" aria-controls="settings" role="tab" data-toggle="tab">Payments</a></li>
+                        </ul>
+                    </aside> <!-- Dashboard sidebar END -->
+
+                    <div class="col-sm-9 dashboard_tabs_holder">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="summary">
+                                <div class="dashboard_tab_section">
+                                    <h2 class="dashboard_ttl center-block text-center">General Stats</h2>
+                                    <div class="dashboard_tab_one_midmain center-block">
+
+                                        <div class="col-sm-4 summaryboxx">
+                                            <div class="summary_icon employers"></div>
+                                            <div class="s_number_holder center-block">
+                                                <h2 class="s_number"><span id="summaryEmployersNumber" class="counter">386</span></h2>
+                                            </div>
+                                            <div class="center-block s_text_holder">
+                                                <h4 class="s_text">Employers</h4>
+                                            </div>
+                                        </div> <!-- Summaryboxx END -->
+
+                                        <div class="col-sm-4 summaryboxx">
+                                            <div class="summary_icon jobseekers"></div>
+                                            <div class="s_number_holder center-block">
+                                                <h2 class="s_number"><span id="summaryJobseekersNumber" class="counter">1370</span></h2>
+                                            </div>
+                                            <div class="center-block s_text_holder">
+                                                <h4 class="s_text">Jobseekers</h4>
+                                            </div>
+                                        </div> <!-- Summaryboxx END -->
+
+                                        <div class="col-sm-4 summaryboxx">
+                                            <div class="summary_icon videoresumes"></div>
+                                            <div class="s_number_holder center-block">
+                                                <h2 class="s_number"><span id="summaryVideoresumeNumber" class="counter">108</span></h2>
+                                            </div>
+                                            <div class="center-block s_text_holder">
+                                                <h4 class="s_text">Video Resumes</h4>
+                                            </div>
+                                        </div> <!-- Summaryboxx END -->
+
+                                        <div class="col-sm-4 summaryboxx">
+                                            <div class="summary_icon standardresumes"></div>
+                                            <div class="s_number_holder center-block">
+                                                <h2 class="s_number"><span id="summaryStandardresumeNumber" class="counter">2755</span></h2>
+                                            </div>
+                                            <div class="center-block s_text_holder">
+                                                <h4 class="s_text">Standard Resumes</h4>
+                                            </div>
+                                        </div> <!-- Summaryboxx END -->
+
+                                        <div class="col-sm-4 summaryboxx">
+                                            <div class="summary_icon paymentz"></div>
+                                            <div class="s_number_holder center-block">
+                                                <h2 class="s_number">$<span id="summarySalesNumber" class="counter">65</span>k</h2>
+                                            </div>
+                                            <div class="center-block s_text_holder">
+                                                <h4 class="s_text">Packages Purchased</h4>
+                                            </div>
+                                        </div> <!-- Summaryboxx END -->
+
+                                        <div class="col-sm-4 summaryboxx">
+                                            <div class="summary_icon blogposts"></div>
+                                            <div class="s_number_holder center-block">
+                                                <h2 class="s_number"><span id="summaryBlogsNumber" class="counter">514</span></h2>
+                                            </div>
+                                            <div class="center-block s_text_holder">
+                                                <h4 class="s_text">Blog Posts</h4>
+                                            </div>
+                                        </div> <!-- Summaryboxx END -->
+                                    </div>
+                                </div>
+                            </div> <!-- Summary Tab END -->
+
+                            <div role="tabpanel" class="tab-pane fade" id="jobseekers">
+                                <div class="dashboard_tab_section">
+                                    <h2 class="dashboard_ttl center-block text-center">Jobseekers</h2>
+                                    <div class="dashboard_tab_two_midmain center-block">
+                                        <div class="search_and_filer_upper_section">
+                                            <div class="col-sm-5 search_form_holder">
+                                                <form id="jobseekerSearch" class="jobseeker_search">
+                                                    <div class="form-group">
+                                                        <label for="jobseekerSearchFilterInput" class="dshbrd_lbl">Search Jobseekers</label>
+                                                        <input id="jobseekerSearchFilterInput" type="search" class="dashboard_search_input" placeholder="Enter a keyword..." onfocus="placeholder='' " onblur="placeholder='Enter a keyword...' ">
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="col-sm-5 pull-right user_filter_holder">
+                                                <form id="jobseekerFilter" class="jobseeker_filter">
+                                                    <div class="form-group">
+                                                        <label for="jobseekerFilterSelekta" class="dshbrd_lbl">Show...</label>
+                                                        <select id="jobseekerFilterSelekta" type="text">
+                                                            <option>Active Jobseekers</option>
+                                                            <option>Suspended Jobseekers</option>
+                                                            <option>Deleted Jobseekers</option>
+                                                        </select>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div> <!-- Search & Filter Upper Section END -->
+
+                                        <div class="clearfix"></div>
+
+                                        <div class="control_buttons_section">
+                                            <button class="btn dashboard_unblock_btn hidden">Unblock</button> <!-- Appears only when 'Suspended Jobseekers' tab is selected! -->
+                                            <button class="btn dashboard_erase_forever_btn hidden">Remove Forever</button> <!-- Appears only when 'Deleted Jobseekers' tab is selected! -->
+                                            <button class="btn dashboard_suspend_btn">Suspend</button>
+                                            <button class="btn dashboard_delete_btn">Delete</button>
+                                        </div>
+
+                                        <div class="dashboard_table_main_holder">
+                                            <div class="dashboard_table">
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow01" />
+                                                                <label class="l3l" for="multiSelectorRow01"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Satoshi Nakamota</p>
+                                                            <p class="dashboard_jobseeker_job">Senior C# Developer</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">08/10/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow02" />
+                                                                <label class="l3l" for="multiSelectorRow02"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Maria Strellson</p>
+                                                            <p class="dashboard_jobseeker_job">Doctor of Science in at Walmart</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">08/22/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow03" />
+                                                                <label class="l3l" for="multiSelectorRow03"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Joshua Wrigleys</p>
+                                                            <p class="dashboard_jobseeker_job">Project Manager at Fujifilm Corporation</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">09/03/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow04" />
+                                                                <label class="l3l" for="multiSelectorRow04"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Stephen Dorohowitz</p>
+                                                            <p class="dashboard_jobseeker_job">Professional Massage Therapist</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">09/17/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow05" />
+                                                                <label class="l3l" for="multiSelectorRow05"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Helen Fergusson</p>
+                                                            <p class="dashboard_jobseeker_job">Accountant at Red Wings™</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">09/21/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow06" />
+                                                                <label class="l3l" for="multiSelectorRow06"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Sergey Demidov</p>
+                                                            <p class="dashboard_jobseeker_job">Hacker at KGB</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">09/29/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow07" />
+                                                                <label class="l3l" for="multiSelectorRow07"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Theresa Bush</p>
+                                                            <p class="dashboard_jobseeker_job">Voice-over Artist at Pixar</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">10/10/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow08" />
+                                                                <label class="l3l" for="multiSelectorRow08"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Louis Spencer</p>
+                                                            <p class="dashboard_jobseeker_job">Fine Arts Teacher at Crenshaw High</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">10/16/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow09" />
+                                                                <label class="l3l" for="multiSelectorRow09"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">James Lavelle</p>
+                                                            <p class="dashboard_jobseeker_job">Producer & Sound Engineer</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">10/19/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe suspended">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow10" />
+                                                                <label class="l3l" for="multiSelectorRow10"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Veronica Villalobos</p>
+                                                            <p class="dashboard_jobseeker_job">Strip Dancer at Tough Pub</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">01/20/2018</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe deleted">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow11" />
+                                                                <label class="l3l" for="multiSelectorRow11"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Oliver Fotzenficker</p>
+                                                            <p class="dashboard_jobseeker_job">Junior Android Developer</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">06/22/2017</p>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder_deleted pull-right">
+                                                        <p class="jobdate date_deleted">01/19/2018</p>
+                                                    </section>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="rb_pagination_holder_dashboard">
+                                            <nav>
+                                                <ul class="pagination rb_pagination">
+                                                    <li>
+                                                        <a href="javascript:void(0)" aria-label="Previous" class="frozen">
+                                                            <span aria-hidden="true">Previous</span>
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="javascript:void(0)" class="active">1</a></li>
+                                                    <li><a href="javascript:void(0)">2</a></li>
+                                                    <li><a href="javascript:void(0)">3</a></li>
+                                                    <li>
+                                                        <a href="javascript:void(0)" aria-label="Next">
+                                                            <span aria-hidden="true">Next</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div> <!-- Jobseekers Tab END -->
+
+
+                            <div role="tabpanel" class="tab-pane fade" id="employers">
+                                <div class="dashboard_tab_section">
+                                    <h2 class="dashboard_ttl center-block text-center">Employers</h2>
+                                    <div class="dashboard_tab_two_midmain center-block">
+                                        <div class="search_and_filer_upper_section">
+                                            <div class="col-sm-5 search_form_holder">
+                                                <form id="employersSearch" class="jobseeker_search">
+                                                    <div class="form-group">
+                                                        <label for="jobseekerSearchFilterInput" class="dshbrd_lbl">Search Employers</label>
+                                                        <input id="employersSearchFilterInput" type="search" class="dashboard_search_input" placeholder="Enter a keyword..." onfocus="placeholder='' " onblur="placeholder='Enter a keyword...' ">
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="col-sm-5 pull-right user_filter_holder">
+                                                <form id="employerFilter" class="jobseeker_filter">
+                                                    <div class="form-group">
+                                                        <label for="employerFilterSelekta" class="dshbrd_lbl">Show...</label>
+                                                        <select id="employerFilterSelekta" type="text">
+                                                            <option>Active Employers</option>
+                                                            <option>Suspended Employers</option>
+                                                            <option>Deleted Employers</option>
+                                                        </select>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div> <!-- Search & Filter Upper Section END -->
+
+                                        <div class="clearfix"></div>
+
+                                        <div class="control_buttons_section">
+                                            <button class="btn dashboard_unblock_btn hidden">Unblock</button> <!-- Appears only when 'Suspended Jobseekers' tab is selected! -->
+                                            <button class="btn dashboard_erase_forever_btn hidden">Remove Forever</button> <!-- Appears only when 'Deleted Jobseekers' tab is selected! -->
+                                            <button class="btn dashboard_suspend_btn">Suspend</button>
+                                            <button class="btn dashboard_delete_btn">Delete</button>
+                                        </div>
+
+                                        <div class="dashboard_table_main_holder">
+                                            <div class="dashboard_table">
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow12" />
+                                                                <label class="l3l" for="multiSelectorRow12"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Michael Carey</p>
+                                                            <p class="dashboard_jobseeker_job">Neurotronic Solutions</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">03/25/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow13" />
+                                                                <label class="l3l" for="multiSelectorRow13"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Darren Emerson</p>
+                                                            <p class="dashboard_jobseeker_job">LuciDreams™</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">04/04/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow14" />
+                                                                <label class="l3l" for="multiSelectorRow14"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Walter Affanasief</p>
+                                                            <p class="dashboard_jobseeker_job">Arista Records</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">05/11/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow15" />
+                                                                <label class="l3l" for="multiSelectorRow15"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Lauren Zumwalt</p>
+                                                            <p class="dashboard_jobseeker_job">Splinter Dots Entertainment</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">05/21/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow16" />
+                                                                <label class="l3l" for="multiSelectorRow16"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Ferry Braunstein</p>
+                                                            <p class="dashboard_jobseeker_job">Dragonfly Airlines LTD.</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">07/31/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow17" />
+                                                                <label class="l3l" for="multiSelectorRow17"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Henry Chang</p>
+                                                            <p class="dashboard_jobseeker_job">Cyber Security Division</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">10/12/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow18" />
+                                                                <label class="l3l" for="multiSelectorRow18"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Dolores May</p>
+                                                            <p class="dashboard_jobseeker_job">United Robotics Inc.</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">03/29/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow19" />
+                                                                <label class="l3l" for="multiSelectorRow19"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Jeremy Holloway</p>
+                                                            <p class="dashboard_jobseeker_job">Meat N' Fish™ Restaurant Network</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">02/24/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow20" />
+                                                                <label class="l3l" for="multiSelectorRow20"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Dominic Rodriguez</p>
+                                                            <p class="dashboard_jobseeker_job">Standpoint Mastering</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">12/07/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe suspended">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow21" />
+                                                                <label class="l3l" for="multiSelectorRow21"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Martin Anderson</p>
+                                                            <p class="dashboard_jobseeker_job">Memopin Inc.</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">11/28/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe deleted">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow22" />
+                                                                <label class="l3l" for="multiSelectorRow22"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-8 col-sm-7 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_jobseeker_name">Jennifer Gray</p>
+                                                            <p class="dashboard_jobseeker_job">Miller Brothers Ensurance</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">06/22/2017</p>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder_deleted pull-right">
+                                                        <p class="jobdate date_deleted">01/19/2018</p>
+                                                    </section>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="rb_pagination_holder_dashboard">
+                                            <nav>
+                                                <ul class="pagination rb_pagination">
+                                                    <li>
+                                                        <a href="javascript:void(0)" aria-label="Previous" class="frozen">
+                                                            <span aria-hidden="true">Previous</span>
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="javascript:void(0)" class="active">1</a></li>
+                                                    <li><a href="javascript:void(0)">2</a></li>
+                                                    <li><a href="javascript:void(0)">3</a></li>
+                                                    <li>
+                                                        <a href="javascript:void(0)" aria-label="Next">
+                                                            <span aria-hidden="true">Next</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div> <!-- Employers Tab END -->
+
+                            <div role="tabpanel" class="tab-pane fade" id="jobs">
+                                <div class="dashboard_tab_section">
+                                    <h2 class="dashboard_ttl center-block text-center">Jobs</h2>
+                                    <div class="dashboard_tab_two_midmain center-block">
+                                        <div class="search_and_filer_upper_section">
+                                            <div class="col-sm-5 search_form_holder">
+                                                <form id="jobsSearch" class="jobseeker_search">
+                                                    <div class="form-group">
+                                                        <label for="jobsSearchFilterInput" class="dshbrd_lbl">Search Jobs</label>
+                                                        <input id="jobsSearchFilterInput" type="search" class="dashboard_search_input" placeholder="Enter a keyword..." onfocus="placeholder='' " onblur="placeholder='Enter a keyword...' ">
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="col-sm-5 pull-right user_filter_holder">
+                                                <form id="jobsFilter" class="jobseeker_filter">
+                                                    <div class="form-group">
+                                                        <label for="jobsFilterSelekta" class="dshbrd_lbl">Show...</label>
+                                                        <select id="jobsFilterSelekta" type="text">
+                                                            <option>Approved (Active) Jobs</option>
+                                                            <option>Pending Jobs</option>
+                                                            <option>Deleted Jobs</option>
+                                                        </select>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div> <!-- Search & Filter Upper Section END -->
+
+                                        <div class="clearfix"></div>
+
+                                        <div class="control_buttons_section">
+                                            <button class="btn dashboard_approve_job_btn ">Approve</button>
+                                            <button class="btn dashboard_sendalert_btn ">Send Alert</button>
+                                            <button class="btn dashboard_delete_btn ">Delete</button>
+                                        </div>
+
+                                        <div class="dashboard_table_main_holder">
+                                            <div class="dashboard_table">
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow23" />
+                                                                <label class="l3l" for="multiSelectorRow23"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_job_post_title">Junior Angular JS Developer<i class="job_approved fa fa-check-square-o"></i></p>
+                                                            <p class="dashboard_job_posters_username">by <i>Boston Dynamics</i></p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">03/25/2017</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow24" />
+                                                                <label class="l3l" for="multiSelectorRow24"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_job_post_title">Business Analyst<i class="job_approved fa fa-check-square-o"></i></p>
+                                                            <p class="dashboard_job_posters_username">by <i>Meltdown Animations</i></p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">07/15/2017</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow25" />
+                                                                <label class="l3l" for="multiSelectorRow25"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_job_post_title">Senior Sweeper<i class="job_approved fa fa-check-square-o"></i></p>
+                                                            <p class="dashboard_job_posters_username">by <i>Clean N' Shine Co.</i></p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">04/20/2017</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow26" />
+                                                                <label class="l3l" for="multiSelectorRow26"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_job_post_title">Chief Editor<i class="job_approved fa fa-check-square-o"></i></p>
+                                                            <p class="dashboard_job_posters_username">by <i>Juice Magazine</i></p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">02/28/2017</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow27" />
+                                                                <label class="l3l" for="multiSelectorRow27"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_job_post_title">Refueler<i class="job_approved fa fa-check-square-o"></i></p>
+                                                            <p class="dashboard_job_posters_username">by <i>Texaco North</i></p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">06/03/2017</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow28" />
+                                                                <label class="l3l" for="multiSelectorRow28"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_job_post_title">Sound Engineer<i class="job_approved fa fa-check-square-o"></i></p>
+                                                            <p class="dashboard_job_posters_username">by <i>Standpoint Records</i></p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">09/25/2017</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow29" />
+                                                                <label class="l3l" for="multiSelectorRow29"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_job_post_title">Front-end Developer<i class="job_approved fa fa-check-square-o"></i></p>
+                                                            <p class="dashboard_job_posters_username">by <i>GreenStar™ Communications</i></p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">10/29/2017</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow30" />
+                                                                <label class="l3l" for="multiSelectorRow30"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_job_post_title">Astronomy Teacher<i class="job_approved fa fa-check-square-o"></i></p>
+                                                            <p class="dashboard_job_posters_username">by <i>South Bronx High School</i></p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">05/19/2017</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe pending">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow31" />
+                                                                <label class="l3l" for="multiSelectorRow31"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_job_post_title">Radio DJ</p>
+                                                            <p class="dashboard_job_posters_username">by <i>KBFW Broadcasting</i></p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">01/18/2018</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Send Alert"><i class="fa fa-bell"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right " data-toggle="tooltip" data-placement="left" title="Approve"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe pending">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow32" />
+                                                                <label class="l3l" for="multiSelectorRow32"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_job_post_title">Customer Support Representative<i class="job_alert_sent fa fa-bell"></i></p>
+                                                            <p class="dashboard_job_posters_username">by <i>B&H Photo & Video </i></p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">01/22/2018</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Send Alert"><i class="fa fa-bell"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right " data-toggle="tooltip" data-placement="left" title="Approve"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe pending_edited">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow33" />
+                                                                <label class="l3l" for="multiSelectorRow33"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_job_post_title">Junior iOS Developer<i class="job_edited fa fa-pencil-square"></i><small class="job_edit_status_update">(16 hours ago)</small></p>
+                                                            <p class="dashboard_job_posters_username">by <i>Parallax Solutions</i></p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">01/26/2018</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Send Alert"><i class="fa fa-bell"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right " data-toggle="tooltip" data-placement="left" title="Approve"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+                                            </div>
+
+                                            <div class="rb_pagination_holder_dashboard">
+                                                <nav>
+                                                    <ul class="pagination rb_pagination">
+                                                        <li>
+                                                            <a href="javascript:void(0)" aria-label="Previous" class="frozen">
+                                                                <span aria-hidden="true">Previous</span>
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="javascript:void(0)" class="active">1</a></li>
+                                                        <li><a href="javascript:void(0)">2</a></li>
+                                                        <li><a href="javascript:void(0)">3</a></li>
+                                                        <li>
+                                                            <a href="javascript:void(0)" aria-label="Next">
+                                                                <span aria-hidden="true">Next</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Jobs Tab END -->
+
+                            <div role="tabpanel" class="tab-pane fade" id="resumes">
+                                <div class="dashboard_tab_section">
+                                    <h2 class="dashboard_ttl center-block text-center">Video Resumes</h2>
+                                    <div class="dashboard_tab_two_midmain center-block">
+                                        <div class="search_and_filer_upper_section">
+                                            <div class="col-sm-5 search_form_holder">
+                                                <form id="resumeSearch" class="jobseeker_search">
+                                                    <div class="form-group">
+                                                        <label for="jobsSearchFilterInput" class="dshbrd_lbl">Search Resume</label>
+                                                        <input id="resumeSearchFilterInput" type="search" class="dashboard_search_input" placeholder="Enter a keyword..." onfocus="placeholder='' " onblur="placeholder='Enter a keyword...' ">
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="col-sm-5 pull-right user_filter_holder">
+                                                <form id="resumeFilter" class="jobseeker_filter">
+                                                    <div class="form-group">
+                                                        <label for="resumeFilterSelekta" class="dshbrd_lbl">Show...</label>
+                                                        <select id="resumeFilterSelekta" type="text">
+                                                            <option>Approved (Active) Resumes</option>
+                                                            <option>Pending Resumes</option>
+                                                            <option>Deleted Resumes</option>
+                                                        </select>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div> <!-- Search & Filter Upper Section END -->
+
+                                        <div class="clearfix"></div>
+
+                                        <div class="control_buttons_section">
+                                            <button class="btn dashboard_approve_job_btn ">Approve</button>
+                                            <button class="btn dashboard_sendalert_btn ">Send Alert</button>
+                                            <button class="btn dashboard_delete_btn ">Delete</button>
+                                        </div>
+
+                                        <div class="dashboard_table_main_holder">
+                                            <div class="dashboard_table">
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow34" />
+                                                                <label class="l3l" for="multiSelectorRow34"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                            <p class="dashboard_video_resume_name">My Video Resume 2018
+                                                                <a href="javascript:void(0)" class="video_resume_shortcut"><i class="play_video_resume fa fa-video-camera"></i></a>
+                                                                <i class="job_approved fa fa-check-square-o"></i>
+                                                            </p>
+                                                            <a href="#" class="dashboard_video_resume_author_name">by <i>Keith Murray</i></a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">01/09/2017</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow35" />
+                                                                <label class="l3l" for="multiSelectorRow35"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                            <p class="dashboard_video_resume_name">Video Resume
+                                                                <a href="javascript:void(0)" class="video_resume_shortcut"><i class="play_video_resume fa fa-video-camera"></i></a>
+                                                                <i class="job_approved fa fa-check-square-o"></i>
+                                                            </p>
+                                                            <a href="#" class="dashboard_video_resume_author_name">by <i>Paul Hamilton</i></a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">11/29/2017</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow36" />
+                                                                <label class="l3l" for="multiSelectorRow36"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                            <p class="dashboard_video_resume_name">Professional Video Resume 2017
+                                                                <a href="javascript:void(0)" class="video_resume_shortcut"><i class="play_video_resume fa fa-video-camera"></i></a>
+                                                                <i class="job_approved fa fa-check-square-o"></i>
+                                                            </p>
+                                                            <a href="#" class="dashboard_video_resume_author_name">by <i>Manuel Cooper</i></a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">12/20/2017</p>
+                                                    </section>
+                                                    <section class="col-md-2 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow37" />
+                                                                <label class="l3l" for="multiSelectorRow37"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                            <p class="dashboard_video_resume_name">Video Resume
+                                                                <a href="javascript:void(0)" class="video_resume_shortcut"><i class="play_video_resume fa fa-video-camera"></i></a>
+                                                                <i class="job_approved fa fa-check-square-o"></i>
+                                                            </p>
+                                                            <a href="#" class="dashboard_video_resume_author_name">by <i>Jennifer Spencer</i></a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">11/20/2017</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow38" />
+                                                                <label class="l3l" for="multiSelectorRow38"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <p class="dashboard_video_resume_name">Latest Resume 2018
+                                                            <a href="javascript:void(0)" class="video_resume_shortcut"><i class="play_video_resume fa fa-video-camera"></i></a>
+                                                            <i class="job_approved fa fa-check-square-o"></i>
+                                                        </p>
+                                                        <a href="#" class="dashboard_video_resume_author_name">by <i>Lauren Brannon</i></a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">10/29/2017</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow39" />
+                                                                <label class="l3l" for="multiSelectorRow39"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <p class="dashboard_video_resume_name">My Resume 2018
+                                                            <a href="javascript:void(0)" class="video_resume_shortcut"><i class="play_video_resume fa fa-video-camera"></i></a>
+                                                            <i class="job_approved fa fa-check-square-o"></i>
+                                                        </p>
+                                                        <a href="#" class="dashboard_video_resume_author_name">by <i>Jason Gallagher</i></a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">11/27/2017</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control delete_ctrl pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control edit_ctrl pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow40" />
+                                                                <label class="l3l" for="multiSelectorRow40"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <p class="dashboard_video_resume_name">Video Resume 2018
+                                                            <a href="javascript:void(0)" class="video_resume_shortcut"><i class="play_video_resume fa fa-video-camera"></i></a>
+                                                            <i class="job_approved fa fa-check-square-o"></i>
+                                                        </p>
+                                                        <a href="#" class="dashboard_video_resume_author_name">by <i>Ginger Banks</i></a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">03/31/2017</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right hidden" data-toggle="tooltip" data-placement="left" title="Suspend"><i class="fa fa-ban"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe pending_edited">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow41" />
+                                                                <label class="l3l" for="multiSelectorRow41"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <p class="dashboard_video_resume_name">My Resume
+                                                            <a href="javascript:void(0)" class="video_resume_shortcut"><i class="play_video_resume fa fa-video-camera"></i></a>
+                                                            <i class="job_edited fa fa-pencil-square"></i><small class="job_edit_status_update">(edited 28 minutes ago)</small>
+                                                        </p>
+                                                        <a href="#" class="dashboard_video_resume_author_name">by <i>Garry McCartney</i></a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">01/20/2018</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right" data-toggle="tooltip" data-placement="left" title="Send Alert"><i class="fa fa-bell"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right " data-toggle="tooltip" data-placement="left" title="Approve"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe pending">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow42" />
+                                                                <label class="l3l" for="multiSelectorRow42"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <p class="dashboard_video_resume_name">Test Test
+                                                            <a href="javascript:void(0)" class="video_resume_shortcut"><i class="play_video_resume fa fa-video-camera"></i></a>
+                                                            <i class="job_alert_sent fa fa-bell"></i>
+                                                        </p>
+                                                        <a href="#" class="dashboard_video_resume_author_name">by <i>Amber Trapassi</i></a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">01/20/2018</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right" data-toggle="tooltip" data-placement="left" title="Send Alert"><i class="fa fa-bell"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right " data-toggle="tooltip" data-placement="left" title="Approve"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe pending">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow43" />
+                                                                <label class="l3l" for="multiSelectorRow43"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-md-7 col-sm-5 dashboard_name_and_job_holder">
+                                                        <p class="dashboard_video_resume_name">Video Resume #2
+                                                            <a href="javascript:void(0)" class="video_resume_shortcut"><i class="play_video_resume fa fa-video-camera"></i></a>
+                                                            <!--<i class="job_alert_sent fa fa-bell"></i>-->
+                                                        </p>
+                                                        <a href="#" class="dashboard_video_resume_author_name">by <i>Christopher Wallace</i></a>
+                                                    </section>
+                                                    <section class="col-md-1 col-sm-2 dashboard_jobdate_holder">
+                                                        <p class="jobdate date_added">01/27/2018</p>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-4 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right" data-toggle="tooltip" data-placement="left" title="Send Alert"><i class="fa fa-bell"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right " data-toggle="tooltip" data-placement="left" title="Approve"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="rb_pagination_holder_dashboard">
+                                                    <nav>
+                                                        <ul class="pagination rb_pagination">
+                                                            <li>
+                                                                <a href="javascript:void(0)" aria-label="Previous" class="frozen">
+                                                                    <span aria-hidden="true">Previous</span>
+                                                                </a>
+                                                            </li>
+                                                            <li><a href="javascript:void(0)" class="active">1</a></li>
+                                                            <li><a href="javascript:void(0)">2</a></li>
+                                                            <li><a href="javascript:void(0)">3</a></li>
+                                                            <li>
+                                                                <a href="javascript:void(0)" aria-label="Next">
+                                                                    <span aria-hidden="true">Next</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div> <!-- Resumes Tab END -->
+
+                            <div role="tabpanel" class="tab-pane fade" id="comments">
+                                <div class="dashboard_tab_section">
+                                    <h2 class="dashboard_ttl center-block text-center">Blog Comments</h2>
+                                    <div class="dashboard_tab_two_midmain center-block">
+                                        <div class="search_and_filer_upper_section">
+                                            <div class="col-sm-5 search_form_holder">
+                                                <form id="blogCommentSearch" class="jobseeker_search">
+                                                    <div class="form-group">
+                                                        <label for="blogCommentSearchFilterInput" class="dshbrd_lbl">Search Comments</label>
+                                                        <input id="blogCommentSearchFilterInput" type="search" class="dashboard_search_input" placeholder="Enter a keyword..." onfocus="placeholder='' " onblur="placeholder='Enter a keyword...' ">
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="col-sm-5 pull-right user_filter_holder">
+                                                <form id="blogCommentSearchFilter" class="jobseeker_filter">
+                                                    <div class="form-group">
+                                                        <label for="blogCommentSearchFilterSelekta" class="dshbrd_lbl">Show...</label>
+                                                        <select id="blogCommentSearchFilterSelekta" type="text">
+                                                            <option>Approved Comments</option>
+                                                            <option>Pending Comments</option>
+                                                        </select>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div> <!-- Search & Filter Upper Section END -->
+
+                                        <div class="clearfix"></div>
+
+                                        <div class="control_buttons_section">
+                                            <button class="btn dashboard_approve_job_btn hidden">Approve</button>
+                                            <button class="btn dashboard_delete_btn ">Delete</button>
+                                        </div>
+
+                                        <div class="dashboard_table_main_holder">
+                                            <div class="dashboard_table">
+
+                                                <div class="well rb_dashboard_stripe_blog_comments strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow44" />
+                                                                <label class="l3l" for="multiSelectorRow44"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-sm-4 dashboard_blog_comment_and_author_holder">
+                                                        <p class="dashboard_blog_post_name">In <a href="#">Why Bitcoin sucks in 2018 and the ways to overcome the issues</a></p>
+                                                        <p class="dashboard_blog_post_comment_author">By <a href="#">Sarah O'Connor</a></p>
+                                                    </section>
+                                                    <section class="col-sm-4 dashboard_comment_textbox_holder">
+                                                        <textarea class="dashboard_comment_textbox">
+This is nonsense! I've invested about $50k in XRP (Ripple) and bought a 2018 Bugatti in 2 months! Crypto is the future right there!
+                                                        </textarea>
+                                                    </section>
+                                                    <section class="col-sm-1 dashboard_jobdate_holder">
+                                                        <p class="blog_comment_date date_added">01/09/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe_blog_comments strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow45" />
+                                                                <label class="l3l" for="multiSelectorRow45"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-sm-4 dashboard_blog_comment_and_author_holder">
+                                                        <p class="dashboard_blog_post_name">In <a href="#">The hottest jobs of the new year are announced</a></p>
+                                                        <p class="dashboard_blog_post_comment_author">By <a href="#">Leonard Brooks</a></p>
+                                                    </section>
+                                                    <section class="col-sm-4 dashboard_comment_textbox_holder">
+                                                        <textarea class="dashboard_comment_textbox">
+I've been working as sweeper for 45 years and still think that got the hottest job... Hell yeah!
+                                                        </textarea>
+                                                    </section>
+                                                    <section class="col-sm-1 dashboard_jobdate_holder">
+                                                        <p class="blog_comment_date date_added">02/28/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe_blog_comments strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow46" />
+                                                                <label class="l3l" for="multiSelectorRow46"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-sm-4 dashboard_blog_comment_and_author_holder">
+                                                        <p class="dashboard_blog_post_name">In <a href="#">JP Morgan Chase to have massive job cuts due Q2</a></p>
+                                                        <p class="dashboard_blog_post_comment_author">By <a href="#">Karen Lowerkirk</a></p>
+                                                    </section>
+                                                    <section class="col-sm-4 dashboard_comment_textbox_holder">
+                                                        <textarea class="dashboard_comment_textbox">
+Wow! Where's the source???
+                                                        </textarea>
+                                                    </section>
+                                                    <section class="col-sm-1 dashboard_jobdate_holder">
+                                                        <p class="blog_comment_date date_added">03/11/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe_blog_comments strp_white">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow47" />
+                                                                <label class="l3l" for="multiSelectorRow47"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-sm-4 dashboard_blog_comment_and_author_holder">
+                                                        <p class="dashboard_blog_post_name">In <a href="#">President Trup announces brand new tax cut reform</a></p>
+                                                        <p class="dashboard_blog_post_comment_author">By <a href="#">James Gordon</a></p>
+                                                    </section>
+                                                    <section class="col-sm-4 dashboard_comment_textbox_holder">
+                                                        <textarea class="dashboard_comment_textbox">
+Make America Great Again!!!!!!!!
+                                                        </textarea>
+                                                    </section>
+                                                    <section class="col-sm-1 dashboard_jobdate_holder">
+                                                        <p class="blog_comment_date date_added">05/22/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe_blog_comments strp_grey">
+                                                    <section class="col-sm-1 admin_checkboxx_holder">
+                                                        <div class="rb_dashboard_checkboxx_form">
+                                                            <p>
+                                                                <input class="t3t" type="checkbox" id="multiSelectorRow48" />
+                                                                <label class="l3l" for="multiSelectorRow48"></label>
+                                                            </p>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-sm-4 dashboard_blog_comment_and_author_holder">
+                                                        <p class="dashboard_blog_post_name">In <a href="#">Blockchain to destroy the "blue collar" jobs sector</a></p>
+                                                        <p class="dashboard_blog_post_comment_author">By <a href="#">Karen Lowerkirk</a></p>
+                                                    </section>
+                                                    <section class="col-sm-4 dashboard_comment_textbox_holder">
+                                                        <textarea class="dashboard_comment_textbox">
+Why is that? I think it's not true because Artificial Intellect is a real evil! I represent the brand new religious movement "Stop Blockchain - Remove Your Chains!" Please join everyone!
+Also, I don't think it's possible as there gonna be huge protests all over the nation and together we'll overcome this damn system!
+                                                        </textarea>
+                                                    </section>
+                                                    <section class="col-sm-1 dashboard_jobdate_holder">
+                                                        <p class="blog_comment_date date_added">03/11/2017</p>
+                                                    </section>
+                                                    <section class="col-sm-2 dashboard_controls_holder pull-right">
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right" data-toggle="tooltip" data-placement="left" title="Delete"><i class="fa fa-trash"></i></a>
+                                                        <a href="javascript:void(0)" class="rb_dashboard_tool_control pull-right hidden" data-toggle="tooltip" data-placement="left" title="Unblock"><i class="fa fa-smile-o"></i></a>
+                                                    </section>
+                                                </div>
+
+                                                <div class="rb_pagination_holder_dashboard">
+                                                    <nav>
+                                                        <ul class="pagination rb_pagination">
+                                                            <li>
+                                                                <a href="javascript:void(0)" aria-label="Previous" class="frozen">
+                                                                    <span aria-hidden="true">Previous</span>
+                                                                </a>
+                                                            </li>
+                                                            <li><a href="javascript:void(0)" class="active">1</a></li>
+                                                            <li><a href="javascript:void(0)">2</a></li>
+                                                            <li><a href="javascript:void(0)">3</a></li>
+                                                            <li>
+                                                                <a href="javascript:void(0)" aria-label="Next">
+                                                                    <span aria-hidden="true">Next</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- Blog Comments Tab END -->
+
+                            <div role="tabpanel" class="tab-pane fade" id="payments">
+                                <div class="dashboard_tab_section">
+                                    <h2 class="dashboard_ttl center-block text-center">Payments</h2>
+                                    <div class="dashboard_tab_two_midmain center-block">
+                                        <div class="search_and_filer_upper_section">
+                                            <div class="col-sm-5 search_form_holder">
+                                                <form id="payeeSearch" class="jobseeker_search">
+                                                    <div class="form-group">
+                                                        <label for="payeeSearchFilterInput" class="dshbrd_lbl">Search User</label>
+                                                        <input id="payeeSearchFilterInput" type="search" class="dashboard_search_input" placeholder="Enter a keyword..." onfocus="placeholder='' " onblur="placeholder='Enter a keyword...' ">
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="col-sm-5 pull-right user_filter_holder">
+                                                <form id="payeeSearchForm" class="jobseeker_filter">
+                                                    <div class="form-group">
+                                                        <label for="payeeFilterSelekta" class="dshbrd_lbl">Show...</label>
+                                                        <select id="payeeFilterSelekta" type="text">
+                                                            <option>All Users</option>
+                                                            <option>BASIC Plan Users</option>
+                                                            <option>STANDARD Plan Users</option>
+                                                            <option>PREMIUM Plan Users</option>
+                                                            <option>PROFESSIONAL Plan Users</option>
+                                                        </select>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div> <!-- Search & Filter Upper Section END -->
+
+                                        <div class="clearfix"></div>
+
+                                        <div class="dashboard_table_main_holder">
+                                            <div class="dashboard_table">
+
+                                                <div class="well rb_dashboard_stripe_payments strp_grey">
+                                                    <section class="col-sm-4 dashboard_payee_and_company_name_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_payee_name">Jonathan Cromwell</p>
+                                                            <p class="dashboard_payee_company_name">Cromwell Systems Inc.</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-2 dashboard_pricing_label_holder">
+                                                        <div class="pricing_label standard">Standard</div>
+                                                    </section>
+                                                    <section class="col-sm-1 payment_cycle_turnaround_holder">
+                                                        <section class=" cycle_innerbox">
+                                                            <small class="timeline_info">Cycle</small>
+                                                            <p class="cycle_abbreviation">M</p>
+                                                        </section>
+                                                    </section>
+
+                                                    <section class="col-md-2 col-sm-1 dashboard_payment_date_holder">
+                                                        <p class="payment_date">05/28/2017</p>
+                                                    </section>
+                                                    <section class="col-md-2 col-sm-1 dashboard_billed_overall_holder pull-right">
+                                                        <p class="billed">$635</p>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe_payments strp_white">
+                                                    <section class="col-sm-4 dashboard_payee_and_company_name_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_payee_name">Sergey Shishkin</p>
+                                                            <p class="dashboard_payee_company_name">Pronto Labs</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-2 dashboard_pricing_label_holder">
+                                                        <div class="pricing_label standard">Standard</div>
+                                                    </section>
+                                                    <section class="col-sm-1 payment_cycle_turnaround_holder">
+                                                        <section class=" cycle_innerbox">
+                                                            <small class="timeline_info">Cycle</small>
+                                                            <p class="cycle_abbreviation">Y</p>
+                                                        </section>
+                                                    </section>
+
+                                                    <section class="col-md-2 col-sm-1 dashboard_payment_date_holder">
+                                                        <p class="payment_date">02/11/2017</p>
+                                                    </section>
+                                                    <section class="col-md-2 col-sm-1 dashboard_billed_overall_holder pull-right">
+                                                        <p class="billed">$225</p>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe_payments strp_grey">
+                                                    <section class="col-sm-4 dashboard_payee_and_company_name_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_payee_name">Alice Weinstein</p>
+                                                            <p class="dashboard_payee_company_name">Golden Gate Corp.</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-2 dashboard_pricing_label_holder">
+                                                        <div class="pricing_label basic">Basic</div>
+                                                    </section>
+                                                    <section class="col-sm-1 payment_cycle_turnaround_holder">
+                                                        <section class=" cycle_innerbox">
+                                                            <small class="timeline_info">Cycle</small>
+                                                            <p class="cycle_abbreviation">Y</p>
+                                                        </section>
+                                                    </section>
+
+                                                    <section class="col-md-2 col-sm-1 dashboard_payment_date_holder">
+                                                        <p class="payment_date">02/12/2017</p>
+                                                    </section>
+                                                    <section class="col-md-2 col-sm-1 dashboard_billed_overall_holder pull-right">
+                                                        <p class="billed">$150</p>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe_payments strp_white">
+                                                    <section class="col-sm-4 dashboard_payee_and_company_name_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_payee_name">Lars Ubergeil</p>
+                                                            <p class="dashboard_payee_company_name">ORACLE</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-2 dashboard_pricing_label_holder">
+                                                        <div class="pricing_label pro">Pro</div>
+                                                    </section>
+                                                    <section class="col-sm-1 payment_cycle_turnaround_holder">
+                                                        <section class=" cycle_innerbox">
+                                                            <small class="timeline_info">Cycle</small>
+                                                            <p class="cycle_abbreviation">M</p>
+                                                        </section>
+                                                    </section>
+
+                                                    <section class="col-md-2 col-sm-1 dashboard_payment_date_holder">
+                                                        <p class="payment_date">02/12/2017</p>
+                                                    </section>
+                                                    <section class="col-md-2 col-sm-1 dashboard_billed_overall_holder pull-right">
+                                                        <p class="billed">$8355</p>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe_payments strp_grey">
+                                                    <section class="col-sm-4 dashboard_payee_and_company_name_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_payee_name">Jeremy Walters</p>
+                                                            <p class="dashboard_payee_company_name">Bernstein Constructions</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-2 dashboard_pricing_label_holder">
+                                                        <div class="pricing_label premium">Premium</div>
+                                                    </section>
+                                                    <section class="col-sm-1 payment_cycle_turnaround_holder">
+                                                        <section class=" cycle_innerbox">
+                                                            <small class="timeline_info">Cycle</small>
+                                                            <p class="cycle_abbreviation">M</p>
+                                                        </section>
+                                                    </section>
+
+                                                    <section class="col-md-2 col-sm-1 dashboard_payment_date_holder">
+                                                        <p class="payment_date">07/01/2017</p>
+                                                    </section>
+                                                    <section class="col-md-2 col-sm-1 dashboard_billed_overall_holder pull-right">
+                                                        <p class="billed">$12k</p>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe_payments strp_white">
+                                                    <section class="col-sm-4 dashboard_payee_and_company_name_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_payee_name">Monica Fairchild</p>
+                                                            <p class="dashboard_payee_company_name">Lucid Inc.</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-2 dashboard_pricing_label_holder">
+                                                        <div class="pricing_label basic">Basic</div>
+                                                    </section>
+                                                    <section class="col-sm-1 payment_cycle_turnaround_holder">
+                                                        <section class=" cycle_innerbox">
+                                                            <small class="timeline_info">Cycle</small>
+                                                            <p class="cycle_abbreviation">M</p>
+                                                        </section>
+                                                    </section>
+
+                                                    <section class="col-md-2 col-sm-1 dashboard_payment_date_holder">
+                                                        <p class="payment_date">07/29/2017</p>
+                                                    </section>
+                                                    <section class="col-md-2 col-sm-1 dashboard_billed_overall_holder pull-right">
+                                                        <p class="billed">$275</p>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe_payments strp_grey">
+                                                    <section class="col-sm-4 dashboard_payee_and_company_name_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_payee_name">Geoff Di Paolo</p>
+                                                            <p class="dashboard_payee_company_name">Wine Gallery</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-2 dashboard_pricing_label_holder">
+                                                        <div class="pricing_label basic">Basic</div>
+                                                    </section>
+                                                    <section class="col-sm-1 payment_cycle_turnaround_holder">
+                                                        <section class=" cycle_innerbox">
+                                                            <small class="timeline_info">Cycle</small>
+                                                            <p class="cycle_abbreviation">M</p>
+                                                        </section>
+                                                    </section>
+
+                                                    <section class="col-md-2 col-sm-1 dashboard_payment_date_holder">
+                                                        <p class="payment_date">11/26/2017</p>
+                                                    </section>
+                                                    <section class="col-md-2 col-sm-1 dashboard_billed_overall_holder pull-right">
+                                                        <p class="billed">$1575</p>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe_payments strp_white">
+                                                    <section class="col-sm-4 dashboard_payee_and_company_name_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_payee_name">Marvin Jackson</p>
+                                                            <p class="dashboard_payee_company_name">Jackson & Sons Insurance</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-2 dashboard_pricing_label_holder">
+                                                        <div class="pricing_label standard">Standard</div>
+                                                    </section>
+                                                    <section class="col-sm-1 payment_cycle_turnaround_holder">
+                                                        <section class=" cycle_innerbox">
+                                                            <small class="timeline_info">Cycle</small>
+                                                            <p class="cycle_abbreviation">Y</p>
+                                                        </section>
+                                                    </section>
+
+                                                    <section class="col-md-2 col-sm-1 dashboard_payment_date_holder">
+                                                        <p class="payment_date">12/09/2017</p>
+                                                    </section>
+                                                    <section class="col-md-2 col-sm-1 dashboard_billed_overall_holder pull-right">
+                                                        <p class="billed">$12k</p>
+                                                    </section>
+                                                </div>
+
+                                                <div class="well rb_dashboard_stripe_payments strp_grey">
+                                                    <section class="col-sm-4 dashboard_payee_and_company_name_holder">
+                                                        <a href="#">
+                                                            <p class="dashboard_payee_name">Linda Crowford</p>
+                                                            <p class="dashboard_payee_company_name">BuzzFeed</p>
+                                                        </a>
+                                                    </section>
+                                                    <section class="col-md-3 col-sm-2 dashboard_pricing_label_holder">
+                                                        <div class="pricing_label basic">Basic</div>
+                                                    </section>
+                                                    <section class="col-sm-1 payment_cycle_turnaround_holder">
+                                                        <section class=" cycle_innerbox">
+                                                            <small class="timeline_info">Cycle</small>
+                                                            <p class="cycle_abbreviation">M</p>
+                                                        </section>
+                                                    </section>
+
+                                                    <section class="col-md-2 col-sm-1 dashboard_payment_date_holder">
+                                                        <p class="payment_date">03/11/2017</p>
+                                                    </section>
+                                                    <section class="col-md-2 col-sm-1 dashboard_billed_overall_holder pull-right">
+                                                        <p class="billed">$635</p>
+                                                    </section>
+                                                </div>
+
+                                                <div class="rb_pagination_holder_dashboard">
+                                                    <nav>
+                                                        <ul class="pagination rb_pagination">
+                                                            <li>
+                                                                <a href="javascript:void(0)" aria-label="Previous" class="frozen">
+                                                                    <span aria-hidden="true">Previous</span>
+                                                                </a>
+                                                            </li>
+                                                            <li><a href="javascript:void(0)" class="active">1</a></li>
+                                                            <li><a href="javascript:void(0)">2</a></li>
+                                                            <li><a href="javascript:void(0)">3</a></li>
+                                                            <li>
+                                                                <a href="javascript:void(0)" aria-label="Next">
+                                                                    <span aria-hidden="true">Next</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div> <!-- Payments Tab END -->
+
+                        </div>
+                    </div> <!-- Dashboard Tabs Content Main Area END -->
+                </div> <!-- Dashboard Inner Area END -->
+            </div> <!-- Row END -->
+        </div> <!-- Fluid Container END -->
+    </div> <!-- Dashboard Main Area END -->
+
+    <div class="skewed_layer_support white"></div> <!-- Invisible utility for supporting following skewed layout -->
+
+    <footer class="rb_footer">
+        <div class="container">
+            <div class="row">
+                <div class="rb_footer_inner_boxx">
+                    <div class="col-sm-3 col-xs-3 footer_logo_holder">
+                        <a href="#">
+                            <img src="img/logo_v2.svg" class="footer_logo">
+                        </a>
+                        <div class="phone_holder">
+                            <i class="fa fa-phone footer_phone_icon"></i>
+                            <a href="tel:+1-541-754-3010">+1-541-754-3010</a>
+                        </div>
+                        <div class="email_holder">
+                            <i class="fa fa-envelope footer_email_icon"></i>
+                            <a href="mailto:info@recruiterboss.com">info@recruiterboss.com</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_linxx_holder">
+                        <ul class="footer_linxx">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Video Resume</a></li>
+                            <li><a href="#">Employers</a></li>
+                            <li><a href="#">Job Seekers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_linxx_holder">
+                        <ul class="footer_linxx">
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Manage email</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_buttons_holder">
+                        <a href="#" class="footer_hex_btn_green rb_hexagon_button green hvr-shrink">Post Video Resume</a>
+                        <a href="#" class="footer_hex_btn_white rb_hexagon_button white hvr-shrink">Post Your Job</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottommost_stripe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6 microtext_holder">
+                        <small class="microtext">&copy; 2017 <span>Recruiterboss</span> All Rights Reserved</small>
+                    </div>
+                    <div class="col-sm-6 col-xs-6 socialz_holder">
+                        <ul class="sozialz pull-right">
+                            <li><a href="#"><i class="fa fa-facebook-square"></i> </a> </li>
+                            <li><a href="#"><i class="fa fa-linkedin-square"></i> </a> </li>
+                            <li><a href="#"><i class="fa fa-instagram"></i> </a> </li>
+                            <li><a href="#"><i class="fa fa-tumblr-square"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Footer END -->
+
+</div> <!-- Main END -->
+
+<!-- jQuery'z -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+<!-- JSz -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/recruiterboss.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 30,
+            time: 2000
+        });
+    });
+</script>
+
+<script src="js/select2.full.js"></script>
+<script>
+    $('#jobseekerFilterSelekta, #employerFilterSelekta, #jobsFilterSelekta, #resumeFilterSelekta, #blogCommentSearchFilterSelekta, #payeeFilterSelekta').select2({
+        width: '100%',
+        minimumResultsForSearch: -1
+
+    });
+    $('#location_city').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "Select City..."
+    });
+    $('#myCompanySize').select2({
+        width: '100%',
+        minimumResultsForSearch: -1
+    });
+</script>
+
+</body>
+</html>

@@ -11,7 +11,9 @@
 /* >>>>>>>> I M P O R T A N T ! <<<<<<<<< */
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 
+/* === RB Collapse 1 (Main Guest Scenario) === */
 /* >>>>> LG/XL <<<<< */
+
 @media screen and (min-width: 1600px){
     #rb_bcollapse_1 {position: relative; top: 45px;}
     #rb_bcollapse_2 {top: 30px;}
@@ -19,25 +21,39 @@
 
 
 /* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1346px){
+    #rb_bcollapse_1 {position: relative; top: -50px;}
+}
+
+
 @media screen and (max-width: 767px){
     #rb_bcollapse_1 {
         position: absolute;
         left: 0;
         width: 100%;
-        margin-top: 46px;
-        background: rgba(54, 54, 54, 0.9);
+        margin-top: 170px;
+        background: rgba(225, 225, 225, 0.99);
         border-top: 2px solid #8fc93a;
         padding-bottom: 6px;
         padding-top: 6px;
     }
+
+    ul.rb_navstripe {margin-top: 20px;}
 }
 
 @media screen and (max-width: 414px){
     #rb_bcollapse_1 {
-        margin-top: 26px;
+        /*margin-top: 26px;*/
     }
 }
 
+
+/* - - - - - - */
+
+
+/* === RB Collapse 2 === */
+/* >>>>> SM/XS <<<<< */
 
 @media screen and (max-width: 767px){
     #rb_bcollapse_2 {
@@ -54,6 +70,17 @@
 }
 
 
+/* - - - - - - */
+
+
+/* === RB Collapse Logged In === */
+/* >>>>> LG/XL <<<<< */
+
+@media screen and (min-width: 1600px){
+    #rb_bcollapse_logged_in {top: 40px;}
+}
+
+/* >>>>> SM/XS <<<<< */
 
 @media screen and (max-width: 767px){
     #rb_bcollapse_logged_in {
@@ -61,8 +88,36 @@
         top: 52px;
         left: 0;
         width: 100%;
-        margin-top: 46px;
-        background: rgba(54, 54, 54, 0.9);
+        margin-top: 50px;
+        background: rgba(225, 225, 225, 0.99);
+        border-top: 2px solid #8fc93a;
+        padding-bottom: 6px;
+        padding-top: 6px;
+    }
+}
+
+
+
+/* - - - - - - */
+
+
+/* === RB Collapse Logged In Jobseeker Homepage === */
+/* >>>>> LG/XL <<<<< */
+
+@media screen and (min-width: 1600px){
+    #rb_bcollapse_logged_in_jobseeker_homepage {top: 40px;}
+}
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    #rb_bcollapse_logged_in_jobseeker_homepage {
+        position: absolute;
+        top: 52px;
+        left: 0;
+        width: 100%;
+        margin-top: 90px;
+        background: rgba(225, 225, 225, 0.99);
         border-top: 2px solid #8fc93a;
         padding-bottom: 6px;
         padding-top: 6px;
@@ -72,10 +127,23 @@
 
 
 
+
+
+
+
+
+
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 /* -------- NAV & HEADER ---------- */
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 
+
+/* >>>>> XL/XXL <<<<< */
+@media screen and (min-width: 1600px) {
+    ul.rb_navstripe {
+        margin-top: 0;
+    }
+}
 
 
 /* >>>>> SM/XS <<<<< */
@@ -150,9 +218,13 @@
     .macbook_holder {margin-top: 7%; margin-bottom: 60px;}
     .rb_macbook {width: 700px; height: 430px; right: 0;}
 
-    img.rb_main_logo_cropped {width: 50%;}
+    img.rb_main_logo_cropped {
+        width: 35%;
+        top: -22px;
+        position: relative;
+    }
 
-    .navbar-default .navbar-toggle {margin-top: 30px;}
+    .navbar-default .navbar-toggle {margin-top: 33px;}
 
     a.navbarhex {height: 40px; width: 174px; font-size: 1rem; padding-top: 16px; line-height: 1.6 !important; margin-bottom: 12px;}
     a.standard_linx {font-size: 1rem;}
@@ -209,7 +281,7 @@
 
 @media screen and (max-width: 414px){
     .rb_macbook {width: 380px; height: 240px;}
-    img.rb_main_logo_cropped {width: 38%;}
+    img.rb_main_logo_cropped {width: 34%;}
 }
 
 @media screen and (max-width: 380px){
@@ -786,13 +858,17 @@
 
 @media screen and (max-width: 1115px){
     img.rb_main_logo_inner {display: none;}
-    img.rb_main_logo_cropped_inner {display: block; width: 37%;}
+    img.rb_main_logo_cropped_inner {display: block; width: 30%; position: relative; top: -11px;}
 
     #rb_bcollapse_2 {top: 30px;}
 }
 
 @media screen and (max-width: 1064px){
     #rb_bcollapse_2 {top: -17px;}
+}
+
+@media screen and (max-width: 991px){
+    .about_founder_hex {right: 30px;}
 }
 
 @media screen and (max-width: 815px){
@@ -805,6 +881,8 @@
     .rb_navstripe_inner {top: 0; float: right; padding-right: 20px;}
     .about_hex_holder {padding-top: 46px; text-align: center;}
     .about_hex {display: inline-block; text-align: center;}
+
+    .about_founder_hex {display: inline-block; text-align: center; top: 0; right: 0;}
 }
 
 
@@ -913,16 +991,20 @@
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* • • • • • • • • • • • • • • • • • • • • • • • • */
 
+
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 /* -------- Contact Form Box ---------- */
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
-
 
 
 /* >>>>> SM/XS <<<<< */
 
 @media screen and (max-width: 991px){
     .contact_boxx {width: 95%;}
+}
+
+@media screen and (max-width: 767px){
+    .faq_area {padding-right: 24px;}
 }
 
 @media screen and (max-width: 699px){
@@ -2094,6 +2176,220 @@
     ul.howtohelp_points {padding-left: 12px;}
 
 }
+
+
+
+
+
+/* • • • • • • • */
+
+
+
+
+
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* V2 AMENDMENT MQs */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* • • • • • • • • • • • • • • • • • • • • • • • • */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .my_package {width: 165px;}
+    ul.my_package_data_list li {font-size: 0.8rem;}
+}
+
+@media screen and (max-width: 767px){
+    .my_package {width: 205px;}
+    ul.my_package_data_list {padding-left: 0;}
+    ul.my_package_data_list li {font-size: 1rem;}
+    .my_package_holder {margin-bottom: 26px;}
+    .payment_info_main_subsection {padding-bottom: 0;}
+    .payment_info_boxx {padding-bottom: 55px;}
+}
+
+
+
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* DASHBOARD (SUMMARY) */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+@media screen and (max-width: 1362px){
+    .summaryboxx {width: 28%;}
+}
+
+@media screen and (max-width: 1150px){
+    .summaryboxx {width: 45%;}
+}
+
+@media screen and (max-width: 935px){
+    .summaryboxx {width: 40%;}
+}
+
+@media screen and (max-width: 767px){
+    .dashboard_sidebar {margin-bottom: 42px; padding-left: 18px; padding-right: 18px;}
+    .summaryboxx {width: 95%;}
+}
+
+@media screen and (max-width: 444px){
+    .dashboard_tab_one_midmain {padding-left: 16px;}
+}
+
+
+
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* DASHBOARD (JOBSEEKERS / EMPLOYERS) */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+@media screen and (max-width: 991px){
+    .dashboard_controls_holder {top: 0;}
+    .dashboard_jobdate_holder_deleted {margin-right: 0;}
+}
+
+@media screen and (max-width: 870px){
+    .dashboard_controls_holder {top: -1px;}
+}
+
+@media screen and (max-width: 767px){
+    .dashboard_controls_holder {top: -16px;}
+    .dashboard_tab_two_midmain {padding-left: 5px;}
+
+    .user_filter_holder {float: none !important; padding-left: 0;}
+
+    .rb_dashboard_stripe {min-height: 175px; height: auto; padding-top: 12px;}
+    div.rb_dashboard_checkboxx_form {margin-bottom: 20px;}
+    .dashboard_jobdate_holder {padding-left: 0; margin-bottom: 34px;}
+
+    .dashboard_controls_holder {float: left !important; clear: both !important; padding-left: 0;}
+    .dashboard_jobdate_holder_deleted {float: left !important; clear: both !important; padding-left: 0; margin-top: -12px;}
+}
+
+@media screen and (max-width: 496px){ /* 496px breakpoint is for DEMO purpose only! Change to 360px after client handover! */
+    button.dashboard_suspend_btn {width: 96%; margin-bottom: 8px;}
+    button.dashboard_delete_btn {width: 96%;}
+
+    button.dashboard_erase_forever_btn {width: 96%; margin-bottom: 8px;}
+    button.dashboard_unblock_btn {width: 96%; margin-bottom: 8px;}
+}
+
+
+
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* DASHBOARD (JOBS) */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+@media screen and (max-width: 345px){
+    small.job_edit_status_update {margin-left: 4px;}
+}
+
+@media screen and (max-width: 320px){
+    small.job_edit_status_update {margin-left: 0;}
+}
+
+@media screen and (max-width: 496px){ /* 496px breakpoint is for DEMO purpose only! Change to 360px after client handover! */
+    button.dashboard_approve_job_btn {width: 96%; margin-bottom: 8px;}
+    button.dashboard_sendalert_btn {width: 96%; margin-bottom: 8px;}
+}
+
+
+
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* DASHBOARD (BLOG COMMENTS) */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+@media screen and (max-width: 1030px){
+    a.blog_comment_ctrl {margin-right: 4px;}
+
+    p.dashboard_blog_post_name {font-size: 0.88rem;}
+    p.dashboard_blog_post_comment_author {font-size: 0.8rem;}
+
+    p.blog_comment_date {font-size: 0.8rem;}
+}
+
+@media screen and (max-width: 991px){
+    .dashboard_controls_holder {right: -24px;}
+}
+
+@media screen and (max-width: 767px){
+    .rb_dashboard_stripe_blog_comments {padding-top: 18px;}
+    p.dashboard_blog_post_name {padding-top: 26px; min-height: 60px; height: auto; margin-bottom: 16px;}
+
+    .dashboard_comment_textbox_holder {top: -9px; padding-left: 0;}
+    textarea.dashboard_comment_textbox {margin-bottom: 4px;}
+
+    .dashboard_controls_holder {right: -1px;}
+    p.dashboard_blog_post_name {font-size: 1rem;}
+    p.dashboard_blog_post_comment_author {font-size: 1rem;}
+
+    p.blog_comment_date {font-size: 1rem;}
+    a.blog_comment_ctrl {margin-right: 16px;}
+}
+
+
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* DASHBOARD (PAYMENTS COMMENTS) */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+@media screen and (max-width: 991px){
+    .dashboard_pricing_label_holder {padding-left: 0;}
+    .dashboard_payment_date_holder {position: relative; right: -99px;}
+    .cycle_innerbox {right: -88px;}
+    .pricing_label {width: 120px;}
+}
+
+@media screen and (max-width: 850px){
+    .dashboard_payment_date_holder {position: relative; right: -80px;}
+    .cycle_innerbox {right: -60px;}
+    .pricing_label {width: 100px;}
+
+    p.billed {position: relative; left: -8px;}
+}
+
+@media screen and (max-width: 800px){
+    .dashboard_payment_date_holder {right: -50px;}
+    .cycle_innerbox {right: -36px;}
+}
+
+@media screen and (max-width: 767px){
+    .rb_dashboard_stripe_payments {min-height: 260px; height: auto;}
+
+    .pricing_label {width: 250px; font-size: 0.9rem; height: 36px; padding-top: 9px;}
+    .payment_cycle_turnaround_holder {display: block; text-align: left; padding-left: 0;}
+    .cycle_innerbox {right: 0; float: left; top: 12px;}
+    p.cycle_abbreviation {top: -8px;}
+
+    .dashboard_payment_date_holder {right: 0; padding-left: 0;}
+    p.payment_date {float: left; clear: both;}
+
+    .dashboard_billed_overall_holder {float: left !important; clear: both; padding-left: 8px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

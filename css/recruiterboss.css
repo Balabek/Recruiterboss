@@ -34,7 +34,7 @@ body {
 
 a:focus, button:focus {
     outline: none !important;
-    border: none !important;
+    /*border: none !important;*/
 }
 
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
@@ -70,7 +70,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 .navbar-default .navbar-toggle:focus {
     border: 1px solid #8fc93a !important;
-    background: rgba(0,0,0,0.2);
+    background: rgba(255,255,255,0.2);
 }
 
 
@@ -369,6 +369,27 @@ a.help_with_upload:hover i.fa-life-saver {
     background-size: cover;
 }
 
+@-webkit-keyframes pulsation {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+@keyframes pulsation {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
 a.hexaplay {
     position: absolute;
     display: inline-block;
@@ -380,7 +401,18 @@ a.hexaplay {
     width: 60px;
     background: url('../img/hexaplay.png') center center no-repeat;
     background-size: contain;
+
+    -webkit-animation-name: pulsation;
+    animation-name: pulsation;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
+
+
 
 .newsletter_hex {
     display: block;
@@ -1315,7 +1347,7 @@ ul.rb_navstripe_inner li a:hover, ul.rb_navstripe_inner li a:focus {
 
 #rb_bcollapse_logged_in {
     position: relative;
-    top: 27px;
+    top: 30px;
 }
 
 nav.rb_navigation_inner {
@@ -1332,10 +1364,13 @@ nav.rb_navigation_inner {
     z-index: 100;
     background: url('../img/inner_nav_bgd.jpg') center center no-repeat;
     background-size: cover;
+    box-shadow: 2px 1px 3px #cecece;
 }
 
 img.rb_main_logo_inner {
-    width: 37%;
+    position: relative;
+    top: -11px;
+    width: 50%;
 }
 
 
@@ -1377,6 +1412,16 @@ img.rb_main_logo_inner {
     width: 285px;
     height: 285px;
     background: url('../img/about_hex.png') center center no-repeat;
+    background-size: contain;
+}
+
+.about_founder_hex {
+    position: relative;
+    top: 100px;
+    display: block;
+    width: 285px;
+    height: 285px;
+    background: url('../img/about_founder_hex.png') center center no-repeat;
     background-size: contain;
 }
 
@@ -1847,6 +1892,32 @@ br.invisible_break_2 {
 }
 
 
+.faq_area {
+    margin-bottom: 75px;
+}
+
+.faq_area_title_holder {
+    margin-bottom: 35px;
+}
+
+ul.faq_list li {
+    list-style-type: none;
+}
+
+p.question {
+    font-family: "BrandonGrotesque-Regular",sans-serif;
+    font-size: 1.5rem;
+    color: #0d6ca8;
+    text-align: left;
+    margin-bottom: 1px;
+}
+
+p.answer {
+    font-size: 1.1rem;
+    color: #666666;
+    text-align: left;
+    font-style: italic;
+}
 
 
 
@@ -5702,9 +5773,9 @@ a.profile_posted_job:hover {
 }
 
 .comingsoon_boxx h1 {
-   font-family: "BrandonGrotesque-Bold", sans-serif;
-   font-size: 6rem;
-   color: #ffffff;
+    font-family: "BrandonGrotesque-Bold", sans-serif;
+    font-size: 6rem;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -5799,4 +5870,1016 @@ h5.howto_subttl {
     color: #0d6ca8;
     text-transform: uppercase;
     margin-bottom: 22px;
+}
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* = = = = = V2 AMENDMENTS (!2018!) = = = = = */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+/* --- Navbar Tweak for a logged in Jobseeker on the homepage --- */
+
+#rb_bcollapse_logged_in_jobseeker_homepage {
+    position: relative;
+    top: -12px;
+}
+
+
+/* --- Payment Block in the 'Account Settings for Employers' page --- */
+
+.user_filter_holder {
+    padding-right: 0;
+}
+
+.payment_info_boxx {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 92%;
+    min-height: 285px;
+    height: auto;
+    background: #f8f8f8;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding-top: 32px;
+    padding-bottom: 35px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-bottom: 24px;
+}
+
+.payment_info_main_subsection {
+    padding-top: 16px;
+    padding-bottom: 55px;
+}
+
+.my_package_holder {
+    padding-left: 0;
+}
+
+.my_package_holder h6 {
+    font-size: 0.9rem;
+    color: #666666;
+    font-weight: 400;
+}
+
+.my_package {
+    height: 55px;
+    width: 205px;
+    border-radius: 5px;
+    color: #ffffff;
+    padding-top: 14px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.my_package.pp_basic {
+    background: url("../img/pp_basic_bgd.jpg") center center no-repeat;
+}
+.my_package.pp_standard {
+    background: url("../img/pp_standard_bgd.jpg") center center no-repeat;
+}
+.my_package.pp_premium {
+    background: url("../img/pp_premium_bgd.jpg") center center no-repeat;
+}
+.my_package.pp_professional {
+    background: url("../img/pp_u_bgd.jpg") center center no-repeat;
+}
+
+
+
+.my_package_data_list_holder {
+    padding-left: 0;
+}
+
+ul.my_package_data_list li {
+    list-style-type: none;
+    font-weight: 400;
+    color: #666666;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 2;
+}
+
+ul.my_package_data_list li span {
+    font-weight: 600;
+    color: #363636;
+}
+
+hr.payment_info_block_separator {
+    clear: both;
+    display: block;
+    position: relative;
+    margin-top: 56px;
+    border-color: #cecece;
+    width: 100%;
+}
+
+button.btn-changepricingplan_btn {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #8fc93a;
+    height: 33px;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-filter: drop-shadow(2px 2px 3px #dddddd);
+    filter: drop-shadow(2px 2px 3px #dddddd);
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+button.btn-changepricingplan_btn:hover, button.btn-changepricingplan_btn:focus {
+    color: #ffffff;
+    background: #83D6DE;
+}
+
+/* =========== */
+/* --- DASHBOARD (Summary Tab) --- */
+/* =========== */
+
+.dashboard_main_area {
+    min-height: 650px;
+    height: auto;
+    background: #ffffff;
+    padding-top: 77px;
+    padding-bottom: 75px;
+}
+
+.nav-tabs-justified > li > a {
+    border-radius: 4px;
+}
+
+ul#rb_dashboard_tab_list li {
+    margin-bottom: 3px;
+}
+
+ul#rb_dashboard_tab_list li.active > a {
+    background: #8fc93a;
+    color: #ffffff;
+}
+
+ul#rb_dashboard_tab_list li a {
+    border: none;
+    background: #0d6ca8;
+    color: #ffffff;
+
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+ul#rb_dashboard_tab_list li a:hover {
+    background: #8fc93a;
+    color: #ffffff;
+}
+
+.dashboard_tab_section {
+    background: #ffffff;
+}
+
+h2.dashboard_ttl {
+    font-family: "BrandonGrotesque-Bold", sans-serif;
+    font-size: 2.6rem;
+    color: #0d6ca8;
+}
+
+.dashboard_tab_one_midmain {
+    padding-top: 55px;
+    padding-left: 32px;
+}
+
+.summaryboxx {
+    display: block;
+    text-align: center;
+    padding-top: 18px;
+    height: 180px;
+    width: 30%;
+    border: 1px solid #cecece;
+    background: #ffffff;
+    border-radius: 4px;
+    margin-right: 32px;
+    padding-bottom: 12px;
+    margin-bottom: 55px;
+
+    -webkit-box-shadow: 0 4px 38px -7px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0 4px 38px -7px rgba(0,0,0,0.21);
+    box-shadow: 0 4px 38px -7px rgba(0,0,0,0.21);
+}
+
+.summary_icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.summary_icon.employers {
+    background: url('../img/skyline.svg') center center no-repeat;
+    background-size: contain;
+}
+.summary_icon.jobseekers {
+    background: url('../img/employees.svg') center center no-repeat;
+    background-size: contain;
+}
+.summary_icon.videoresumes {
+    background: url('../img/video-camera.svg') center center no-repeat;
+    background-size: contain;
+}
+.summary_icon.paymentz {
+    background: url('../img/cash-payment.svg') center center no-repeat;
+    background-size: contain;
+}
+.summary_icon.blogposts {
+    background: url('../img/blogging.svg') center center no-repeat;
+    background-size: contain;
+}
+.summary_icon.standardresumes {
+    background: url('../img/resume.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.s_number_holder {
+    padding-top: 14px;
+    margin-bottom: 12px;
+}
+
+.s_number {
+    font-family: "BrandonGrotesque-Light", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    color: #83D6DE; /* backup color for non-Webkit browsers */
+
+    background: -webkit-linear-gradient(#0d6ca8, #8fc93a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.s_text {
+    font-size: 1.222rem;
+    font-weight: 400;
+    color: #707070;
+    text-align: center;
+}
+
+
+
+/* =========== */
+/* --- DASHBOARD (Jobseekers/Employers Tab) --- */
+/* =========== */
+
+.dashboard_tab_two_midmain {
+    padding-top: 55px;
+    padding-left: 32px;
+}
+
+.search_form_holder {
+    padding-left: 0;
+}
+
+label.dshbrd_lbl {
+    font-size: 0.9rem;
+    color: #666666;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+input.dashboard_search_input {
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    padding-left: 12px;
+    height: 44px;
+    width: 100%;
+    background: #ffffff;
+    color: #666666;
+    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+}
+
+input.dashboard_search_input:focus {
+    border: 1px solid #cfcfcf;
+}
+
+.control_buttons_section {
+    padding-top: 36px;
+    padding-left: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #cecece;
+}
+
+
+button.dashboard_suspend_btn {
+    display: inline-block;
+    /*height: 30px;*/
+    width: 135px;
+    border-radius: 5px;
+    border: 1px solid #fec606;
+    color: #fec606;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 8px;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button.dashboard_suspend_btn:hover, button.dashboard_suspend_btn:focus {
+    background: #fec606;
+    color: #ffffff;
+}
+
+
+button.dashboard_delete_btn {
+    display: inline-block;
+    /*height: 30px;*/
+    width: 135px;
+    border-radius: 5px;
+    border: 1px solid #d33257;
+    color: #d33257;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 16px;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button.dashboard_delete_btn:hover, button.dashboard_delete_btn:focus {
+    border: 1px solid #d33257;
+    background: #d33257;
+    color: #ffffff;
+}
+
+
+button.dashboard_unblock_btn {
+    display: inline-block;
+    /*height: 30px;*/
+    width: 135px;
+    border-radius: 5px;
+    border: 1px solid #00aeef;
+    color: #00aeef;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 8px;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button.dashboard_unblock_btn:hover, button.dashboard_unblock_btn:focus {
+    background: #00aeef;
+    color: #ffffff;
+}
+
+
+button.dashboard_erase_forever_btn {
+    display: inline-block;
+    /*height: 30px;*/
+    width: 205px;
+    border-radius: 5px;
+    border: 1px solid #90A4AE;
+    color: #90A4AE;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 8px;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button.dashboard_erase_forever_btn:hover, button.dashboard_erase_forever_btn:focus {
+    background: #90A4AE;
+    color: #ffffff;
+}
+
+
+.dashboard_table {
+    padding-top: 32px;
+}
+
+.rb_dashboard_stripe.strp_grey {background-color: #f7f7f7;}
+.rb_dashboard_stripe.strp_white {background-color: #ffffff; border: 1px solid #f2f2f2;}
+
+/* Use this class instead of .strp_grey and .strp_white for showing 'Suspended' users list */
+.rb_dashboard_stripe.suspended {background-color: rgba(254, 198, 6, 0.13);}
+
+/* Use this class instead of .strp_grey and .strp_white for showing 'Deleted' users list */
+.rb_dashboard_stripe.deleted {background-color: rgba(211, 50, 87, 0.12);}
+
+
+
+.rb_dashboard_stripe {
+    padding: 25px 12px 25px 12px;
+    width: 100%;
+    height: 80px;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+}
+
+.dashboard_name_and_job_holder {
+    padding-left: 1px;
+    position: relative;
+    top: -7px;
+}
+
+.dashboard_name_and_job_holder a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.dashboard_name_and_job_holder a:hover > p {
+    color: #666666;
+}
+
+p.dashboard_jobseeker_name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 1px;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+p.dashboard_jobseeker_job {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 1px;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+div.rb_dashboard_checkboxx_form {
+    position: relative;
+    top: -7px;
+}
+
+.dashboard_jobdate_holder {
+    position: relative;
+    top: 7px;
+}
+
+.dashboard_controls_holder {
+    position: relative;
+    top: 0;
+}
+
+.rb_pagination_holder_dashboard {
+    padding-top: 32px;
+    text-align: center;
+}
+
+a.rb_dashboard_tool_control {
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+    color: #5c5c5c;
+    font-size: 1.5rem;
+
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -ms-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+}
+
+a.rb_dashboard_tool_control:hover {
+    color: #e16846;
+}
+
+.dashboard_jobdate_holder_deleted {
+    position: relative;
+    top: 7px;
+    margin-right: 18px;
+}
+
+p.jobdate.date_deleted {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #d33257;
+    text-align: left;
+}
+
+
+
+/* =========== */
+/* --- DASHBOARD (Jobs Tab) --- */
+/* =========== */
+
+button.dashboard_approve_job_btn {
+    display: inline-block;
+    /*height: 30px;*/
+    width: 135px;
+    border-radius: 5px;
+    border: 1px solid #58a440;
+    color: #58a440;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 8px;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button.dashboard_approve_job_btn:hover, button.dashboard_approve_job_btn:focus {
+    background: #58a440;
+    color: #ffffff;
+}
+
+
+button.dashboard_sendalert_btn {
+    display: inline-block;
+    /*height: 30px;*/
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #fec606;
+    color: #fec606;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 8px;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button.dashboard_sendalert_btn:hover, button.dashboard_sendalert_btn:focus {
+    background: #fec606;
+    color: #ffffff;
+}
+
+p.dashboard_job_post_title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 1px;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+p.dashboard_job_posters_username {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 1px;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+i.job_approved {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    margin-left: 8px;
+    color: #58a440;
+    font-size: 1.1rem;
+}
+
+/* Use this class instead of .strp_grey and .strp_white for showing 'Suspended' users list */
+.rb_dashboard_stripe.pending {background-color: rgba(254, 198, 6, 0.13);}
+
+/* Use this class instead of .strp_grey and .strp_white for showing 'Suspended' users list */
+.rb_dashboard_stripe.pending_edited {background: rgba(0, 174, 239, 0.05);}
+
+i.job_alert_sent {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    margin-left: 8px;
+    color: #fec606;
+    font-size: 1.1rem;
+}
+
+i.job_edited {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    margin-left: 8px;
+    color: #0d6ca8;
+    font-size: 1.1rem;
+}
+
+small.job_edit_status_update {
+    font-size: 0.77rem;
+    font-weight: 400;
+    color: #0d6ca8;
+    text-align: left;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+}
+
+
+
+
+
+/* =========== */
+/* --- DASHBOARD (Video Resumes Tab) --- */
+/* =========== */
+
+p.dashboard_video_resume_name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000 !important;
+    text-align: left;
+    margin-bottom: 1px;
+
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    /*display:inline-block;*/
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a.dashboard_video_resume_author_name {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 1px;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a.video_resume_shortcut {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    margin-left: 8px;
+    color: #666666;
+    font-size: 1.1rem;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+a.video_resume_shortcut:hover {
+    color: #999999;
+}
+
+
+.rb_dashboard_stripe_blog_comments {
+    padding: 45px 12px 25px 12px;
+    width: 100%;
+    min-height: 130px;
+    height: auto;
+
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+}
+
+.rb_dashboard_stripe_blog_comments.strp_grey {background-color: #f7f7f7;}
+.rb_dashboard_stripe_blog_comments.strp_white {background-color: #ffffff; border: 1px solid #f2f2f2;}
+
+/* Use this class instead of .strp_grey and .strp_white for showing 'Suspended' users list */
+.rb_dashboard_stripe_blog_comments.pending {background-color: rgba(254, 198, 6, 0.13);}
+
+.dashboard_blog_comment_and_author_holder {
+    padding-left: 1px;
+    position: relative;
+    top: -25px;
+}
+
+.dashboard_blog_comment_and_author_holder a {
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.dashboard_blog_comment_and_author_holder a:hover {
+    color: #666666;
+}
+
+p.dashboard_blog_post_name {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 1px;
+    min-height: 70px;
+    height: auto;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+p.dashboard_blog_post_comment_author {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 1px;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.dashboard_comment_textbox_holder {
+    position: relative;
+    top: -35px;
+}
+
+textarea.dashboard_comment_textbox {
+    display: block;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-top: 6px;
+    height: 105px;
+    overflow-y: scroll;
+    width: 100%;
+    background: #ffffff;
+    resize: none;
+    color: #666666;
+    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 20px;
+}
+
+textarea.dashboard_comment_textbox:focus {
+    border: 1px solid #cfcfcf;
+}
+
+textarea.dashboard_comment_textbox.pending_textbox {
+    display: block;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-top: 6px;
+    height: 105px;
+    overflow-y: scroll;
+    width: 100%;
+    background: #ffffff;
+    resize: none;
+    color: #666666;
+    border-radius: 4px;
+    border: 1px solid #fec606;
+    margin-bottom: 20px;
+}
+
+textarea.dashboard_comment_textbox.pending_textbox:focus {
+    border: 1px solid #fec606;
+}
+
+p.blog_comment_date {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+}
+
+
+
+
+
+
+/* =========== */
+/* --- DASHBOARD (Payments Tab) --- */
+/* =========== */
+
+.rb_dashboard_stripe_payments.strp_grey {background-color: #f7f7f7;}
+.rb_dashboard_stripe_payments.strp_white {background-color: #ffffff; border: 1px solid #f2f2f2;}
+
+.rb_dashboard_stripe_payments {
+    padding: 25px 12px 25px 12px;
+    width: 100%;
+    height: 80px;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+}
+
+.dashboard_payee_and_company_name_holder {
+    padding-left: 1px;
+    position: relative;
+    top: -7px;
+}
+
+.dashboard_payee_and_company_name_holder a {
+    text-decoration: none;
+    color: #000000;
+}
+
+p.dashboard_payee_name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000 !important;
+    text-align: left;
+    margin-bottom: 1px;
+
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    /*display:inline-block;*/
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+p.dashboard_payee_company_name {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000 !important;
+    text-align: left;
+    margin-bottom: 1px;
+
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    /*display:inline-block;*/
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.dashboard_payment_date_holder {
+    position: relative;
+    top: 7px;
+}
+
+.dashboard_billed_overall_holder {
+    position: relative;
+    top: 6px;
+}
+
+p.billed {
+    font-size: 1.114rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: right;
+}
+
+.pricing_label {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+
+.pricing_label.basic {
+    background: url('../img/pp_basic_bgd.jpg') center center no-repeat;
+    background-size: cover;
+}
+.pricing_label.standard {
+    background: url('../img/pp_standard_bgd.jpg') center center no-repeat;
+    background-size: cover;
+}
+.pricing_label.premium {
+    background: url('../img/pp_premium_bgd.jpg') center center no-repeat;
+    background-size: cover;
+}
+.pricing_label.pro {
+    background: url('../img/pp_u_bgd.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.cycle_innerbox {
+    position: relative;
+    top: -16px;
+    padding: 0;
+    text-align: center;
+}
+
+small.timeline_info {
+    font-size: 0.7rem;
+    color: #666666;
+    font-weight: 300;
+    text-align: center;
+}
+
+p.cycle_abbreviation {
+    font-family: "BrandonGrotesque-Black", sans-serif;
+    font-size: 2rem;
+    color: #0d6ca8;
+    text-align: center;
+    margin-bottom: 0;
+    position: relative;
+    left: 1px;
+    top: -5px;
+}
+
+p.payment_date {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: right;
 }

@@ -73,15 +73,16 @@ $(document).ready(function () {
 });
 
 
-$(window).on('load resize', function(){
+// $(window).on('load resize', function(){
+//
+//     $(window).width();
+//
+//     if ($(window).width() < 525) {
+//         $('html,body').animate({
+//             scrollTop: $("#onlyForJobseekerz").offset().top}, 'slow');
+//
+//     }
+//
+// });
 
-    $(window).width();
 
-    if ($(window).width() < 525) {
-        $('html,body').animate({
-            scrollTop: $("#onlyForJobseekerz").offset().top}, 'slow');
-
-    }
-
-
-});
